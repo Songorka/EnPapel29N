@@ -1,0 +1,38 @@
+name: Datos diarios de Google Analytics
+
+on:
+  schedule:
+    - cron: '10 5 * * *'   # 07:10 en Madrid en verano, 06:10 en invierno (antes de la tarea de las 7:46)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['analytics/pedir.txt']   # para lanzarlo a mano desde la tarea o desde Claude
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analytics-diario
+  cancel-in-progress: false
+
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar la librería de Google Analytics
+        run: pip install --quiet google-analytics-data
+      - name: Sacar los datos de ayer
+        env:
+          GA_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+        run: python3 noticias/analytics.py
+      - name: Guardar en el repositorio
+        if: always()
+        run: |
+          git config user.name "EnPapel29N"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A analytics
+          git diff --cached --quiet || git commit -m "Datos de Analytics [skip ci]"
+          git pull --rebase -q || true
+          git push
