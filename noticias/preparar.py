@@ -29,6 +29,14 @@ def bloque_p(t):
     return f'<!-- wp:paragraph -->\n<p>{t}</p>\n<!-- /wp:paragraph -->'
 
 
+BOTON = ('<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->\n'
+         '<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#11512a","text":"#ffffff"}}} -->\n'
+         '<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" '
+         'href="https://enpapel.es/encuestas-29n/" style="color:#ffffff;background-color:#11512a">'
+         '📊 Ver todas las encuestas, la media y el pactómetro</a></div>\n'
+         '<!-- /wp:button --></div>\n<!-- /wp:buttons -->')
+
+
 def bloque_h2(t):
     return f'<!-- wp:heading -->\n<h2 class="wp-block-heading">{t}</h2>\n<!-- /wp:heading -->'
 
@@ -74,9 +82,11 @@ def main():
     img = json.loads(r.stdout.strip().splitlines()[-1])
 
     partes = []
-    for s in b['secciones']:
+    for i, s in enumerate(b['secciones']):
         partes.append(bloque_h2(s['subtitulo']))
         partes += [bloque_p(p) for p in s['parrafos']]
+        if i == 0:
+            partes.append(BOTON)  # enlace bien visible a la página de encuestas tras el primer bloque
     partes.append(bloque_p(CIERRE))
     partes += [bloque_p(f) for f in b['fichas']]
 

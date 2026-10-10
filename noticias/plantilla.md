@@ -48,8 +48,16 @@ Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los d
 ## Imagen destacada
 `python3 noticias/imagen.py --salida imagen.png` crea la imagen del día (sin repetir). Su texto alternativo es el campo `alt` que imprime el programa.
 
+## Enlace a la página de encuestas (obligatorio)
+- Toda noticia lleva un botón verde bien visible «📊 Ver todas las encuestas, la media y el pactómetro» tras el primer bloque (lo pone preparar.py) y además la línea final con el enlace a enpapel.es/encuestas-29n.
+- En el texto, al hablar de la media o del pactómetro, se puede enlazar también a https://enpapel.es/encuestas-29n/.
+
 ## Post para X (campo `post_x` del borrador)
 - Máx. ~230 caracteres, sin enlace (se añade solo, con #29N y #Encuestas si no están).
-- Empieza por 📊 y da las cifras clave de la encuesta nueva y la conclusión en una frase. Neutral. Ejemplo:
-  «📊 Encuesta 40dB para El País/SER: PP 31,9 % · PSOE 28,1 % · Vox 18,9 %. PP y Vox seguirían sumando mayoría absoluta a 50 días del #29N.»
+- Tono llamativo, con gancho, un punto sensacionalista para que se pare el scroll: empieza con un emoji fuerte (🚨, 🔥, ⚡, 📊, 😱…) y una frase-gancho corta (puede ir en MAYÚSCULAS una palabra clave), luego las cifras clave y remata con una pregunta o un giro. Varía el gancho cada día: no repitas la misma fórmula dos días seguidos.
+- Límites: todo lo que diga debe salir de los datos (nada inventado ni exagerado hasta ser falso: «a un paso de la mayoría» solo si está a pocos escaños, «se desploma» solo si baja más de 2 puntos…); sin insultos ni descalificaciones; sin tomar partido (el gancho puede caer sobre cualquier partido según lo que digan los números).
+- Ejemplos:
+  «🚨 PP y Vox, con la MAYORÍA en el bolsillo: la última de 40dB les da 203 escaños a 50 días del #29N. PP 31,9 · PSOE 28,1 · Vox 18,9. ¿Le queda remontada a Sánchez?»
+  «🔥 Vox no para: +6 puntos desde el 23J y ya roza el 19 %. La encuesta de IMOP sacude el tablero del #29N.»
+  «😱 Empate técnico entre PP y PSOE en la encuesta de hoy. A 30 días del #29N, todo puede pasar.»
 - Se publica en @EnPapel2021 justo después de la noticia, con la misma imagen.
