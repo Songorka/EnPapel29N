@@ -47,3 +47,9 @@ Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los d
 
 ## Imagen destacada
 `python3 noticias/imagen.py --salida imagen.png` crea la imagen del día (sin repetir). Su texto alternativo es el campo `alt` que imprime el programa.
+
+## Post para X (campo `post_x` del borrador)
+- Máx. ~230 caracteres, sin enlace (se añade solo, con #29N y #Encuestas si no están).
+- Empieza por 📊 y da las cifras clave de la encuesta nueva y la conclusión en una frase. Neutral. Ejemplo:
+  «📊 Encuesta 40dB para El País/SER: PP 31,9 % · PSOE 28,1 % · Vox 18,9 %. PP y Vox seguirían sumando mayoría absoluta a 50 días del #29N.»
+- Se publica en @EnPapel2021 justo después de la noticia, con la misma imagen.

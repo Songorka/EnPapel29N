@@ -23,6 +23,10 @@ jobs:
           WP_URL: https://enpapel.es
           WP_USER: ${{ secrets.WP_USER || vars.WP_USER || 'Gorka' }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: python3 noticias/publicar.py
       - name: Guardar el resultado en el repositorio
         if: always()

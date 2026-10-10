@@ -8,6 +8,7 @@ BORRADOR.json (lo escribe la tarea diaria siguiendo noticias/plantilla.md):
   "titulo": "...", "slug": "encuesta-40db-...-29n", "extracto": "...",
   "frase_clave": "encuesta 40dB", "seo_titulo": "...", "seo_descripcion": "...",
   "social_titulo": "...", "social_descripcion": "...",
+  "post_x": "Texto del post para X, sin enlace (se añade solo), máx. ~230 caracteres, con emoji 📊 y cifras",
   "etiquetas": ["elecciones", "elecciones generales", "encuestas electorales", "29N", "40dB", "PP", "PSOE", "Vox"],
   "encuestadora": "40dB",
   "secciones": [ {"subtitulo": "Qué dice la encuesta de 40dB", "parrafos": ["...", "<em>...</em>"]}, ... ],
@@ -91,6 +92,7 @@ def main():
                 'social_titulo': b.get('social_titulo', ''), 'social_descripcion': b.get('social_descripcion', ''),
                 'categoria_principal': 7041},
         'tipo_imagen': img['tipo'],
+        'x_texto': b.get('post_x') or b.get('social_descripcion', ''),
     }
     os.makedirs(os.path.join(RAIZ, 'noticias', 'cola'), exist_ok=True)
     dest = os.path.join(RAIZ, 'noticias', 'cola', f'{hoy.isoformat()}.json')

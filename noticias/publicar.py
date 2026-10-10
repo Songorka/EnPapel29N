@@ -91,9 +91,27 @@ def meta_seo(n):
     return {k: v for k, v in m.items() if v}
 
 
+def a_x(texto_base, enlace, imagen_rel, alt):
+    """Publica en X si están los secretos. Nunca hace fallar la publicación en WordPress."""
+    sys.path.insert(0, os.path.join(RAIZ, 'noticias'))
+    import x_publicar as X
+    if not X.configurado():
+        return {'x': 'sin configurar'}
+    try:
+        texto = X.texto_post(texto_base, enlace)
+        r = X.publicar_en_x(texto, os.path.join(RAIZ, imagen_rel) if imagen_rel else None, alt)
+        return {'x_enlace': r['enlace'], 'x_con_imagen': r['con_imagen']}
+    except Exception as e:
+        return {'x_error': str(e)[:500]}
+
+
 def publicar(ruta):
     n = json.load(open(ruta, encoding='utf-8'))
     fecha = n['fecha']; estado = n.get('estado', 'publish')
+    if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
+        res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', '')))
+        json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
     if estado == 'publish' and os.path.exists(salida) and json.load(open(salida)).get('estado') == 'publish':
         print(f'{fecha}: ya hay una noticia publicada hoy; no se publica otra.')
@@ -114,6 +132,8 @@ def publicar(ruta):
     p = api('POST', f'posts/{p["id"]}', {'meta': meta} if meta else {'excerpt': n.get('extracto', '')})
     res = {'fecha': fecha, 'estado': p['status'], 'id': p['id'], 'enlace': p['link'], 'titulo': n['titulo'],
            'imagen_id': media, 'seo_aplicado': bool(p.get('meta', {}).get('_yoast_wpseo_metadesc'))}
+    if estado == 'publish' and p['status'] == 'publish' and n.get('x_texto'):
+        res.update(a_x(n['x_texto'], p['link'], n['imagen'], n.get('imagen_alt', '')))
     os.makedirs(os.path.dirname(salida), exist_ok=True)
     if estado == 'draft':
         salida = salida.replace('.json', '-borrador.json')
