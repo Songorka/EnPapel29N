@@ -129,4 +129,12 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except SystemExit as e:
+        if e.code not in (None, 0):
+            # deja el motivo en el repositorio (sin datos secretos) para poder revisarlo
+            os.makedirs(os.path.join(RAIZ, 'noticias', 'publicadas'), exist_ok=True)
+            with open(os.path.join(RAIZ, 'noticias', 'publicadas', 'ultimo-error.txt'), 'w', encoding='utf-8') as f:
+                f.write(time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()) + '\n' + str(e.code) + '\n')
+        raise
