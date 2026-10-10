@@ -54,10 +54,12 @@ Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los d
 
 ## Post para X (campo `post_x` del borrador)
 - Máx. ~230 caracteres, sin enlace (se añade solo, con #29N y #Encuestas si no están).
-- Tono llamativo, con gancho, un punto sensacionalista para que se pare el scroll: empieza con un emoji fuerte (🚨, 🔥, ⚡, 📊, 😱…) y una frase-gancho corta (puede ir en MAYÚSCULAS una palabra clave), luego las cifras clave y remata con una pregunta o un giro. Varía el gancho cada día: no repitas la misma fórmula dos días seguidos.
-- Límites: todo lo que diga debe salir de los datos (nada inventado ni exagerado hasta ser falso: «a un paso de la mayoría» solo si está a pocos escaños, «se desploma» solo si baja más de 2 puntos…); sin insultos ni descalificaciones; sin tomar partido (el gancho puede caer sobre cualquier partido según lo que digan los números).
+- Tono: que llame la atención pero sin caer en el sensacionalismo ni en el periodismo basura. Un titular con gancho, como el de una buena portada: verbo fuerte y el dato más llamativo del día por delante.
+- Un solo emoji al principio, sobrio (📊, 📈, 📉, 🗳️). Nada de MAYÚSCULAS, signos de exclamación, 🚨/😱/🔥 ni preguntas retóricas dirigidas a un líder o partido.
+- Estructura: dato o idea que engancha + cifras clave + cierre que invite a leer (p. ej. «Así queda el reparto a 50 días del #29N 👇»). Varía el ángulo cada día (quién sube, quién baja, el reparto de escaños, la sorpresa de la encuesta, lo que dice la media).
+- Todo debe salir de los datos (nada exagerado: «se desploma» solo si baja más de 2 puntos, «sorpresa» solo si se aparta más de 2 puntos de la media…). Neutral: el foco cae sobre el partido que toque según los números.
 - Ejemplos:
-  «🚨 PP y Vox, con la MAYORÍA en el bolsillo: la última de 40dB les da 203 escaños a 50 días del #29N. PP 31,9 · PSOE 28,1 · Vox 18,9. ¿Le queda remontada a Sánchez?»
-  «🔥 Vox no para: +6 puntos desde el 23J y ya roza el 19 %. La encuesta de IMOP sacude el tablero del #29N.»
-  «😱 Empate técnico entre PP y PSOE en la encuesta de hoy. A 30 días del #29N, todo puede pasar.»
+  «📊 PP y Vox superarían los 200 escaños, según la última encuesta de 40dB. El PSOE recorta algo, pero sigue lejos. Así queda el reparto a 50 días del #29N 👇»
+  «📈 Vox gana más de seis puntos desde el 23J y es el partido en el que más coinciden las encuestas. La nueva de IMOP lo sitúa en el 19 %. #29N»
+  «🗳️ La encuesta de hoy se sale de la media: Sigma Dos deja al PSOE a solo dos puntos del PP. ¿Cambio de tendencia o dato aislado? Lo analizamos #29N»
 - Se publica en @EnPapel2021 justo después de la noticia, con la misma imagen.
