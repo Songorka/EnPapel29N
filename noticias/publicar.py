@@ -19,12 +19,12 @@ Formato de cada fichero de la cola (JSON):
 }
 Resultado: noticias/publicadas/<fecha>.json con el enlace, y el fichero sale de la cola.
 """
-import base64, glob, json, os, sys, time, urllib.error, urllib.parse, urllib.request
+import base64, glob, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WP = os.environ.get('WP_URL', 'https://enpapel.es').rstrip('/')
 USER = os.environ.get('WP_USER', '')
-PWD = os.environ.get('WP_APP_PASSWORD', '').replace(' ', '')
+PWD = re.sub(r'\s+', '', os.environ.get('WP_APP_PASSWORD', '')).strip('"\'')
 UA = 'Mozilla/5.0 (compatible; EnPapel29N-publicador/1.0; +https://songorka.github.io/EnPapel29N/)'
 
 
@@ -46,7 +46,11 @@ def api(metodo, ruta, datos=None, crudo=None, cabeceras=None, intentos=3):
             txt = e.read().decode(errors='replace')[:500]
             if e.code >= 500 and i < intentos - 1:
                 time.sleep(5 * (i + 1)); continue
-            raise SystemExit(f'ERROR {e.code} en {metodo} {ruta}: {txt}')
+            pista = ''
+            if e.code == 401:
+                pista = (f' | Pista: la contraseña recibida tiene {len(PWD)} caracteres (deben ser 24, solo letras y números)'
+                         f'{" y contiene caracteres raros" if not PWD.isalnum() else ""}.')
+            raise SystemExit(f'ERROR {e.code} en {metodo} {ruta}: {txt}{pista}')
         except urllib.error.URLError as e:
             if i < intentos - 1:
                 time.sleep(5 * (i + 1)); continue
