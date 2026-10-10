@@ -1,0 +1,8 @@
+<!-- EnPapel29N · pegar en un bloque "HTML personalizado" de WordPress -->
+<iframe id="enpapel29n" src="https://songorka.github.io/enpapel29n/" title="EnPapel29N · encuestas de las elecciones generales del 29N" loading="lazy" style="width:100%;height:2600px;border:0;display:block" scrolling="no"></iframe>
+<script>
+window.addEventListener('message', function (e) {
+  if (e.origin !== 'https://songorka.github.io' || !e.data || !e.data.pulso29n) return;
+  document.getElementById('enpapel29n').style.height = (e.data.height + 20) + 'px';
+});
+</script>
