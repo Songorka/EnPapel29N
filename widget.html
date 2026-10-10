@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EnPapel29N · resumen</title>
+<style>
+/* Versión mini para la portada de Enpapel: tema claro fijo, como la web del periódico. */
+:root{
+  --bg:#ffffff; --ink:#151a2b; --ink-2:#4a5068; --ink-3:#7c8197; --line:#e3e5ec; --soft:#f3f4f8;
+  --green:#11512a; --up:#1d7a46; --down:#b3261e;
+  --f-display:"Arial Narrow","Roboto Condensed",system-ui,-apple-system,sans-serif;
+  --f-body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-data:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --f-brand:Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent}
+body{font-family:var(--f-body);color:var(--ink);font-size:14px;line-height:1.45}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px;container-type:inline-size}
+a.card:hover{border-color:#c9ccd8}
+a.card:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto;display:block}
+.brand .sep{width:2px;height:30px;background:var(--green)}
+.brand .n{font-family:var(--f-brand);font-weight:600;color:var(--green);font-size:26px;line-height:1}
+.days{font-size:12px;color:var(--ink-2);text-align:right}
+.days b{font-family:var(--f-display);font-size:22px;font-weight:800;font-stretch:80%;color:var(--ink);display:block;line-height:1}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600;margin:0 0 6px}
+.body{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.rows{display:flex;flex-direction:column;gap:7px}
+.row{display:grid;grid-template-columns:52px minmax(0,1fr) 46px 40px;align-items:center;gap:8px}
+.badge{display:inline-flex;align-items:center;justify-content:center;height:22px;border-radius:5px;font-family:var(--f-display);font-weight:700;font-stretch:85%;font-size:12px;letter-spacing:.02em}
+.bar{height:8px;background:var(--soft);border-radius:4px;overflow:hidden}
+.bar b{display:block;height:100%;border-radius:4px}
+.val{font-family:var(--f-data);font-variant-numeric:tabular-nums;font-weight:500;text-align:right}
+.tr{font-size:11.5px;font-weight:600;text-align:right;white-space:nowrap}
+.tr.up{color:var(--up)} .tr.down{color:var(--down)} .tr.flat{color:var(--ink-3)}
+.seats .sbar{position:relative;display:flex;height:16px;border-radius:5px;overflow:hidden;background:var(--soft)}
+.seats .sbar b{height:100%}
+.seats .mark{position:absolute;top:-4px;bottom:-4px;left:50.2857%;border-left:2px dashed var(--ink)}
+.seats .legend{display:flex;justify-content:space-between;gap:8px;margin-top:7px;font-size:12.5px}
+.seats .legend span b{font-family:var(--f-data);font-weight:500}
+.seats .verdict{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+.cta{font-weight:600;font-size:13px;color:#fff;background:var(--green);padding:7px 12px;border-radius:8px;white-space:nowrap}
+.veda{background:#efe9f6;border-radius:10px;padding:14px;font-size:13.5px;color:var(--ink-2)}
+.veda strong{display:block;color:var(--ink);font-size:15px;margin-bottom:4px}
+.empty{color:var(--ink-3);font-size:13px}
+@container (min-width:620px){
+  .body{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:center}
+}
+</style>
+</head>
+<body>
+<a class="card" id="card" href="https://enpapel.es/encuestas-29n/" target="_top" aria-label="Encuestas de las elecciones generales del 29N. Ver todas las encuestas en Enpapel">
+  <div class="head">
+    <div class="brand"><img src="logo-mini.png" alt="En Papel" width="112" height="34"><span class="sep" aria-hidden="true"></span><span class="n">29N</span></div>
+    <div class="days"><b id="days">–</b>días para votar</div>
+  </div>
+  <div id="content"><p class="empty">Cargando las encuestas…</p></div>
+  <div class="foot"><span id="meta">Media de encuestas publicadas</span><span class="cta">Ver todas las encuestas →</span></div>
+</a>
+<script>
+(function(){
+const DAY=864e5, d=s=>new Date(s+'T12:00:00');
+const fmt=v=>v==null||isNaN(v)?'–':v.toFixed(1).replace('.',',');
+const mes=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const dm=s=>{const x=d(s);return x.getDate()+' '+mes[x.getMonth()];};
+const textOn=h=>{h=h.replace('#','');const r=parseInt(h.substr(0,2),16),g=parseInt(h.substr(2,2),16),b=parseInt(h.substr(4,2),16);return (0.299*r+0.587*g+0.114*b)>165?'#1a1a1a':'#fff';};
+const madrid=(()=>{try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}catch(e){return new Date().toISOString().slice(0,10);}})();
+const today=d(madrid);
+const send=()=>{ if(window.parent!==window){ try{ window.parent.postMessage({pulso29nmini:true,height:document.documentElement.scrollHeight},'*'); }catch(e){} } };
+window.addEventListener('load',send); window.addEventListener('resize',send);
+if('ResizeObserver' in window) new ResizeObserver(send).observe(document.body);
+
+fetch('index.html',{cache:'no-cache'}).then(r=>r.text()).then(html=>{
+  const m=html.match(/<script type="application\/json" id="datos">([\s\S]*?)<\/script>/);
+  if(!m) throw new Error('sin datos');
+  render(JSON.parse(m[1]));
+}).catch(()=>{ document.getElementById('content').innerHTML='<p class="empty">No se han podido cargar las encuestas. Pulsa para verlas en Enpapel.</p>'; send(); });
+
+function render(D){
+  const P=D.parties, el=document.getElementById('content');
+  const election=d(D.electionDate), vedaStart=d(D.vedaStart), vedaEnd=d(D.vedaEnd||D.electionDate);
+  const days=Math.round((election-today)/DAY);
+  document.getElementById('days').textContent=days>0?days:'0';
+  if(today>=vedaStart && today<vedaEnd){
+    el.innerHTML='<div class="veda"><strong>Periodo de veda</strong>La ley prohíbe difundir encuestas del 24 al 29 de noviembre. Volvemos el 30 con los resultados.</div>';
+    document.getElementById('meta').textContent='Seguimiento de encuestas del 29N'; send(); return;
+  }
+  const polls=D.polls.slice().sort((a,b)=>d(a.fieldEnd)-d(b.fieldEnd)||d(a.published)-d(b.published));
+  if(!polls.length){ el.innerHTML='<p class="empty">Todavía no hay encuestas.</p>'; send(); return; }
+  const lastEnd=d(polls[polls.length-1].fieldEnd);
+  const map={}; polls.forEach(p=>{ const e=d(p.fieldEnd); if(e<=lastEnd && e>=lastEnd-14*DAY && (!map[p.pollster]||e>=d(map[p.pollster].fieldEnd))) map[p.pollster]=p; });
+  const cur=Object.values(map);
+  const acc={}; cur.forEach(p=>Object.entries(p.vote).forEach(([k,v])=>(acc[k]=acc[k]||[]).push(v)));
+  const media=Object.fromEntries(Object.entries(acc).map(([k,a])=>[k,a.reduce((s,x)=>s+x,0)/a.length]));
+  const byH={}; polls.forEach(p=>(byH[p.pollster]=byH[p.pollster]||[]).push(p));
+  const tr={}; Object.values(byH).forEach(l=>{ if(l.length<2) return; const a=l[l.length-2], b=l[l.length-1]; Object.keys(b.vote).forEach(k=>{ if(a.vote[k]!=null)(tr[k]=tr[k]||[]).push(b.vote[k]-a.vote[k]); }); });
+  const top=Object.entries(media).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const max=top[0][1];
+  const rows=top.map(([k,v])=>{ const c=P[k]?.color||'#888'; const t=tr[k]?tr[k].reduce((s,x)=>s+x,0)/tr[k].length:null;
+    const cls=t==null?'flat':t>=0.5?'up':t<=-0.5?'down':'flat'; const txt=t==null?'':cls==='up'?'▲ '+fmt(t):cls==='down'?'▼ '+fmt(Math.abs(t)):'■';
+    const lbl={PODEMOS:'PODEM'}[k]||k;
+    return `<div class="row"><span class="badge" style="background:${c};color:${textOn(c)}">${lbl}</span><div class="bar"><b style="width:${v/max*100}%;background:${c}"></b></div><span class="val">${fmt(v)}%</span><span class="tr ${cls}">${txt}</span></div>`; }).join('');
+
+  /* escaños: media de encuestas con reparto completo */
+  const mid=v=>Array.isArray(v)?(v[0]+v[1])/2:v;
+  const full=cur.filter(p=>Object.values(p.seats||{}).reduce((s,v)=>s+(mid(v)||0),0)>=340);
+  let seatsHTML='';
+  if(full.length){
+    const sa={}; full.forEach(p=>Object.entries(p.seats).forEach(([k,v])=>sa[k]=(sa[k]||0)+mid(v)/full.length));
+    const sum=ks=>Math.round(ks.reduce((s,k)=>s+(sa[k]||0),0));
+    const right=sum(['PP','VOX','UPN']), left=sum(['PSOE','SUMAR','PODEMOS','ERC','JUNTS','BILDU','PNV','BNG','CC']);
+    const rest=Math.max(0,350-right-left);
+    seatsHTML=`<div class="seats"><p class="eyebrow">Escaños (media)</p>
+      <div class="sbar" role="img" aria-label="PP y Vox ${right} escaños, bloque de investidura ${left}, mayoría 176"><b style="width:${right/3.5}%;background:linear-gradient(90deg,${P.PP.color} 0 70%,${P.VOX.color} 70%)"></b><b style="width:${rest/3.5}%;background:transparent"></b><b style="width:${left/3.5}%;background:${P.PSOE.color}"></b><span class="mark"></span></div>
+      <div class="legend"><span>PP + Vox <b>${right}</b></span><span>Bloque investidura <b>${left}</b></span></div>
+      <div class="verdict">${right>=176?'PP y Vox superan la mayoría absoluta (176).':left>=176?'El bloque de investidura supera la mayoría (176).':'Ningún bloque llega a la mayoría (176).'}</div></div>`;
+  }
+  el.innerHTML=`<div class="body"><div><p class="eyebrow">Media de estimación de voto</p><div class="rows">${rows}</div></div>${seatsHTML}</div>`;
+  const last=polls.slice().sort((a,b)=>d(b.published)-d(a.published))[0];
+  document.getElementById('meta').textContent=`${polls.length} encuestas · última: ${last.pollster}, ${dm(last.published)}`;
+  send();
+}
+})();
+</script>
+</body>
+</html>
