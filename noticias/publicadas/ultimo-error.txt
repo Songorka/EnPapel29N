@@ -1,2 +1,0 @@
-2026-10-10 21:20 UTC
-Faltan los secretos WP_USER y WP_APP_PASSWORD en GitHub.

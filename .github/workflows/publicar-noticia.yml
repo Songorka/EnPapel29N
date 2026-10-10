@@ -21,7 +21,7 @@ jobs:
       - name: Publicar en WordPress
         env:
           WP_URL: https://enpapel.es
-          WP_USER: ${{ secrets.WP_USER }}
+          WP_USER: ${{ secrets.WP_USER || vars.WP_USER || 'Gorka' }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: python3 noticias/publicar.py
       - name: Guardar el resultado en el repositorio
