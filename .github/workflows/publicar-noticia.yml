@@ -1,0 +1,35 @@
+name: Publicar noticia en Enpapel
+
+on:
+  push:
+    branches: [main]
+    paths: ['noticias/cola/**.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-noticia
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar en WordPress
+        env:
+          WP_URL: https://enpapel.es
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: python3 noticias/publicar.py
+      - name: Guardar el resultado en el repositorio
+        if: always()
+        run: |
+          git config user.name "EnPapel29N"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A noticias
+          git diff --cached --quiet || git commit -m "Noticia publicada en Enpapel [skip ci]"
+          git pull --rebase -q || true
+          git push
