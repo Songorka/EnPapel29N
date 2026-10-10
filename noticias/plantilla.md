@@ -1,7 +1,7 @@
 # Noticia diaria de encuestas 29N · instrucciones de redacción
 
 Se publica **una sola noticia al día**, y solo si ese día hay encuestas nuevas. Nunca durante la veda (24–29 nov).
-Autor: Redacción. Tono: periodístico, neutral entre partidos, con algo de chispa en el segundo párrafo. Texto siempre original: nunca se copian frases de las fuentes.
+Autor: Redacción. Tono: periodístico pero llano, como se lo contarías a un vecino informado; frases cortas, sin tecnicismos de demoscopia («horquilla», «estimación», «submuestra»…) o explicados al momento; neutral entre partidos, con algo de chispa en el segundo párrafo. Texto siempre original: nunca se copian frases de las fuentes.
 
 ## Titular
 Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los días que faltan cuando aporte. Ejemplo: «40dB mantiene la mayoría de PP y Vox a 50 días del 29N».
