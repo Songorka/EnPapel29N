@@ -27,5 +27,23 @@ Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los d
 - Enlace a la página: «Todas las encuestas, la media y el pactómetro, en enpapel.es/encuestas-29n».
 - Línea de **Ficha técnica** completa con cada encuesta citada: encuestadora, medio, fechas de campo, muestra, método, margen de error y enlace a la fuente original.
 
+## Estructura en WordPress
+- Un subtítulo H2 antes de cada bloque: «Qué dice la encuesta de <encuestadora>», uno con gancho para la tendencia y «A N días del 29N: los escenarios».
+- La línea en cursiva del método/muestra va en su propio párrafo (ningún párrafo de más de 150 palabras).
+- Categorías: Elecciones 29N (id 7041, **categoría principal**) + Slider (id 58). Autor: En Papel (id 4).
+- Extracto: una o dos frases con el dato principal.
+
+## SEO (Yoast)
+- Frase clave: «encuesta <encuestadora>» (p. ej. «encuesta 40dB»). Debe aparecer en el título SEO, la URL, el primer subtítulo y al menos dos veces en el texto.
+- URL corta: encuesta-<encuestadora>-<idea-clave>-29n (p. ej. encuesta-40db-pp-vox-mayoria-29n).
+- Título SEO (≤ 60 caracteres antes de « - sitio»): «Encuesta <encuestadora>: <dato clave> …» + %%sep%% %%sitename%%.
+- Meta descripción (120–155 caracteres) con las cifras de los tres primeros partidos.
+- Título y descripción para Facebook/X propios (más directos, con cifras).
+- Tipo de artículo de schema: NewsArticle.
+- Etiquetas (reutilizar las existentes, no crear duplicados): elecciones (1418), elecciones generales (7042), encuestas electorales (7043), 29N (7044) + la de la encuestadora (crear si no existe, p. ej. 40dB = 7045) + los partidos que salgan en el titular o el primer párrafo: PP (1786), psoe (174), vox (2207), Sumar (3723), Podemos (1826). Entre 6 y 10 etiquetas.
+- Texto alternativo de la imagen: el campo `alt` del generador. Nombre del archivo: encuesta-<encuestadora>-29n-<día>-<mes>.png.
+- Enlace interno a enpapel.es/encuestas-29n y enlace externo a la fuente original.
+- Tras publicar: vaciar la caché de WP Super Cache para que salga en la portada.
+
 ## Imagen destacada
 `python3 noticias/imagen.py --salida imagen.png` crea la imagen del día (sin repetir). Su texto alternativo es el campo `alt` que imprime el programa.
