@@ -6,5 +6,13 @@
   "titular": "40dB para El País / SER: PP 31,9, PSOE 28,1",
   "alt": "Encuesta de 40dB para El País / SER: PP 31,9 %, PSOE 28,1 %, Vox 18,9 %, Sumar 5,3 %, Podemos 2,3 %, SALF 1,8 %. Se compara con la media.",
   "huella": "c533010fa2b7fc9fd0b6dbc2f064bbe1"
+ },
+ {
+  "fecha": "2026-10-11",
+  "tipo": "cambio23J",
+  "variante": "",
+  "titular": "Vox gana 6,2 puntos desde el 23J",
+  "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −0,4 puntos, PSOE −4,7 puntos, Vox +6,2 puntos, Sumar + Podemos −3,7 puntos, ERC +0,1 puntos, Junts +0,1 puntos, EH Bildu 0,0 puntos, EAJ-PNV −0,2 puntos",
+  "huella": "468e3e9edcae4b212ae981c5b6b5defb"
  }
 ]
