@@ -1,11 +1,11 @@
 {
  "fecha": "2026-10-10",
- "generado": "2026-10-10T22:29+00:00",
+ "generado": "2026-10-11T11:22+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 39,
-   "sessions": 41,
-   "screenPageViews": 50
+   "activeUsers": 104,
+   "sessions": 115,
+   "screenPageViews": 294
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 43,
@@ -13,90 +13,127 @@
    "screenPageViews": 43
   },
   "media_7_dias": {
-   "activeUsers": 50,
-   "sessions": 51,
-   "screenPageViews": 56
+   "activeUsers": 60,
+   "sessions": 62,
+   "screenPageViews": 91
   }
  },
  "29n": {
   "ayer": {
-   "activeUsers": 5,
-   "screenPageViews": 8
+   "activeUsers": 64,
+   "screenPageViews": 117
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 0,
    "screenPageViews": 0
   },
   "pagina_encuestas": {
-   "activeUsers": 5,
-   "screenPageViews": 8
+   "activeUsers": 7,
+   "screenPageViews": 50
   },
-  "noticias": [],
+  "noticias": [
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 66.0,
+    "activeUsers": 59.0
+   },
+   {
+    "pageTitle": "40dB mantiene la mayoría de PP y Vox a 50 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/40db-mantiene-la-mayoria-de-pp-y-vox-a-50-dias-del-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
   "fuentes": [
    {
+    "sessionSource": "google",
+    "activeUsers": 55.0
+   },
+   {
     "sessionSource": "(direct)",
-    "activeUsers": 5.0
+    "activeUsers": 7.0
+   },
+   {
+    "sessionSource": "t.co",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
    }
   ],
   "acumulado_desde_5_oct": {
-   "activeUsers": 5,
-   "screenPageViews": 8
+   "activeUsers": 64,
+   "screenPageViews": 117
   }
  },
  "mas_leidas": [
   {
    "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/",
-   "screenPageViews": 13.0
+   "screenPageViews": 138.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 66.0
   },
   {
    "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/encuestas-29n/",
-   "screenPageViews": 8.0
+   "screenPageViews": 50.0
   },
   {
    "pageTitle": "Alfredo Timermans entra con fuerza en las quinielas para relevar a Álvarez Ustarroz - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/majadahonda/alfredo-timermans-entra-con-fuerza-en-las-quinielas-para-relevar-a-alvarez-ustarroz/",
-   "screenPageViews": 4.0
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Economía archivos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/economia/",
+   "screenPageViews": 3.0
   },
   {
    "pageTitle": "La accesibilidad y la comunicación creativa llegan a la incubadora INNPAR - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/ieavanzado-y-emprendimiento/la-accesibilidad-y-la-comunicacion-creativa-llegan-a-la-incubadora-innpar/",
    "screenPageViews": 2.0
-  },
-  {
-   "pageTitle": "Sociedad archivos - Página 13 de 23 - Enpapel - Tu periódico en Majadahonda",
-   "pagePath": "/sociedad/page/13/",
-   "screenPageViews": 2.0
-  },
-  {
-   "pageTitle": "¿Qué ha sido de Tradiciones Peruanas?: Un restaurante en el que las raciones y las discusiones se servían en tamaño familiar - Enpapel - Tu periódico en Majadahonda",
-   "pagePath": "/majadahonda/que-ha-sido-de-tradiciones-peruanas-un-restaurante-en-el-que-las-raciones-y-las-discusiones-se-servian-en-tamano-familiar/",
-   "screenPageViews": 2.0
   }
  ],
  "fuentes_web": [
   {
-   "sessionDefaultChannelGroup": "Direct",
-   "sessions": 36.0
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 62.0
   },
   {
-   "sessionDefaultChannelGroup": "Organic Search",
-   "sessions": 5.0
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 49.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
   }
  ],
  "dispositivos": [
   {
-   "deviceCategory": "desktop",
-   "activeUsers": 28.0
+   "deviceCategory": "mobile",
+   "activeUsers": 61.0
   },
   {
-   "deviceCategory": "mobile",
-   "activeUsers": 11.0
+   "deviceCategory": "desktop",
+   "activeUsers": 42.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
   }
  ],
  "desde_x": {
-  "sessions": 0,
-  "activeUsers": 0
+  "sessions": 3,
+  "activeUsers": 2
  }
 }
