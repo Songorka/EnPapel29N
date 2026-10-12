@@ -14,5 +14,13 @@
   "titular": "Vox gana 6,2 puntos desde el 23J",
   "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −0,4 puntos, PSOE −4,7 puntos, Vox +6,2 puntos, Sumar + Podemos −3,7 puntos, ERC +0,1 puntos, Junts +0,1 puntos, EH Bildu 0,0 puntos, EAJ-PNV −0,2 puntos",
   "huella": "468e3e9edcae4b212ae981c5b6b5defb"
+ },
+ {
+  "fecha": "2026-10-12",
+  "tipo": "pactometro",
+  "variante": "",
+  "titular": "PP y Vox suman 203 escaños: mayoría absoluta",
+  "alt": "Pactómetro con la media de escaños: PP + Vox 203, PP + Vox + UPN + CC 205, Bloque de investidura 145, Investidura sin Junts 138, PP + PSOE 243. Mayoría absoluta 176.",
+  "huella": "a5ac5e26e0fa695115a39f80aa72135b"
  }
 ]
