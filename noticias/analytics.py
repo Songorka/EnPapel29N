@@ -75,7 +75,9 @@ def main():
         'fuentes_web': informe(['sessionDefaultChannelGroup'], ['sessions'], ayer, ayer, None, 'sessions', 6),
         'dispositivos': informe(['deviceCategory'], ['activeUsers'], ayer, ayer, None, 'activeUsers', 3),
         'desde_x': total(['sessions', 'activeUsers'], ayer, ayer, FilterExpression(or_group=FilterExpressionList(expressions=[
-            f_contiene('sessionSource', 't.co'), f_contiene('sessionSource', 'x.com'), f_contiene('sessionSource', 'twitter')]))),
+            f_contiene('sessionSource', 't.co'), f_contiene('sessionSource', 'x.com'), f_contiene('sessionSource', 'twitter'),
+            FilterExpression(filter=Filter(field_name='sessionSource', string_filter=Filter.StringFilter(
+                match_type=Filter.StringFilter.MatchType.EXACT, value='x')))]))),  # visitas con utm_source=x
     }
     os.makedirs(SALIDA, exist_ok=True)
     ruta = os.path.join(SALIDA, f'{iso(ayer)}.json')
