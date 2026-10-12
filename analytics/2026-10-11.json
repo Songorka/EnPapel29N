@@ -1,0 +1,163 @@
+{
+ "fecha": "2026-10-11",
+ "generado": "2026-10-12T06:39+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 174,
+   "sessions": 186,
+   "screenPageViews": 227
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 28,
+   "sessions": 28,
+   "screenPageViews": 32
+  },
+  "media_7_dias": {
+   "activeUsers": 80,
+   "sessions": 85,
+   "screenPageViews": 119
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 131,
+   "screenPageViews": 172
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 7,
+   "screenPageViews": 11
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+    "screenPageViews": 83.0,
+    "activeUsers": 79.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 73.0,
+    "activeUsers": 53.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Página no encontrada - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 112.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 14.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "t.co",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 191,
+   "screenPageViews": 289
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+   "screenPageViews": 83.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 73.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Alfredo Timermans entra con fuerza en las quinielas para relevar a Álvarez Ustarroz - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/alfredo-timermans-entra-con-fuerza-en-las-quinielas-para-relevar-a-alvarez-ustarroz/",
+   "screenPageViews": 2.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 125.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 47.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 9.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 105.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 64.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 5.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 3,
+  "activeUsers": 3
+ }
+}
