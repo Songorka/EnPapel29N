@@ -103,6 +103,10 @@ def texto_post(base, enlace, etiquetas=('#29N', '#Encuestas')):
     cola = ' '.join(e for e in etiquetas if e.lower() not in base.lower())
     def largo(t):
         return len(t) + 23 + 2 + (len(cola) + 1 if cola else 0)
+    # UTM para que Google Analytics atribuya bien las visitas que llegan desde X
+    # (la app de X a menudo no pasa la procedencia y esas visitas salían como "directo")
+    if 'utm_source=' not in enlace:
+        enlace += ('&' if '?' in enlace else '?') + 'utm_source=x&utm_medium=social&utm_campaign=29n'
     t = base.strip()
     while largo(t) > 280:
         t = t[:-2].rstrip() + '…'
