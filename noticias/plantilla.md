@@ -4,7 +4,7 @@ Se publica **una sola noticia al día**, y solo si ese día hay encuestas nuevas
 Autor: Redacción. Tono: periodístico pero llano, como se lo contarías a un vecino informado; frases cortas, sin tecnicismos de demoscopia («horquilla», «estimación», «submuestra»…) o explicados al momento; neutral entre partidos, con algo de chispa en el segundo párrafo. Texto siempre original: nunca se copian frases de las fuentes.
 
 ## Titular
-Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los días que faltan cuando aporte. Ejemplo: «40dB mantiene la mayoría de PP y Vox a 50 días del 29N».
+Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los días que faltan cuando aporte. Al hablar de distancias, que quede claro quién va delante: «X queda a N puntos de Y» significa que X va detrás (bien: «deja al PSOE a 2,6 puntos del PP» si el PP va primero). Relee el titular comprobándolo con las cifras. Ejemplo: «40dB mantiene la mayoría de PP y Vox a 50 días del 29N».
 
 ## Párrafo 1 · Qué trae la encuesta nueva
 - El dato principal: estimación de PP, PSOE, Vox, Sumar y Podemos, y escaños si los publica.
