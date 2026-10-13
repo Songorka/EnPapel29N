@@ -1,0 +1,157 @@
+{
+ "fecha": "2026-10-12",
+ "generado": "2026-10-13T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 1446,
+   "sessions": 1533,
+   "screenPageViews": 1683
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 42,
+   "sessions": 42,
+   "screenPageViews": 45
+  },
+  "media_7_dias": {
+   "activeUsers": 279,
+   "sessions": 298,
+   "screenPageViews": 353
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 1423,
+   "screenPageViews": 1645
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 47,
+   "screenPageViews": 53
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 1510.0,
+    "activeUsers": 1363.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 40.0,
+    "activeUsers": 39.0
+   },
+   {
+    "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+    "screenPageViews": 37.0,
+    "activeUsers": 32.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Enquesta GAD3: PP i Vox sumen 198 escons a 48 dies del 29N - Enpaper - El teu diari a Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 1346.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 71.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 18.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 2.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 1607,
+   "screenPageViews": 1934
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 1510.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 53.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 40.0
+  },
+  {
+   "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+   "screenPageViews": 37.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/",
+   "screenPageViews": 3.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 1429.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 96.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 18.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 4.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 1297.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 122.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 27.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
