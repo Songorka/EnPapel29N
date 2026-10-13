@@ -113,6 +113,15 @@ def publicar(ruta):
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
+    if n.get('corregir_id'):  # corregir el titular (u otros campos) de una noticia ya publicada; no toca X
+        cambios = {k_wp: n[k] for k, k_wp in (('titulo', 'title'), ('extracto', 'excerpt')) if n.get(k)}
+        p = api('POST', f'posts/{n["corregir_id"]}', cambios)
+        if os.path.exists(salida):
+            res = json.load(open(salida, encoding='utf-8'))
+            if res.get('id') == p['id'] and n.get('titulo'):
+                res['titulo'] = n['titulo']; res['corregido'] = True
+                json.dump(res, open(salida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        os.remove(ruta); print('Corregida', p['id'], p['link']); return
     if estado == 'publish' and os.path.exists(salida) and json.load(open(salida)).get('estado') == 'publish':
         print(f'{fecha}: ya hay una noticia publicada hoy; no se publica otra.')
         os.remove(ruta); return
