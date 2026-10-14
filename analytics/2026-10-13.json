@@ -1,0 +1,167 @@
+{
+ "fecha": "2026-10-13",
+ "generado": "2026-10-14T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 573,
+   "sessions": 625,
+   "screenPageViews": 669
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 53,
+   "sessions": 54,
+   "screenPageViews": 56
+  },
+  "media_7_dias": {
+   "activeUsers": 352,
+   "sessions": 379,
+   "screenPageViews": 440
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 535,
+   "screenPageViews": 625
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 20,
+   "screenPageViews": 24
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 412.0,
+    "activeUsers": 368.0
+   },
+   {
+    "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+    "screenPageViews": 137.0,
+    "activeUsers": 126.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 49.0,
+    "activeUsers": 39.0
+   },
+   {
+    "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 3.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 493.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 32.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 29.0
+   },
+   {
+    "sessionSource": "(data not available)",
+    "activeUsers": 6.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2128,
+   "screenPageViews": 2559
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 412.0
+  },
+  {
+   "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+   "screenPageViews": 137.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 49.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 24.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+   "screenPageViews": 3.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 546.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 66.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 31.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Cross-network",
+   "sessions": 6.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 459.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 111.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 3.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
