@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-10-14",
+ "generado": "2026-10-15T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 227,
+   "sessions": 246,
+   "screenPageViews": 273
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 68,
+   "sessions": 68,
+   "screenPageViews": 70
+  },
+  "media_7_dias": {
+   "activeUsers": 374,
+   "sessions": 403,
+   "screenPageViews": 469
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 162,
+   "screenPageViews": 199
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 6,
+   "screenPageViews": 7
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 110.0,
+    "activeUsers": 97.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 61.0,
+    "activeUsers": 47.0
+   },
+   {
+    "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+    "screenPageViews": 10.0,
+    "activeUsers": 9.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 148.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 12.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 7.0
+   },
+   {
+    "sessionSource": "(data not available)",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2286,
+   "screenPageViews": 2758
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+   "screenPageViews": 110.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 61.0
+  },
+  {
+   "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 6.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 169.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 72.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 7.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Cross-network",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 143.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 84.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
