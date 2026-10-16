@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-10-15",
+ "generado": "2026-10-16T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 98,
+   "sessions": 102,
+   "screenPageViews": 105
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "sessions": 0,
+   "screenPageViews": 0
+  },
+  "media_7_dias": {
+   "activeUsers": 388,
+   "sessions": 422,
+   "screenPageViews": 484
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 17,
+   "screenPageViews": 21
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 1,
+   "screenPageViews": 2
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 8.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-target-point-pp-vox-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 10.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "(data not available)",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2302,
+   "screenPageViews": 2779
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Alfredo Timermans entra con fuerza en las quinielas para relevar a Álvarez Ustarroz - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/alfredo-timermans-entra-con-fuerza-en-las-quinielas-para-relevar-a-alvarez-ustarroz/",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "El Instituto de Emprendimiento Avanzado se estrena en Compluemprende  - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/el-instituto-de-emprendimiento-avanzado-se-estrena-en-compluemprende/",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 2.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 80.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 19.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Cross-network",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 80.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 18.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 2,
+  "activeUsers": 2
+ }
+}
