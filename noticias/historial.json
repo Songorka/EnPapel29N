@@ -38,5 +38,13 @@
   "titular": "El PP saca 4,4 puntos al PSOE",
   "alt": "Cara a cara: PP 31,5 % frente a PSOE 27,1 % en la media de encuestas",
   "huella": "38c00ef28d333df3a4bf087566510b52"
+ },
+ {
+  "fecha": "2026-10-16",
+  "tipo": "encuesta",
+  "variante": "winston-2026-10-01",
+  "titular": "Winston para Artículo14: PP 31,3, PSOE 24,9",
+  "alt": "Encuesta de Winston para Artículo14: PP 31,3 %, PSOE 24,9 %, Vox 19,1 %, Sumar 6,8 %, Podemos 3,9 %. Se compara con la media.",
+  "huella": "87aa9d020250c667dbf852aa1b08d241"
  }
 ]
