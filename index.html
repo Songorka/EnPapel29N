@@ -52,6 +52,11 @@ header.top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-
 .chip.veda{background:var(--veda);color:var(--ink)}
 .chip i{width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}
 .meta-line{font-size:12.5px;color:var(--ink-3)}
+.aparte{margin-top:10px;border:1px dashed var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;font-size:13px;color:var(--ink-2)}
+.aparte strong{color:var(--ink)}
+.aparte .vals{display:flex;flex-wrap:wrap;gap:6px 12px}
+.aparte .vals span{display:inline-flex;align-items:center;gap:5px}
+.fuera-tag{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-left:6px}
 .upd-line{display:flex;align-items:flex-start;gap:8px;margin:12px 0 0;font-size:13.5px;color:var(--ink-2)}
 .upd-line strong{color:var(--ink);font-weight:600}
 .upd-line .dot{width:8px;height:8px;border-radius:50%;background:var(--up);display:inline-block;flex:none;margin-top:7px}
@@ -292,6 +297,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
         <span class="conf"><span class="sig"><i></i><i></i><i></i></span>Pocos datos</span></div>
     </div>
     <div class="cards" id="cards"></div>
+    <div class="aparte" id="aparte" hidden></div>
   </section>
 
   <section class="panel" aria-labelledby="h-seats">
@@ -341,7 +347,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
     <div class="panel-head"><div><h2>Cómo se calcula</h2></div></div>
     <div class="method">
       <div><h3>Qué entra</h3><p>Encuestas de ámbito estatal publicadas en medios desde el 5 de octubre de 2026. No se incluyen sondeos encargados por partidos. Las cifras se copian tal cual de la fuente original; si un dato no se publica, queda vacío.</p></div>
-      <div><h3>La media</h3><p>Media simple de la última encuesta de cada casa con trabajo de campo terminado en los 14 días anteriores a la encuesta más reciente. Cada casa cuenta una vez, aunque haya publicado varias.</p></div>
+      <div><h3>La media</h3><p>Media simple de la última encuesta de cada casa con trabajo de campo terminado en los 14 días anteriores a la encuesta más reciente. Cada casa cuenta una vez, aunque haya publicado varias. El CIS no entra en la media: usa un método de estimación propio y se muestra aparte.</p></div>
       <div><h3>Los escaños</h3><p>Media de las encuestas que publican el reparto completo; si dan una horquilla se usa su punto medio. El total se ajusta a 350 por restos mayores. No es una proyección propia.</p></div>
       <div><h3>La tendencia</h3><p>Se compara cada casa solo consigo misma, para eliminar su sesgo propio. Sube o baja si el cambio medio supera ±0,5 puntos. Con una sola casa repetida, el dato es provisional.</p></div>
       <div><h3>La confianza</h3><p>Mide cuánto coinciden entre sí las encuestas con campo en los 5 días anteriores a la más reciente (una por casa). Alta: desviación típica de hasta 1 punto; media: hasta 2; baja: más de 2. En partidos pequeños se exige además que la dispersión no supere el 15 % o el 30 % de su media. Con menos de 3 encuestas, se marca como pocos datos. Al lado aparece el rango entre la cifra más baja y la más alta.</p></div>
@@ -383,9 +389,10 @@ if(inVeda){
 }
 
 /* ---------- media ---------- */
+const fuera = p => p.fueraMedia===true || p.pollster==='CIS';  // el CIS se muestra aparte, no entra en la media
 function latestPerHouse(list, refDate, windowDays){
   const from = refDate - windowDays*DAY, map = {};
-  list.forEach(p=>{ const e=d(p.fieldEnd); if(e<=refDate && e>=from){ if(!map[p.pollster] || e>=d(map[p.pollster].fieldEnd)) map[p.pollster]=p; }});
+  list.forEach(p=>{ if(fuera(p)) return; const e=d(p.fieldEnd); if(e<=refDate && e>=from){ if(!map[p.pollster] || e>=d(map[p.pollster].fieldEnd)) map[p.pollster]=p; }});
   return Object.values(map);
 }
 function avgVote(set){
@@ -402,7 +409,8 @@ function avgSeats(set){
   for(let i=0;used<350;i++,used++) scaled[rem[i%rem.length][0]]++;
   return {seats:scaled,n:full.length,houses:full.map(p=>p.pollster)};
 }
-const lastEnd = polls.length ? d(polls[polls.length-1].fieldEnd) : today;
+const enMedia = polls.filter(p=>!fuera(p));
+const lastEnd = enMedia.length ? d(enMedia[enMedia.length-1].fieldEnd) : today;
 const current = latestPerHouse(polls, lastEnd, 14);
 const media = avgVote(current);
 const seatAvg = avgSeats(current);
@@ -453,7 +461,7 @@ document.getElementById('meta').textContent = polls.length+' encuestas · '+Obje
   el.innerHTML='<strong>Actualizado el '+fecha+' a las '+hora+'</strong>'+(ult?' · Última encuesta incluida: '+ult.pollster+' para '+ult.media+', publicada el '+dm(ult.published):'');
 })();
 document.getElementById('foot-upd').textContent = 'Última revisión: '+dm(D.lastCheck)+' · última actualización de datos: '+updTxt;
-document.getElementById('media-sub').textContent = 'Última encuesta de cada casa con campo entre el '+dm(new Date(lastEnd-14*DAY).toISOString().slice(0,10))+' y el '+dm(polls[polls.length-1].fieldEnd)+' · '+current.length+' casas';
+document.getElementById('media-sub').textContent = 'Última encuesta de cada casa con campo entre el '+dm(new Date(lastEnd-14*DAY).toISOString().slice(0,10))+' y el '+dm(lastEnd.toISOString().slice(0,10))+' · '+current.length+' casas';
 
 /* ---------- tarjetas ---------- */
 const order = Object.entries(media).filter(([k,o])=>o.v>=0.8).sort((a,b)=>b[1].v-a[1].v);
@@ -468,6 +476,16 @@ document.getElementById('cards').innerHTML = order.map(([k,o])=>{
     <div class="bar-mini"><b style="width:${o.v/maxV*100}%;background:${P[k]?.color||'#888'}"></b></div>
     <div class="seats">${s!=null?'<span class="num">'+s+'</span> escaños':'Sin reparto de escaños'}</div>${tr}${confHTML(k)}</div>`;
 }).join('');
+
+/* ---------- encuestas fuera de la media (CIS) ---------- */
+(function(){
+  const ult={}; polls.filter(fuera).forEach(p=>{ ult[p.pollster]=p; });
+  const list=Object.values(ult); if(!list.length) return;
+  const el=document.getElementById('aparte'); el.hidden=false;
+  el.innerHTML=list.map(p=>`<div><strong>Fuera de la media: ${p.media.startsWith(p.pollster)?p.media:p.pollster+' ('+p.media+')'}</strong> <span class="meta-line">publicada el ${dm(p.published)}</span></div>
+    <div class="vals">${Object.entries(p.vote).filter(([k])=>MAIN.includes(k)).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<span>${badge(k)} <b class="num">${fmt(v)}</b></span>`).join('')}</div>`).join('')
+    +'<div class="meta-line" style="flex-basis:100%">Usa un método de estimación propio y sus cifras se alejan mucho del resto de encuestas, por eso se muestra aparte y no entra en la media.</div>';
+})();
 
 /* ---------- escaños y pactos (hemiciclo + pactómetro en una caja) ---------- */
 (function(){
@@ -603,7 +621,7 @@ document.getElementById('cards').innerHTML = order.map(([k,o])=>{
     const list=polls.slice().reverse().filter(p=>!sel.value||p.pollster===sel.value);
     tb.innerHTML=list.map(p=>{ const pv=p.seats&&(p.seats.PP!=null&&p.seats.VOX!=null)?(()=>{ const a=v=>Array.isArray(v)?v:[v,v]; const pp=a(p.seats.PP),vx=a(p.seats.VOX),up=a(p.seats.UPN||0); const lo=pp[0]+vx[0], hi=pp[1]+vx[1]; return lo===hi?String(lo):lo+'–'+hi; })():'–';
       const cell=k=>`<td class="num">${fmt(p.vote[k])}</td>`;
-      return `<tr><td><span class="who">${p.pollster}</span>${p.detected===last&&p.detected!==D.baseline?'<span class="new">nueva</span>':''}<br><span class="med">${p.media}</span></td>
+      return `<tr><td><span class="who">${p.pollster}</span>${p.detected===last&&p.detected!==D.baseline?'<span class="new">nueva</span>':''}${fuera(p)?'<span class="fuera-tag">fuera de la media</span>':''}<br><span class="med">${p.media}</span></td>
       <td>${range(p.fieldStart,p.fieldEnd)}<br><span class="med">publ. ${dm(p.published)}</span></td><td class="num">${p.n?p.n.toLocaleString('es-ES'):'n. d.'}</td>
       ${MAIN.map(cell).join('')}<td class="num">${pv}</td><td><a href="${p.source}" target="_blank" rel="noopener">Ver fuente ↗</a></td></tr>`; }).join('');
   }

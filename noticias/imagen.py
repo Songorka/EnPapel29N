@@ -80,7 +80,9 @@ def d(s):
 def media_hasta(polls, limite=None):
     """Misma regla que el panel: última encuesta de cada casa con fin de campo
     dentro de los 14 días anteriores a la más reciente."""
-    ps = [p for p in polls if limite is None or d(p['published']) <= limite]
+    # El CIS (o cualquier encuesta marcada fueraMedia) se muestra aparte y no entra en la media
+    ps = [p for p in polls if (limite is None or d(p['published']) <= limite)
+          and not (p.get('fueraMedia') or p['pollster'] == 'CIS')]
     if not ps:
         return {}, []
     ultimo = max(d(p['fieldEnd']) for p in ps)
