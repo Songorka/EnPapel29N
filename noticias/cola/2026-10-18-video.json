@@ -1,0 +1,36 @@
+{
+ "fecha": "2026-10-18-video",
+ "estado": "future",
+ "fecha_publicacion": "2026-10-18T10:00:00",
+ "titulo": "Papiro te cuenta las encuestas de la semana: PP y Vox, por encima de la mayoría",
+ "slug": "papiro-encuestas-semana-18-octubre-29n",
+ "extracto": "Siete encuestas nuevas en una semana: PP y Vox rondan los 205 escaños y la mayoría está en 176. Papiro lo explica en vídeo.",
+ "contenido": "<!-- wp:paragraph -->\n<p>Siete encuestas nuevas en una semana y un mensaje casi unánime: PP y Vox sumarían mayoría absoluta. Papiro, el personaje de Enpapel, lo cuenta en poco más de un minuto, a 42 días del 29N.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:video {\"align\":\"center\"} -->\n<figure class=\"wp-block-video aligncenter\"><video controls playsinline preload=\"metadata\" poster=\"{{POSTER_URL}}\" src=\"{{VIDEO_URL}}\" style=\"max-width:420px;width:100%;margin:0 auto;display:block\"></video><figcaption class=\"wp-element-caption\">Papiro, el personaje de Enpapel, resume las encuestas de la semana.</figcaption></figure>\n<!-- /wp:video -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Las encuestas de la semana, en cuatro claves</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><li><strong>La media, sin el CIS:</strong> PP 32,2 %, PSOE 26,3 %, Vox 18,8 %, Sumar 6,2 % y Podemos 3,1 %.</li><li><strong>En escaños,</strong> PP y Vox (con UPN) rondan los 205. La mayoría absoluta está en 176.</li><li><strong>Las que se salen del guion:</strong> GESOP deja al PSOE a solo 2,6 puntos del PP, y el CIS, que no entra en nuestra media, lo pone primero con un 34 %.</li><li><strong>¿Puede darse la vuelta?</strong> PP y Vox tendrían que perder unos 30 escaños: más o menos, que 7 de cada 100 votantes cambien de bloque en seis semanas.</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:buttons {\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\"}} -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"style\":{\"color\":{\"background\":\"#11512a\",\"text\":\"#ffffff\"}}} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-text-color has-background wp-element-button\" href=\"https://enpapel.es/encuestas-29n/\" style=\"color:#ffffff;background-color:#11512a\">📊 Ver todas las encuestas, la media y el pactómetro</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:paragraph -->\n<p><em>Papiro es un personaje animado creado con inteligencia artificial. Las cifras del vídeo salen de la media de encuestas publicadas que elabora Enpapel, sin el CIS, y de las propias encuestas citadas.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Todas las encuestas, la media y el pactómetro, en <a href=\"https://enpapel.es/encuestas-29n/\">enpapel.es/encuestas-29n</a>.</em></p>\n<!-- /wp:paragraph -->",
+ "categorias": [
+  7041,
+  58
+ ],
+ "autor": 4,
+ "etiquetas": [
+  "elecciones",
+  "elecciones generales",
+  "encuestas electorales",
+  "29N",
+  "PP",
+  "psoe",
+  "vox",
+  "vídeo"
+ ],
+ "imagen": "noticias/imagenes/2026-10-18-video.png",
+ "imagen_nombre": "papiro-encuestas-29n-18-octubre.png",
+ "imagen_alt": "Papiro, el personaje de Enpapel con forma de periódico, presenta el vídeo de las encuestas de la semana",
+ "video": "noticias/videos/papiro-encuestas-29n-18-octubre.mp4",
+ "seo": {
+  "frase_clave": "encuestas de la semana",
+  "titulo": "Encuestas de la semana: PP y Vox, por encima de la mayoría",
+  "descripcion": "Siete encuestas nuevas: PP 32,2 %, PSOE 26,3 % y Vox 18,8 % de media. PP y Vox rondan los 205 escaños. Papiro lo explica en vídeo.",
+  "social_titulo": "Papiro te cuenta las encuestas de la semana",
+  "social_descripcion": "Siete encuestas en una semana y PP y Vox, por encima de la mayoría absoluta. ¿Puede darse la vuelta? El vídeo, en Enpapel.",
+  "categoria_principal": 7041
+ }
+}

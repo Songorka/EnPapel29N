@@ -40,7 +40,7 @@ def api(metodo, ruta, datos=None, crudo=None, cabeceras=None, intentos=3):
     h.update(cabeceras or {})
     for i in range(intentos):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, cuerpo, h, method=metodo), timeout=60) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, cuerpo, h, method=metodo), timeout=300) as r:
                 return json.loads(r.read().decode() or 'null')
         except urllib.error.HTTPError as e:
             txt = e.read().decode(errors='replace')[:500]
@@ -91,7 +91,7 @@ def meta_seo(n):
     return {k: v for k, v in m.items() if v}
 
 
-def a_x(texto_base, enlace, imagen_rel, alt):
+def a_x(texto_base, enlace, imagen_rel, alt, video_rel=None):
     """Publica en X si están los secretos. Nunca hace fallar la publicación en WordPress."""
     sys.path.insert(0, os.path.join(RAIZ, 'noticias'))
     import x_publicar as X
@@ -99,8 +99,9 @@ def a_x(texto_base, enlace, imagen_rel, alt):
         return {'x': 'sin configurar'}
     try:
         texto = X.texto_post(texto_base, enlace)
-        r = X.publicar_en_x(texto, os.path.join(RAIZ, imagen_rel) if imagen_rel else None, alt)
-        return {'x_enlace': r['enlace'], 'x_con_imagen': r['con_imagen']}
+        r = X.publicar_en_x(texto, os.path.join(RAIZ, imagen_rel) if imagen_rel else None, alt,
+                            os.path.join(RAIZ, video_rel) if video_rel else None)
+        return {'x_enlace': r['enlace'], 'x_con_imagen': r['con_imagen'], 'x_con_video': r.get('con_video')}
     except Exception as e:
         return {'x_error': str(e)[:500]}
 
@@ -109,7 +110,7 @@ def publicar(ruta):
     n = json.load(open(ruta, encoding='utf-8'))
     fecha = n['fecha']; estado = n.get('estado', 'publish')
     if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
-        res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', '')))
+        res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', ''), n.get('x_video')))
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
@@ -130,11 +131,19 @@ def publicar(ruta):
             raise SystemExit(f'{ruta}: falta el campo {campo}')
     tags = [etiqueta_id(t) for t in n.get('etiquetas', [])]
     media = subir_imagen(n)
+    if n.get('video'):  # vídeo de la semana: se sube a la mediateca y se inserta donde ponga {{VIDEO_URL}}
+        with open(os.path.join(RAIZ, n['video']), 'rb') as f:
+            v = api('POST', 'media', crudo=f.read(), cabeceras={
+                'Content-Type': 'video/mp4', 'Content-Disposition': f'attachment; filename="{os.path.basename(n["video"])}"'})
+        api('POST', f'media/{v["id"]}', {'title': n['titulo']})
+        n['contenido'] = n['contenido'].replace('{{VIDEO_URL}}', v['source_url']).replace('{{POSTER_URL}}', api('GET', f'media/{media}')['source_url'])
     datos = {'title': n['titulo'], 'content': n['contenido'], 'excerpt': n.get('extracto', ''),
              'status': estado, 'categories': n['categorias'], 'tags': tags, 'featured_media': media,
              'author': n.get('autor', 4), 'comment_status': 'open'}
     if n.get('slug'):
         datos['slug'] = n['slug']
+    if n.get('fecha_publicacion'):  # p. ej. "2026-10-18T10:00:00" (hora de Madrid) con estado "future" = programada
+        datos['date'] = n['fecha_publicacion']
     meta = meta_seo(n)
     p = api('POST', 'posts', dict(datos, meta=meta) if meta else datos)
     # segunda pasada: Yoast recalcula con los campos SEO ya guardados
@@ -142,7 +151,7 @@ def publicar(ruta):
     res = {'fecha': fecha, 'estado': p['status'], 'id': p['id'], 'enlace': p['link'], 'titulo': n['titulo'],
            'imagen_id': media, 'seo_aplicado': bool(p.get('meta', {}).get('_yoast_wpseo_metadesc'))}
     if estado == 'publish' and p['status'] == 'publish' and n.get('x_texto'):
-        res.update(a_x(n['x_texto'], p['link'], n['imagen'], n.get('imagen_alt', '')))
+        res.update(a_x(n['x_texto'], p['link'], n['imagen'], n.get('imagen_alt', ''), n.get('x_video')))
     os.makedirs(os.path.dirname(salida), exist_ok=True)
     if estado == 'draft':
         salida = salida.replace('.json', '-borrador.json')
