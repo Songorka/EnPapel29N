@@ -17,3 +17,10 @@ Usarla SIEMPRE como referencia al generar al personaje. No cambiar nada sin el v
 - El personaje aparece en la entrada, en la despedida y pequeño en una esquina durante los gráficos.
 - Aviso visible: "Personaje animado con IA".
 - Nunca se publica del 24 al 29 de noviembre (veda).
+
+## Voz (elegida por Gorka el 17/10/2026)
+- Higgsfield, modelo `seed_audio` (ByteDance Seed Audio 1.0), formato mp3.
+- Voz preset "Dylan": voice_type `preset`, voice_id `b847bc29-f184-583a-8ad9-d1f1e16d1a60`.
+- `pitch_rate: 2` (tono algo subido, chico adolescente). Sin cambiar velocidad.
+- Muestra de referencia: job 888c5f8c-f14c-4bae-9038-5384cb5cb0b6.
+- Acento de España con este motor; el motor ElevenLabs daba acento latino con estas voces.
