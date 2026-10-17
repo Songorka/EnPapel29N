@@ -1,0 +1,20 @@
+{
+ "fecha": "Domingo 18 de octubre · Faltan 42 días",
+ "dias": 42, "entrada": 0.6, "pausa": 0.35, "salida": 1.4,
+ "casas": ["GAD3", "Sigma Dos", "SocioMétrica", "GESOP", "Target Point", "Hamalgama", "CIS"],
+ "n_casas": "13", "pp_vox": 205, "investidura": 144, "pp_psoe": 244,
+ "gesop": {"PP": 28.7, "PSOE": 26.1}, "cis": {"PSOE": 34.0, "PP": 22.2},
+ "filas_media": [["PP", 0.0], ["PSOE", 3.4], ["VOX", 7.0], ["SUMAR", 11.2], ["PODEMOS", 11.6]],
+ "t_resalta": 2.0, "t_gesop": 3.3, "t_cis": 8.8,
+ "escenas": [
+  {"tipo": "gancho", "pose": "sorpresa", "clips": [{"audio": "e1.wav", "texto": "Siete encuestas en una semana. Y casi todas dicen lo mismo: la derecha arrasaría."}]},
+  {"tipo": "media", "pose": "explica", "clips": [{"audio": "e2.wav", "texto": "El PP lidera, con el 32,2 %. El PSOE, a seis puntos, con el 26,3. Y Vox se consolida como tercera fuerza, con el 18,8. A Sumar y Podemos juntos no les llega ni para el 10 %."}]},
+  {"tipo": "escanos", "pose": "explica", "clips": [{"audio": "e3.wav", "texto": "Traducido a escaños: PP y Vox rozarían los 205. La mayoría absoluta está en 176. Les sobrarían casi treinta diputados."}]},
+  {"tipo": "discordante", "pose": "sorpresa", "clips": [{"audio": "e4.wav", "texto": "Pero hay dos que se salen del guion. GESOP deja al PSOE a solo 2,6 puntos del PP. Y el CIS, que no entra en nuestra media, va más allá: pone al PSOE primero, con un 34 %."}]},
+  {"tipo": "vuelta", "pose": "piensa", "clips": [
+    {"audio": "e5a.wav", "texto": "¿Puede darse la vuelta? Para que PP y Vox pierdan la mayoría, tendrían que dejarse unos treinta escaños."},
+    {"audio": "e5b.wav", "texto": "Eso es que siete de cada cien votantes cambien de bloque en solo seis semanas. Un vuelco enorme."},
+    {"audio": "e5c.wav", "texto": "La otra salida sería un pacto entre PP y PSOE, que hoy nadie pone sobre la mesa."}]},
+  {"tipo": "cierre", "pose": "adios", "clips": [{"audio": "e6.wav", "texto": "Quedan 42 días y toda una campaña por delante. Todas las encuestas y el pactómetro, en enpapel.es. El domingo, más."}]}
+ ]
+}
