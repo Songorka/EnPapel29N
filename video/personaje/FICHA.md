@@ -18,9 +18,16 @@ Usarla SIEMPRE como referencia al generar al personaje. No cambiar nada sin el v
 - Aviso visible: "Personaje animado con IA".
 - Nunca se publica del 24 al 29 de noviembre (veda).
 
-## Voz (elegida por Gorka el 17/10/2026)
-- Higgsfield, modelo `seed_audio` (ByteDance Seed Audio 1.0), formato mp3.
-- Voz preset "Dylan": voice_type `preset`, voice_id `b847bc29-f184-583a-8ad9-d1f1e16d1a60`.
-- `pitch_rate: 2` (tono algo subido, chico adolescente). Sin cambiar velocidad.
-- Muestra de referencia: job 888c5f8c-f14c-4bae-9038-5384cb5cb0b6.
-- Acento de España con este motor; el motor ElevenLabs daba acento latino con estas voces.
+## Nombre
+- Se llama **Papiro**.
+
+## Voz (elegida por Gorka el 17/10/2026, sustituye a "Dylan")
+- Higgsfield, modelo `seed_audio`, formato wav 44,1 kHz, `speech_rate: 8`.
+- Voz clonada de la muestra aprobada: `medias: [{value: "71364d71-1ba7-4d82-8883-25c0c3ce24b2", role: "audio_references"}]`
+  (esa muestra se creó con la ficha del personaje como referencia de imagen, pitch +2, velocidad +8).
+- Generar frases cortas (máx. ~130 caracteres por clip): con textos largos el motor a veces corta el final.
+
+## Animación
+- `video/papiro/<gesto>_{cerrada,abierta,parpadeo}.png`: 8 gestos (neutral, explica, presenta, ojo, encoge, piensa, sorpresa, adios),
+  cada uno con boca cerrada, boca abierta y parpadeo, alineados entre sí (`video/cortar.py`).
+- `video/render.py`: la boca se abre con la voz, parpadea cada ~3,4 s y cambia de gesto en cada frase (con un saltito).

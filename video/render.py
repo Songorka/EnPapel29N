@@ -51,7 +51,8 @@ wv = wave.open(f'{BASE}/narracion.wav', 'w'); wv.setnchannels(1); wv.setsampwidt
 wv.writeframes(audio.astype(np.int16).tobytes()); wv.close()
 spf = SR // FPS
 rms = np.array([np.sqrt(np.mean((audio[i * spf:(i + 1) * spf] / 32767) ** 2)) if i * spf < len(audio) else 0 for i in range(int(TOTAL * FPS) + 2)])
-rms = np.convolve(rms / max(rms.max(), 1e-6), np.ones(3) / 3, 'same')
+rms = rms / max(np.percentile(rms, 98), 1e-6)
+rms_suave = np.convolve(rms, np.ones(3) / 3, 'same')
 
 # subtítulos: frases repartidas por longitud dentro de cada clip
 subs = []
@@ -61,14 +62,18 @@ for e in escenas:
         frases = [f.strip() for f in re.split(r'(?<=[.?!])\s+', c['texto']) if f.strip()]
         tot = sum(len(f) for f in frases); a = c['ini']
         for f in frases:
-            b = a + (c['fin'] - c['ini']) * len(f) / tot; subs.append((a, b, f)); a = b
+            b = a + (c['fin'] - c['ini']) * len(f) / tot; subs.append((a, b, f)); e.setdefault('frases', []).append(a); a = b
 
 # ---------- recursos ----------
 logo = Image.open(f'{BASE}/logo.png').convert('RGBA'); logo = logo.resize((int(logo.width * 96 / logo.height), 96), Image.LANCZOS)
+ALTO_P = 630
 SPR = {}
-for k in ('neutral', 'explica', 'sorpresa', 'piensa', 'adios'):
-    im = Image.open(f'{BASE}/sprites/{k}.png').convert('RGBA'); bb = im.getbbox(); im = im.crop(bb)
-    SPR[k] = im.resize((int(im.width * 560 / im.height), 560), Image.LANCZOS)
+for k in ('neutral', 'explica', 'sorpresa', 'piensa', 'adios', 'presenta', 'encoge', 'ojo'):
+    fr = {v: Image.open(f'{BASE}/papiro/{k}_{v}.png').convert('RGBA') for v in ('cerrada', 'abierta', 'parpadeo')}
+    bbs = [f.getbbox() for f in fr.values()]
+    bb = (min(b[0] for b in bbs), min(b[1] for b in bbs), max(b[2] for b in bbs), max(b[3] for b in bbs))
+    esc = ALTO_P / (fr['cerrada'].getbbox()[3] - fr['cerrada'].getbbox()[1])
+    SPR[k] = {v: f.crop(bb).resize((int((bb[2] - bb[0]) * esc), int((bb[3] - bb[1]) * esc)), Image.LANCZOS) for v, f in fr.items()}
 
 def centrado(dr, x, y, s, f, fill):
     w = dr.textlength(s, font=f); dr.text((x - w / 2, y), s, font=f, fill=fill)
@@ -80,7 +85,7 @@ def badge(dr, x, y, k, f=f_badge, h=58):
 
 def envolver(dr, s, f, ancho):
     lin, cur = [], ''
-    for p in s.split():
+    for p in s.split(' '):
         prueba = (cur + ' ' + p).strip()
         if dr.textlength(prueba, font=f) <= ancho: cur = prueba
         else: lin.append(cur); cur = p
@@ -150,17 +155,18 @@ def tarjeta(dr, x, y, w, h, titulo_, filas, nota, a, morado=False):
     off = (1 - a) * 60
     dr.rounded_rectangle((x, y + off, x + w, y + h + off), 28, fill=(255, 255, 255), outline=MORADO if morado else LINEA, width=4)
     dr.text((x + 34, y + 28 + off), titulo_, font=f_titulo, fill=TINTA)
-    yy = y + 120 + off
+    yy = y + 110 + off
     for k, v in filas:
-        badge(dr, x + 34, yy, k); dr.text((x + 270, yy - 6), num(v) + ' %', font=f_valor, fill=TINTA); yy += 86
+        badge(dr, x + 34, yy, k); dr.text((x + 270, yy - 6), num(v) + ' %', font=f_valor, fill=TINTA); yy += 74
     dr.text((x + 34, yy + 8), nota, font=f_fecha, fill=MORADO if morado else VERDE)
 
 def e_discordante(dr, img, lt, e):
     dr.text((60, 330), 'Las que se salen del guion', font=f_titulo, fill=TINTA)
-    a = ease((lt - G['t_gesop']) / 0.5)
-    if a > 0: tarjeta(dr, 60, 440, 960, 370, 'GESOP', [('PP', G['gesop']['PP']), ('PSOE', G['gesop']['PSOE'])], 'Solo 2,6 puntos de diferencia', a)
-    b = ease((lt - G['t_cis']) / 0.5)
-    if b > 0: tarjeta(dr, 60, 850, 960, 370, 'CIS', [('PSOE', G['cis']['PSOE']), ('PP', G['cis']['PP'])], 'Fuera de nuestra media', b, morado=True)
+    cl = e['clips']; t_g = (cl[0]['fin'] - e['ini']) * 0.45; t_c = cl[1]['ini'] - e['ini'] if len(cl) > 1 else G['t_cis']
+    a = ease((lt - t_g) / 0.5)
+    if a > 0: tarjeta(dr, 60, 430, 960, 340, 'GESOP', [('PP', G['gesop']['PP']), ('PSOE', G['gesop']['PSOE'])], 'Solo 2,6 puntos de diferencia', a)
+    b = ease((lt - t_c) / 0.5)
+    if b > 0: tarjeta(dr, 60, 800, 960, 340, 'CIS', [('PSOE', G['cis']['PSOE']), ('PP', G['cis']['PP'])], 'Fuera de nuestra media', b, morado=True)
 
 def barra_bloque(dr, y, etiqueta, valor, color, a=1.0):
     x0, x1, maxv = 60, 1020, 260
@@ -191,7 +197,7 @@ def e_cierre(dr, img, lt, e):
     centrado(dr, W / 2, 380, 'Faltan', f_titulo, TINTA2)
     centrado(dr, W / 2, 450, str(G['dias']), f_gigante, VERDE)
     centrado(dr, W / 2, 860, 'días para el 29N', f_titulo, TINTA)
-    a = ease((lt - 3.6) / 0.6)
+    a = ease((lt - G.get('t_url', 3.6)) / 0.6)
     if a > 0:
         centrado(dr, W / 2, 990, 'Todas las encuestas y el pactómetro', f_fecha, TINTA2)
         s = 'enpapel.es/encuestas-29n'; w = dr.textlength(s, font=f_medio) + 70
@@ -214,15 +220,23 @@ def fotograma(i):
     lt = t - esc['ini']
     ESC[esc['tipo']](dr, img, lt, esc)
     # personaje: balanceo + "habla" con la voz
-    spr = SPR[esc['pose']]; r = rms[min(i, len(rms) - 1)]
-    sy = 1 + 0.035 * r; sx = 1 - 0.012 * r
-    sp = spr.resize((int(spr.width * sx), int(spr.height * sy)), Image.BILINEAR).rotate(2.2 * math.sin(t * 2.1), resample=Image.BICUBIC, expand=True)
-    bob = 8 * math.sin(t * 3.0)
-    img.alpha_composite(sp, (int(40 + (spr.width - sp.width) / 2), int(1235 + 560 - sp.height + bob)))
+    poses = esc.get('poses', [esc['pose']]); fr_ini = esc.get('frases', [esc['ini']])
+    n_fr = max([j for j, a in enumerate(fr_ini) if a <= t] or [0]); pose = poses[n_fr % len(poses)]
+    t_cambio = fr_ini[n_fr] if fr_ini else esc['ini']
+    r = rms[min(i, len(rms) - 1)]; rs = rms_suave[min(i, len(rms) - 1)]
+    abierta = r > 0.32 or (rs > 0.25 and i % 4 < 2)
+    ciclo = (t + 0.7) % 3.4; parpadeo = ciclo < 0.12 and not abierta
+    spr = SPR[pose]['abierta' if abierta else 'parpadeo' if parpadeo else 'cerrada']
+    dt = t - t_cambio; salto = -28 * math.sin(math.pi * dt / 0.3) if 0 <= dt < 0.3 else 0
+    sy = 1 + 0.03 * rs; sx = 1 - 0.01 * rs
+    if 0 <= dt < 0.3: sy *= 1 + 0.06 * math.sin(math.pi * dt / 0.3); sx *= 1 - 0.04 * math.sin(math.pi * dt / 0.3)
+    sp = spr.resize((int(spr.width * sx), int(spr.height * sy)), Image.BILINEAR).rotate(1.8 * math.sin(t * 2.1), resample=Image.BICUBIC, expand=True)
+    bob = 7 * math.sin(t * 3.0)
+    img.alpha_composite(sp, (int(230 - sp.width / 2), int(1798 - sp.height + bob + salto)))
     # subtítulo
     sub = next((s for s in subs if s[0] <= t < s[1] + 0.15), None)
     if sub:
-        x0, x1 = 450, 1040
+        x0, x1 = 470, 1040
         lin = envolver(dr, sub[2], f_sub, x1 - x0 - 60)
         hh = len(lin) * 64 + 50; y0 = 1520 - hh / 2
         dr.rounded_rectangle((x0, y0, x1, y0 + hh), 30, fill=(255, 255, 255), outline=LINEA, width=3)
