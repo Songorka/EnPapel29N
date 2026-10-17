@@ -1,0 +1,133 @@
+{
+ "fecha": "2026-10-16",
+ "generado": "2026-10-17T05:46+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 49,
+   "sessions": 53,
+   "screenPageViews": 51
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 125,
+   "sessions": 128,
+   "screenPageViews": 139
+  },
+  "media_7_dias": {
+   "activeUsers": 377,
+   "sessions": 414,
+   "screenPageViews": 472
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 32,
+   "screenPageViews": 34
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "pagina_encuestas": {
+   "activeUsers": 1,
+   "screenPageViews": 1
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
+    "screenPageViews": 22.0,
+    "activeUsers": 22.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 3.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 26.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 5.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2331,
+   "screenPageViews": 2813
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
+   "screenPageViews": 22.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Página no encontrada - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/espacios-comerciales",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "Sergio Tubío, coordinador de la unidad de intervención en tentativas de suicidio: “La persona que se suicida no desea morir, sino que desea dejar de sufrir” - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/sociedad/sergio-tubio-coordinador-de-la-unidad-de-intervencion-en-tentativas-de-suicidio-la-persona-que-se-suicida-no-desea-morir-sino-que-desea-dejar-de-sufrir/",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "Deportes archivos - Página 37 de 39 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/deportes/page/37/",
+   "screenPageViews": 1.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 28.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 24.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 30.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 19.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
