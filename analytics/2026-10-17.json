@@ -1,11 +1,11 @@
 {
  "fecha": "2026-10-17",
- "generado": "2026-10-18T05:47+00:00",
+ "generado": "2026-10-18T09:30+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 27,
-   "sessions": 34,
-   "screenPageViews": 34
+   "activeUsers": 31,
+   "sessions": 38,
+   "screenPageViews": 38
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 104,
@@ -13,15 +13,15 @@
    "screenPageViews": 294
   },
   "media_7_dias": {
-   "activeUsers": 377,
-   "sessions": 412,
-   "screenPageViews": 448
+   "activeUsers": 378,
+   "sessions": 413,
+   "screenPageViews": 449
   }
  },
  "29n": {
   "ayer": {
-   "activeUsers": 17,
-   "screenPageViews": 22
+   "activeUsers": 20,
+   "screenPageViews": 25
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 64,
@@ -35,8 +35,8 @@
    {
     "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
     "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
-    "screenPageViews": 10.0,
-    "activeUsers": 9.0
+    "screenPageViews": 12.0,
+    "activeUsers": 11.0
    },
    {
     "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
@@ -53,8 +53,8 @@
    {
     "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
     "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
-    "screenPageViews": 1.0,
-    "activeUsers": 1.0
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
    },
    {
     "pageTitle": "Encuesta Target Point: PP y Vox, mayoría a 49 días del 29N - Enpapel - Tu periódico en Majadahonda",
@@ -66,27 +66,27 @@
   "fuentes": [
    {
     "sessionSource": "google",
-    "activeUsers": 11.0
+    "activeUsers": 12.0
    },
    {
     "sessionSource": "(direct)",
-    "activeUsers": 3.0
+    "activeUsers": 4.0
    },
    {
     "sessionSource": "x",
-    "activeUsers": 3.0
+    "activeUsers": 4.0
    }
   ],
   "acumulado_desde_5_oct": {
-   "activeUsers": 2400,
-   "screenPageViews": 2904
+   "activeUsers": 2403,
+   "screenPageViews": 2907
   }
  },
  "mas_leidas": [
   {
    "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
-   "screenPageViews": 10.0
+   "screenPageViews": 12.0
   },
   {
    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
@@ -99,6 +99,11 @@
    "screenPageViews": 3.0
   },
   {
+   "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+   "screenPageViews": 2.0
+  },
+  {
    "pageTitle": "'¡De Vivaldi a los Beatles!': una de las propuestas de la Semana de la Música de Majadahonda - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/majadahonda/de-vivaldi-a-los-beatles-una-de-las-propuestas-de-la-semana-de-la-musica-de-majadahonda/",
    "screenPageViews": 1.0
@@ -107,31 +112,26 @@
    "pageTitle": "Condenado a 26 años por matar a su mujer en Majadahonda - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/majadahonda/condenado-a-26-anos-por-matar-a-su-mujer-en-majadahonda/",
    "screenPageViews": 1.0
-  },
-  {
-   "pageTitle": "El Rayo busca los tres puntos ante el Talavera - Enpapel - Tu periódico en Majadahonda",
-   "pagePath": "/deportes/el-rayo-busca-los-tres-puntos-ante-el-talavera/",
-   "screenPageViews": 1.0
   }
  ],
  "fuentes_web": [
   {
    "sessionDefaultChannelGroup": "Organic Search",
-   "sessions": 18.0
+   "sessions": 19.0
   },
   {
    "sessionDefaultChannelGroup": "Direct",
-   "sessions": 13.0
+   "sessions": 15.0
   },
   {
    "sessionDefaultChannelGroup": "Organic Social",
-   "sessions": 3.0
+   "sessions": 4.0
   }
  ],
  "dispositivos": [
   {
    "deviceCategory": "mobile",
-   "activeUsers": 15.0
+   "activeUsers": 19.0
   },
   {
    "deviceCategory": "desktop",
@@ -139,7 +139,7 @@
   }
  ],
  "desde_x": {
-  "sessions": 3,
-  "activeUsers": 3
+  "sessions": 4,
+  "activeUsers": 4
  }
 }
