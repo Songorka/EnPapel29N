@@ -115,14 +115,18 @@ def publicar(ruta):
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
     if n.get('corregir_id'):  # corregir el titular (u otros campos) de una noticia ya publicada; no toca X
-        cambios = {k_wp: n[k] for k, k_wp in (('titulo', 'title'), ('extracto', 'excerpt'), ('estado', 'status')) if n.get(k)}
+        cambios = {k_wp: n[k] for k, k_wp in (('titulo', 'title'), ('extracto', 'excerpt'), ('estado', 'status'), ('contenido', 'content')) if n.get(k)}
         p = api('POST', f'posts/{n["corregir_id"]}', cambios)
         if os.path.exists(salida):
             res = json.load(open(salida, encoding='utf-8'))
             if res.get('id') == p['id'] and n.get('titulo'):
                 res['titulo'] = n['titulo']; res['corregido'] = True
                 json.dump(res, open(salida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-        if n.get('estado') and os.path.exists(salida):
+        if n.get('estado') == 'publish' and not os.path.exists(salida):  # un borrador que se publica después
+            json.dump({'fecha': fecha, 'estado': p['status'], 'id': p['id'], 'enlace': p['link'],
+                       'titulo': (p.get('title') or {}).get('raw') or n.get('titulo', '')},
+                      open(salida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        elif n.get('estado') and os.path.exists(salida):
             res = json.load(open(salida, encoding='utf-8'))
             if res.get('id') == p['id']:
                 res.update(estado=p['status'], enlace=p['link'])
