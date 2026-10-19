@@ -1,0 +1,157 @@
+{
+ "fecha": "2026-10-18",
+ "generado": "2026-10-19T05:49+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 95,
+   "sessions": 101,
+   "screenPageViews": 123
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 174,
+   "sessions": 186,
+   "screenPageViews": 227
+  },
+  "media_7_dias": {
+   "activeUsers": 368,
+   "sessions": 399,
+   "screenPageViews": 434
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 83,
+   "screenPageViews": 111
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 131,
+   "screenPageViews": 172
+  },
+  "pagina_encuestas": {
+   "activeUsers": 6,
+   "screenPageViews": 7
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+    "screenPageViews": 86.0,
+    "activeUsers": 73.0
+   },
+   {
+    "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
+    "screenPageViews": 8.0,
+    "activeUsers": 7.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 75.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 5.0
+   },
+   {
+    "sessionSource": "facebook.com",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2483,
+   "screenPageViews": 3020
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+   "screenPageViews": 86.0
+  },
+  {
+   "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 3.0
+  },
+  {
+   "pageTitle": "Aprender japonés y “A la gloria, con Gloria Fuertes”, propuestas culturales de la semana en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/aprender-japones-y-a-la-gloria-con-gloria-fuertes-propuestas-culturales-de-la-semana-en-majadahonda/",
+   "screenPageViews": 1.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 81.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 16.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 62.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 31.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 2.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
