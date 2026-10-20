@@ -1,0 +1,139 @@
+{
+ "fecha": "2026-10-19",
+ "generado": "2026-10-20T05:48+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 82,
+   "sessions": 85,
+   "screenPageViews": 93
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 1446,
+   "sessions": 1536,
+   "screenPageViews": 1683
+  },
+  "media_7_dias": {
+   "activeUsers": 177,
+   "sessions": 193,
+   "screenPageViews": 208
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 38,
+   "screenPageViews": 45
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 1423,
+   "screenPageViews": 1645
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+    "screenPageViews": 36.0,
+    "activeUsers": 32.0
+   },
+   {
+    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta Winston: el PSOE cae al 24,9 % y PP y Vox suman 204 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-psoe-pp-vox-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 0.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 34.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2522,
+   "screenPageViews": 3070
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+   "screenPageViews": 36.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 12.0
+  },
+  {
+   "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Las Rozas lanza un Plan de Salud Mental con 10 programas y cerca de 200 medidas concretas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/las-rozas-lanza-un-plan-de-salud-mental-con-10-programas-y-cerca-de-200-medidas-concretas/0/",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "Alerta amarilla por riesgo de inundaciones en la Comunidad de Madrid - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/alerta-amarilla-por-riesgo-de-inundaciones-en-la-comunidad-de-madrid/",
+   "screenPageViews": 1.0
+  },
+  {
+   "pageTitle": "David Rodríguez Cabrera: \"Hay que trabajar de cara a la ciudadanía\" - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/david-rodriguez-cabrera-hay-que-trabajar-de-cara-a-la-ciudadania/",
+   "screenPageViews": 1.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 45.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 40.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 54.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 27.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
