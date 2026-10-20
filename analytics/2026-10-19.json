@@ -1,11 +1,11 @@
 {
  "fecha": "2026-10-19",
- "generado": "2026-10-20T05:48+00:00",
+ "generado": "2026-10-20T09:58+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 82,
-   "sessions": 85,
-   "screenPageViews": 93
+   "activeUsers": 158,
+   "sessions": 165,
+   "screenPageViews": 182
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 1446,
@@ -13,36 +13,42 @@
    "screenPageViews": 1683
   },
   "media_7_dias": {
-   "activeUsers": 177,
-   "sessions": 193,
-   "screenPageViews": 208
+   "activeUsers": 187,
+   "sessions": 204,
+   "screenPageViews": 221
   }
  },
  "29n": {
   "ayer": {
-   "activeUsers": 38,
-   "screenPageViews": 45
+   "activeUsers": 110,
+   "screenPageViews": 128
   },
   "mismo_dia_semana_pasada": {
    "activeUsers": 1423,
    "screenPageViews": 1645
   },
   "pagina_encuestas": {
-   "activeUsers": 0,
-   "screenPageViews": 0
+   "activeUsers": 2,
+   "screenPageViews": 2
   },
   "noticias": [
    {
     "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
     "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
-    "screenPageViews": 36.0,
-    "activeUsers": 32.0
+    "screenPageViews": 116.0,
+    "activeUsers": 104.0
    },
    {
     "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
     "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
     "screenPageViews": 7.0,
     "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
    },
    {
     "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
@@ -60,37 +66,46 @@
   "fuentes": [
    {
     "sessionSource": "google",
-    "activeUsers": 34.0
+    "activeUsers": 101.0
    },
    {
     "sessionSource": "(direct)",
-    "activeUsers": 3.0
+    "activeUsers": 7.0
    },
    {
     "sessionSource": "news.google.com",
     "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
    }
   ],
   "acumulado_desde_5_oct": {
-   "activeUsers": 2522,
-   "screenPageViews": 3070
+   "activeUsers": 2590,
+   "screenPageViews": 3153
   }
  },
  "mas_leidas": [
   {
    "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
-   "screenPageViews": 36.0
+   "screenPageViews": 116.0
   },
   {
    "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/",
-   "screenPageViews": 12.0
+   "screenPageViews": 16.0
   },
   {
    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
    "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 2.0
   },
   {
    "pageTitle": "Las Rozas lanza un Plan de Salud Mental con 10 programas y cerca de 200 medidas concretas - Enpapel - Tu periódico en Majadahonda",
@@ -101,35 +116,34 @@
    "pageTitle": "Alerta amarilla por riesgo de inundaciones en la Comunidad de Madrid - Enpapel - Tu periódico en Majadahonda",
    "pagePath": "/majadahonda/alerta-amarilla-por-riesgo-de-inundaciones-en-la-comunidad-de-madrid/",
    "screenPageViews": 1.0
-  },
-  {
-   "pageTitle": "David Rodríguez Cabrera: \"Hay que trabajar de cara a la ciudadanía\" - Enpapel - Tu periódico en Majadahonda",
-   "pagePath": "/majadahonda/david-rodriguez-cabrera-hay-que-trabajar-de-cara-a-la-ciudadania/",
-   "screenPageViews": 1.0
   }
  ],
  "fuentes_web": [
   {
-   "sessionDefaultChannelGroup": "Direct",
-   "sessions": 45.0
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 112.0
   },
   {
-   "sessionDefaultChannelGroup": "Organic Search",
-   "sessions": 40.0
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 52.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
   }
  ],
  "dispositivos": [
   {
-   "deviceCategory": "desktop",
-   "activeUsers": 54.0
+   "deviceCategory": "mobile",
+   "activeUsers": 88.0
   },
   {
-   "deviceCategory": "mobile",
-   "activeUsers": 27.0
+   "deviceCategory": "desktop",
+   "activeUsers": 68.0
   },
   {
    "deviceCategory": "tablet",
-   "activeUsers": 1.0
+   "activeUsers": 2.0
   }
  ],
  "desde_x": {
