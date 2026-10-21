@@ -1,0 +1,163 @@
+{
+ "fecha": "2026-10-20",
+ "generado": "2026-10-21T05:48+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 97,
+   "sessions": 101,
+   "screenPageViews": 118
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 573,
+   "sessions": 623,
+   "screenPageViews": 669
+  },
+  "media_7_dias": {
+   "activeUsers": 119,
+   "sessions": 130,
+   "screenPageViews": 142
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 57,
+   "screenPageViews": 63
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 535,
+   "screenPageViews": 625
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+    "screenPageViews": 60.0,
+    "activeUsers": 55.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 36.0
+   },
+   {
+    "sessionSource": "m.facebook.com",
+    "activeUsers": 8.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 5.0
+   },
+   {
+    "sessionSource": "lm.facebook.com",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "share.google",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2645,
+   "screenPageViews": 3216
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+   "screenPageViews": 60.0
+  },
+  {
+   "pageTitle": "Conexxia Group nace para conectar talento - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/conexxia-group-nace-para-conectar-talento/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Conexxia Group nace para conectar talento - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/uncategorized/conexxia-group-nace-para-conectar-talento/",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Conexxia Group nace para conectar talento - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 2.0
+  },
+  {
+   "pageTitle": "Conexxia Group: el ecosistema que conecta talento y empresas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/conexxia-group-nace-para-conectar-talento/",
+   "screenPageViews": 2.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 43.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 40.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 12.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 53.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 44.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 2,
+  "activeUsers": 2
+ }
+}
