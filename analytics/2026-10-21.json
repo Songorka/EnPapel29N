@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-10-21",
+ "generado": "2026-10-22T05:49+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 5122,
+   "sessions": 5113,
+   "screenPageViews": 5127
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 227,
+   "sessions": 246,
+   "screenPageViews": 273
+  },
+  "media_7_dias": {
+   "activeUsers": 819,
+   "sessions": 824,
+   "screenPageViews": 836
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 21,
+   "screenPageViews": 23
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 162,
+   "screenPageViews": 199
+  },
+  "pagina_encuestas": {
+   "activeUsers": 2,
+   "screenPageViews": 2
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Página no encontrada - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuestiv class=",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 15.0
+   },
+   {
+    "sessionSource": "google",
+    "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "duckduckgo",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2664,
+   "screenPageViews": 3239
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "Conexxia Group: el ecosistema que conecta talento y empresas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/conexxia-group-nace-para-conectar-talento/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: Vox sube al 19,5 % y PP y Vox suman mayoría - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-vox-pp-mayoria-29n/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Sonsoles Ónega recoge el título de Hija Adoptiva de Pozuelo de Alarcón - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/sonsoles-onega-recoge-el-titulo-de-hija-adoptiva-de-pozuelo-de-alarcon/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Formulario para anunciantes - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/anunciantes",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Gafas de realidad virtual para recuperar la movilidad - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/gafas-de-realidad-virtual-para-recuperar-la-movilidad/",
+   "screenPageViews": 4.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 5105.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 11.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 10.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 5108.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 14.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
