@@ -62,7 +62,15 @@ def etiqueta_id(nombre):
     for t in r:
         if t['name'].strip().lower() == nombre.strip().lower():
             return t['id']
-    return api('POST', 'tags', {'name': nombre})['id']
+    try:
+        return api('POST', 'tags', {'name': nombre})['id']
+    except SystemExit as e:
+        # Con palabras muy repetidas ("Majadahonda") la búsqueda trae 100 etiquetas que la contienen y la
+        # exacta no sale: WordPress responde "term_exists" con su id. Se usa esa en vez de fallar.
+        m = re.search(r'"term_id":\s*(\d+)', str(e.code))
+        if 'term_exists' in str(e.code) and m:
+            return int(m.group(1))
+        raise
 
 
 def subir_imagen(n):
