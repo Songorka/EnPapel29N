@@ -91,14 +91,14 @@ def meta_seo(n):
     return {k: v for k, v in m.items() if v}
 
 
-def a_x(texto_base, enlace, imagen_rel, alt, video_rel=None):
+def a_x(texto_base, enlace, imagen_rel, alt, video_rel=None, etiquetas=('#29N', '#Encuestas'), campana='29n'):
     """Publica en X si están los secretos. Nunca hace fallar la publicación en WordPress."""
     sys.path.insert(0, os.path.join(RAIZ, 'noticias'))
     import x_publicar as X
     if not X.configurado():
         return {'x': 'sin configurar'}
     try:
-        texto = X.texto_post(texto_base, enlace)
+        texto = X.texto_post(texto_base, enlace, etiquetas, campana)
         r = X.publicar_en_x(texto, os.path.join(RAIZ, imagen_rel) if imagen_rel else None, alt,
                             os.path.join(RAIZ, video_rel) if video_rel else None)
         return {'x_enlace': r['enlace'], 'x_con_imagen': r['con_imagen'], 'x_con_video': r.get('con_video')}
@@ -110,7 +110,9 @@ def publicar(ruta):
     n = json.load(open(ruta, encoding='utf-8'))
     fecha = n['fecha']; estado = n.get('estado', 'publish')
     if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
-        res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', ''), n.get('x_video')))
+        # x_etiquetas / x_campana: otros usos de la cola (p. ej. el bot de tendencias) sin los hashtags del 29N
+        res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', ''), n.get('x_video'),
+                                                          n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')

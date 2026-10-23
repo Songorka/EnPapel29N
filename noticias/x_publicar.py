@@ -149,7 +149,7 @@ def publicar_en_x(texto, ruta_imagen=None, alt='', ruta_video=None):
     return {'id': tid, 'enlace': f'https://x.com/i/status/{tid}', 'con_imagen': 'media' in datos, 'con_video': con_video}
 
 
-def texto_post(base, enlace, etiquetas=('#29N', '#Encuestas')):
+def texto_post(base, enlace, etiquetas=('#29N', '#Encuestas'), campana='29n'):
     """Une el texto, el enlace y los hashtags sin pasar de 280 (un enlace cuenta 23)."""
     cola = ' '.join(e for e in etiquetas if e.lower() not in base.lower())
     def largo(t):
@@ -157,7 +157,7 @@ def texto_post(base, enlace, etiquetas=('#29N', '#Encuestas')):
     # UTM para que Google Analytics atribuya bien las visitas que llegan desde X
     # (la app de X a menudo no pasa la procedencia y esas visitas salían como "directo")
     if 'utm_source=' not in enlace:
-        enlace += ('&' if '?' in enlace else '?') + 'utm_source=x&utm_medium=social&utm_campaign=29n'
+        enlace += ('&' if '?' in enlace else '?') + 'utm_source=x&utm_medium=social&utm_campaign=' + campana
     t = base.strip()
     while largo(t) > 280:
         t = t[:-2].rstrip() + '…'
