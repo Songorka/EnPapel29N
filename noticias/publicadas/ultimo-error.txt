@@ -1,0 +1,2 @@
+2026-10-23 13:43 UTC
+ERROR 400 en POST tags: {"code":"term_exists","message":"Ya existe en esta taxonom\u00eda un t\u00e9rmino con el nombre y el slug facilitados.","data":{"status":400,"term_id":68},"additional_data":[68,68]}
