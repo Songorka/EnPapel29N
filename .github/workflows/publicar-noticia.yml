@@ -17,9 +17,14 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
     steps:
+      # ref: main = la última versión, no la del commit que lanzó la ejecución. Con dos envíos seguidos,
+      # la segunda ejecución espera a la primera (concurrency) y así ya no ve lo que esa publicó.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Publicar en WordPress
         env:
+          PYTHONDONTWRITEBYTECODE: '1'   # sin .pyc nuevos que choquen al guardar el resultado
           WP_URL: https://enpapel.es
           WP_USER: ${{ secrets.WP_USER || vars.WP_USER || 'Gorka' }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
