@@ -1,0 +1,169 @@
+{
+ "fecha": "2026-10-23",
+ "generado": "2026-10-24T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 167,
+   "sessions": 180,
+   "screenPageViews": 212
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 127,
+   "sessions": 142,
+   "screenPageViews": 146
+  },
+  "media_7_dias": {
+   "activeUsers": 821,
+   "sessions": 820,
+   "screenPageViews": 842
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 124,
+   "screenPageViews": 146
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 88,
+   "screenPageViews": 103
+  },
+  "pagina_encuestas": {
+   "activeUsers": 5,
+   "screenPageViews": 6
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta IMOP: el PSOE se acerca al PP a 37 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-imop-psoe-recorta-pp-29n/",
+    "screenPageViews": 129.0,
+    "activeUsers": 113.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta GESOP: el PP, solo 2,6 puntos por delante del PSOE - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gesop-pp-psoe-distancia-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 118.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2789,
+   "screenPageViews": 3396
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta IMOP: el PSOE se acerca al PP a 37 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-imop-psoe-recorta-pp-29n/",
+   "screenPageViews": 129.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Majadahonda aprueba un skatepark y un pumptrack de 438.967 e - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/majadahonda-aprueba-un-skatepark-y-un-pumptrack-de-438-967-euros-en-una-parcela-municipal-junto-a-la-avenida-rey-juan-carlos-i/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 3.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 3.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 136.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 41.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 103.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 61.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 3.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 2,
+  "activeUsers": 2
+ }
+}
