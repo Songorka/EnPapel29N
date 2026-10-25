@@ -1,0 +1,12 @@
+{
+ "modo": "instalar",
+ "hora": "2026-10-25 18:15 UTC",
+ "resultado": {
+  "plugin": "wordfence/wordfence",
+  "name": "Wordfence Security",
+  "version": "9.0.2",
+  "status": "active",
+  "error": null,
+  "detalle": null
+ }
+}
