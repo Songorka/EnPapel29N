@@ -91,7 +91,7 @@ def main():
     global DESDE
     DESDE = orden.get('desde', DESDE)
     if modo == 'perfiles':   # quitar permisos de edición a usuarios que ya no colaboran (su firma se mantiene)
-        intocables = {1, 4, 6, 10}
+        intocables = {1, 4, 6, 10} - set(orden.get('permitir', []))
         res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'usuarios': []}
         for uid in orden['ids']:
             if uid in intocables:
