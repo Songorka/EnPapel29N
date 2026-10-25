@@ -14,7 +14,7 @@ WP = os.environ.get('WP_URL', 'https://enpapel.es').rstrip('/')
 USER = os.environ.get('WP_USER', '')
 PWD = re.sub(r'\s+', '', os.environ.get('WP_APP_PASSWORD', ''))
 MARCAS = ('varors.', 'site-verification-ok', 'Click to verify', 'Verify you are human')
-DESDE = '2026-10-24T00:00:00'
+DESDE = '2026-10-24T00:00:00'  # se puede cambiar con "desde" en orden.json
 
 
 def api(metodo, ruta, datos=None):
@@ -88,6 +88,8 @@ def accesos():
 def main():
     orden = json.load(open(os.path.join(RAIZ, 'limpieza', 'orden.json'), encoding='utf-8'))
     modo = orden.get('modo', 'revisar')
+    global DESDE
+    DESDE = orden.get('desde', DESDE)
     res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'elementos': []}
     for tipo in ('posts', 'pages'):
         for o in todos(tipo):
