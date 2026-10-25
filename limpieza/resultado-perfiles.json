@@ -1,108 +1,12 @@
 {
  "modo": "perfiles",
- "hora": "2026-10-25 17:57 UTC",
+ "hora": "2026-10-25 17:59 UTC",
  "usuarios": [
   {
    "id": 17,
    "nombre": "Marcos Yebra",
    "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 2,
-   "nombre": "Alberto Sierra",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 18,
-   "nombre": "Gonzalo Alonso",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 11,
-   "nombre": "Maria Martinez de Mora",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 3,
-   "nombre": "Raquel Fernandez",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 8,
-   "nombre": "Alex Cano",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 12,
-   "nombre": "Carlos Jaen",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 13,
-   "nombre": "Guillermo del valle",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 14,
-   "nombre": "Loreto Ochando",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 15,
-   "nombre": "Pablo Montes Sanchez",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 9,
-   "nombre": "Ruben Floriano",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 5,
-   "nombre": "Sonsoles Ónega",
-   "roles": [
-    "subscriber"
-   ],
-   "error": null
-  },
-  {
-   "id": 19,
-   "nombre": "Julia Bachiller",
-   "roles": [
-    "subscriber"
+    "administrator"
    ],
    "error": null
   }
@@ -189,7 +93,7 @@
    "id": 17,
    "name": "Marcos Yebra",
    "roles": [
-    "subscriber"
+    "administrator"
    ]
   },
   {
