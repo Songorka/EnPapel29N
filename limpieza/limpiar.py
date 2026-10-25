@@ -90,6 +90,22 @@ def main():
     modo = orden.get('modo', 'revisar')
     global DESDE
     DESDE = orden.get('desde', DESDE)
+    if modo == 'perfiles':   # quitar permisos de edición a usuarios que ya no colaboran (su firma se mantiene)
+        intocables = {1, 4, 6, 10}
+        res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'usuarios': []}
+        for uid in orden['ids']:
+            if uid in intocables:
+                res['usuarios'].append({'id': uid, 'omitido': 'protegido'}); continue
+            u, _ = api('POST', f'users/{uid}', {'roles': [orden.get('rol', 'subscriber')]})
+            res['usuarios'].append({'id': uid, 'nombre': u.get('name') if isinstance(u, dict) else None,
+                                    'roles': u.get('roles') if isinstance(u, dict) else None,
+                                    'error': u.get('error') if isinstance(u, dict) else str(u)})
+        d, _ = api('GET', 'users?context=edit&per_page=100&_fields=id,name,roles')
+        res['estado_final'] = d
+        json.dump(res, open(os.path.join(RAIZ, 'limpieza', 'resultado-perfiles.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        print(json.dumps(res, ensure_ascii=False)[:2000])
+        return
     res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'elementos': []}
     for tipo in ('posts', 'pages'):
         for o in todos(tipo):
