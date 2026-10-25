@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-10-24",
+ "generado": "2026-10-25T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 147,
+   "sessions": 158,
+   "screenPageViews": 181
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 34,
+   "sessions": 42,
+   "screenPageViews": 42
+  },
+  "media_7_dias": {
+   "activeUsers": 837,
+   "sessions": 833,
+   "screenPageViews": 861
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 49,
+   "screenPageViews": 71
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 21,
+   "screenPageViews": 27
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 1
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 26.0,
+    "activeUsers": 19.0
+   },
+   {
+    "pageTitle": "Encuesta IMOP: el PSOE se acerca al PP a 37 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-imop-psoe-recorta-pp-29n/",
+    "screenPageViews": 20.0,
+    "activeUsers": 15.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 9.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 4.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 43.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 2.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 2837,
+   "screenPageViews": 3467
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 26.0
+  },
+  {
+   "pageTitle": "Encuesta IMOP: el PSOE se acerca al PP a 37 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-imop-psoe-recorta-pp-29n/",
+   "screenPageViews": 20.0
+  },
+  {
+   "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Majadahonda aprueba un skatepark y un pumptrack de 438.967 e - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/majadahonda-aprueba-un-skatepark-y-un-pumptrack-de-438-967-euros-en-una-parcela-municipal-junto-a-la-avenida-rey-juan-carlos-i/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 6.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 98.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 57.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 92.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 54.0
+  },
+  {
+   "deviceCategory": "smart tv",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
