@@ -1,0 +1,140 @@
+{
+ "modo": "autores",
+ "hora": "2026-10-25 18:10 UTC",
+ "entradas": [
+  {
+   "id": 12830,
+   "revisiones": [
+    {
+     "rev": 13836,
+     "autor": 6,
+     "fecha_utc": "2026-10-25T17:19:07",
+     "infectada": false
+    },
+    {
+     "rev": 13500,
+     "autor": 0,
+     "fecha_utc": "2026-10-23T17:55:08",
+     "infectada": true
+    },
+    {
+     "rev": 12837,
+     "autor": 17,
+     "fecha_utc": "2025-05-06T18:32:35",
+     "infectada": false
+    }
+   ]
+  },
+  {
+   "id": 13349,
+   "revisiones": [
+    {
+     "rev": 13733,
+     "autor": 6,
+     "fecha_utc": "2026-10-25T17:13:23",
+     "infectada": false
+    },
+    {
+     "rev": 13627,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T13:45:11",
+     "infectada": true
+    },
+    {
+     "rev": 13521,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T12:18:53",
+     "infectada": true
+    },
+    {
+     "rev": 13404,
+     "autor": 0,
+     "fecha_utc": "2026-10-23T17:49:35",
+     "infectada": true
+    },
+    {
+     "rev": 13350,
+     "autor": 6,
+     "fecha_utc": "2026-10-23T12:52:30",
+     "infectada": false
+    }
+   ]
+  },
+  {
+   "id": 12824,
+   "revisiones": [
+    {
+     "rev": 13828,
+     "autor": 6,
+     "fecha_utc": "2026-10-25T17:17:06",
+     "infectada": false
+    },
+    {
+     "rev": 13722,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T13:51:25",
+     "infectada": true
+    },
+    {
+     "rev": 13616,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T12:24:53",
+     "infectada": true
+    },
+    {
+     "rev": 13499,
+     "autor": 0,
+     "fecha_utc": "2026-10-23T17:55:05",
+     "infectada": true
+    },
+    {
+     "rev": 12839,
+     "autor": 17,
+     "fecha_utc": "2025-05-06T18:36:22",
+     "infectada": false
+    },
+    {
+     "rev": 12829,
+     "autor": 17,
+     "fecha_utc": "2025-05-06T17:54:26",
+     "infectada": false
+    }
+   ]
+  },
+  {
+   "id": 12999,
+   "revisiones": [
+    {
+     "rev": 13789,
+     "autor": 6,
+     "fecha_utc": "2026-10-25T17:15:32",
+     "infectada": false
+    },
+    {
+     "rev": 13683,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T13:49:00",
+     "infectada": true
+    },
+    {
+     "rev": 13577,
+     "autor": 0,
+     "fecha_utc": "2026-10-25T12:22:35",
+     "infectada": true
+    },
+    {
+     "rev": 13460,
+     "autor": 0,
+     "fecha_utc": "2026-10-23T17:52:47",
+     "infectada": true
+    },
+    {
+     "rev": 13001,
+     "autor": 17,
+     "fecha_utc": "2025-05-27T14:46:13",
+     "infectada": false
+    }
+   ]
+  }
+ ]
+}
