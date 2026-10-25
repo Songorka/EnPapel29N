@@ -90,6 +90,14 @@ def main():
     modo = orden.get('modo', 'revisar')
     global DESDE
     DESDE = orden.get('desde', DESDE)
+    if modo == 'instalar':   # instalar y activar un plugin del directorio oficial de WordPress
+        res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}
+        r, _ = api('POST', 'plugins', {'slug': orden['slug'], 'status': 'active'})
+        res['resultado'] = {k: r.get(k) for k in ('plugin', 'name', 'version', 'status', 'error', 'detalle')} \
+            if isinstance(r, dict) else str(r)
+        json.dump(res, open(os.path.join(RAIZ, 'limpieza', 'resultado-instalar.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        return
     if modo == 'plugins':   # desactivar plugins por su nombre (no se borran)
         res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'cambios': []}
         lista, _ = api('GET', 'plugins?_fields=plugin,name,version,status')
