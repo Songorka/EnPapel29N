@@ -1,0 +1,231 @@
+{
+ "modo": "perfiles",
+ "hora": "2026-10-25 17:57 UTC",
+ "usuarios": [
+  {
+   "id": 17,
+   "nombre": "Marcos Yebra",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 2,
+   "nombre": "Alberto Sierra",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 18,
+   "nombre": "Gonzalo Alonso",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 11,
+   "nombre": "Maria Martinez de Mora",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 3,
+   "nombre": "Raquel Fernandez",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 8,
+   "nombre": "Alex Cano",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 12,
+   "nombre": "Carlos Jaen",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 13,
+   "nombre": "Guillermo del valle",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 14,
+   "nombre": "Loreto Ochando",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 15,
+   "nombre": "Pablo Montes Sanchez",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 9,
+   "nombre": "Ruben Floriano",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 5,
+   "nombre": "Sonsoles Ónega",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  },
+  {
+   "id": 19,
+   "nombre": "Julia Bachiller",
+   "roles": [
+    "subscriber"
+   ],
+   "error": null
+  }
+ ],
+ "estado_final": [
+  {
+   "id": 1,
+   "name": "admin",
+   "roles": [
+    "administrator"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Alberto Sierra",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Alex Cano",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Carlos Jaen",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "En Papel",
+   "roles": [
+    "editor"
+   ]
+  },
+  {
+   "id": 18,
+   "name": "Gonzalo Alonso",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Gorka Otaño",
+   "roles": [
+    "administrator"
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Guillermo del valle",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 19,
+   "name": "Julia Bachiller",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Loreto Ochando",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 10,
+   "name": "maquetación",
+   "roles": [
+    "editor"
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Marcos Yebra",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Maria Martinez de Mora",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Pablo Montes Sanchez",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Raquel Fernandez",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Ruben Floriano",
+   "roles": [
+    "subscriber"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Sonsoles Ónega",
+   "roles": [
+    "subscriber"
+   ]
+  }
+ ]
+}
