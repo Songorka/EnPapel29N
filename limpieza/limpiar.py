@@ -90,6 +90,21 @@ def main():
     modo = orden.get('modo', 'revisar')
     global DESDE
     DESDE = orden.get('desde', DESDE)
+    if modo == 'plugins':   # desactivar plugins por su nombre (no se borran)
+        res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'cambios': []}
+        lista, _ = api('GET', 'plugins?_fields=plugin,name,version,status')
+        for nombre in orden['desactivar']:
+            p = next((x for x in lista if x['name'].strip().lower() == nombre.strip().lower()), None)
+            if not p:
+                res['cambios'].append({'nombre': nombre, 'error': 'no encontrado'}); continue
+            r, _ = api('POST', 'plugins/' + p['plugin'].removesuffix('.php'), {'status': 'inactive'})
+            res['cambios'].append({'nombre': nombre, 'estado': r.get('status') if isinstance(r, dict) else None,
+                                   'error': r.get('error') if isinstance(r, dict) else str(r)})
+        final, _ = api('GET', 'plugins?_fields=name,version,status')
+        res['plugins'] = final
+        json.dump(res, open(os.path.join(RAIZ, 'limpieza', 'resultado-plugins.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        return
     if modo == 'autores':   # quién hizo cada cambio (revisiones) en las entradas atacadas
         res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'entradas': []}
         for tipo, pid in orden['ids']:
