@@ -90,6 +90,17 @@ def main():
     modo = orden.get('modo', 'revisar')
     global DESDE
     DESDE = orden.get('desde', DESDE)
+    if modo == 'autores':   # quién hizo cada cambio (revisiones) en las entradas atacadas
+        res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'entradas': []}
+        for tipo, pid in orden['ids']:
+            revs, _ = api('GET', f'{tipo}/{pid}/revisions?per_page=20&context=edit&_fields=id,author,date,date_gmt,content')
+            res['entradas'].append({'id': pid, 'revisiones': [
+                {'rev': r['id'], 'autor': r['author'], 'fecha_utc': r['date_gmt'],
+                 'infectada': infectado((r.get('content') or {}).get('raw', ''))} for r in revs]
+                if isinstance(revs, list) else str(revs)})
+        json.dump(res, open(os.path.join(RAIZ, 'limpieza', 'resultado-autores.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        return
     if modo == 'perfiles':   # quitar permisos de edición a usuarios que ya no colaboran (su firma se mantiene)
         intocables = {1, 4, 6, 10} - set(orden.get('permitir', []))
         res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()), 'usuarios': []}
