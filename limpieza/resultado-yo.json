@@ -1,0 +1,12 @@
+{
+ "modo": "yo",
+ "hora": "2026-10-26 06:31 UTC",
+ "usuario": "Gorka",
+ "roles": [
+  "administrator"
+ ],
+ "puede_crear_etiquetas": true,
+ "puede_publicar": true,
+ "error": null,
+ "detalle": null
+}
