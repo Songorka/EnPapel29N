@@ -21,7 +21,7 @@ DAT = json.load(open(f'{BASE}/datos.json', encoding='utf-8'))
 P = DAT['parties']
 def col(k): h = P[k]['color'].lstrip('#'); return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 def txtcol(c): return (26, 26, 26) if 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2] > 165 else (255, 255, 255)
-NOMBRE = {'PP': 'PP', 'PSOE': 'PSOE', 'VOX': 'Vox', 'SUMAR': 'Sumar', 'PODEMOS': 'Podemos'}
+NOMBRE = {'PP': 'PP', 'PSOE': 'PSOE', 'VOX': 'Vox', 'SUMAR': 'F. Amplio', 'PODEMOS': 'Podemos'}
 def num(v, dec=1): return f'{v:.{dec}f}'.replace('.', ',')
 
 def ease(x): x = max(0.0, min(1.0, x)); return 1 - (1 - x) ** 3

@@ -179,7 +179,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
   "parties": {
     "BILDU":  {"name":"EH Bildu","color":"#a5c20f","seatOrder":1},
     "PODEMOS":{"name":"Podemos","color":"#6b2d6b","seatOrder":2},
-    "SUMAR":  {"name":"Sumar","color":"#e0215a","seatOrder":3},
+    "SUMAR":  {"name":"Frente Amplio","color":"#e0215a","seatOrder":3},
     "AA":     {"name":"Adelante Andalucía","color":"#2f9e86","seatOrder":4},
     "BNG":    {"name":"BNG","color":"#76bde6","seatOrder":5},
     "ERC":    {"name":"ERC","color":"#f5a623","seatOrder":6},
@@ -195,7 +195,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
   "results2023": {
     "vote": {"PP":33.1,"PSOE":31.7,"VOX":12.4,"SUMAR":12.3,"ERC":1.9,"JUNTS":1.6,"BILDU":1.4,"PNV":1.1,"BNG":0.6,"CC":0.5,"UPN":0.2},
     "seats": {"PP":137,"PSOE":121,"VOX":33,"SUMAR":31,"ERC":7,"JUNTS":7,"BILDU":6,"PNV":5,"BNG":1,"CC":1,"UPN":1},
-    "note": "En 2023 Podemos concurrió dentro de Sumar."
+    "note": "En 2023 Podemos concurrió dentro de Sumar; en 2026 el antiguo espacio de Sumar se presenta como Frente Amplio y Podemos va aparte."
   },
   "polls": [
     {"id":"40db-2026-09-28","pollster":"40dB.","media":"El País / SER","fieldStart":"2026-09-25","fieldEnd":"2026-09-28","published":"2026-10-05","n":2000,"method":"Online",
@@ -355,7 +355,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
       <div><h2>Todas las encuestas</h2><p>Estimación de voto en % y suma de escaños de PP y Vox. Cada fila enlaza a su fuente.</p></div>
       <div class="filters"><label for="f-house" class="eyebrow" style="align-self:center">Casa</label><select id="f-house"><option value="">Todas</option></select></div>
     </div>
-    <div class="table-box"><table><thead><tr><th>Encuestadora</th><th>Campo</th><th>Muestra</th><th>PP</th><th>PSOE</th><th>Vox</th><th>Sumar</th><th>Podemos</th><th>PP+Vox (esc.)</th><th>Fuente</th></tr></thead><tbody id="tbody"></tbody></table></div>
+    <div class="table-box"><table><thead><tr><th>Encuestadora</th><th>Campo</th><th>Muestra</th><th>PP</th><th>PSOE</th><th>Vox</th><th>F. Amplio</th><th>Podemos</th><th>PP+Vox (esc.)</th><th>Fuente</th></tr></thead><tbody id="tbody"></tbody></table></div>
   </section>
 
   <section class="panel">
@@ -366,6 +366,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
       <div><h3>Los escaños</h3><p>Media de las encuestas que publican el reparto completo; si dan una horquilla se usa su punto medio. El total se ajusta a 350 por restos mayores. No es una proyección propia.</p></div>
       <div><h3>La tendencia</h3><p>Se compara cada casa solo consigo misma, para eliminar su sesgo propio. Sube o baja si el cambio medio supera ±0,5 puntos. Con una sola casa repetida, el dato es provisional.</p></div>
       <div><h3>La confianza</h3><p>Mide cuánto coinciden entre sí las encuestas con campo en los 5 días anteriores a la más reciente (una por casa). Alta: desviación típica de hasta 1 punto; media: hasta 2; baja: más de 2. En partidos pequeños se exige además que la dispersión no supere el 15 % o el 30 % de su media. Con menos de 3 encuestas, se marca como pocos datos. Al lado aparece el rango entre la cifra más baja y la más alta.</p></div>
+      <div><h3>Frente Amplio</h3><p>El espacio que en 2023 fue Sumar se presenta el 29N como Frente Amplio (Movimiento Sumar, IU, Más Madrid y Comuns, entre otros). Podemos va por separado, salvo en Canarias y la Comunidad Valenciana, donde concurre en coalición. Para comparar con el 23J se suman Frente Amplio y Podemos, que entonces fueron juntos.</p></div>
       <div><h3>Veda</h3><p>La ley prohíbe publicar encuestas del 24 al 29 de noviembre. Durante esos días esta página oculta todas las cifras y vuelve el 30 con los resultados.</p></div>
       <div><h3>Actualización</h3><p>Una búsqueda automática revisa cada mañana si hay encuestas nuevas y las añade. No es un agregador oficial.</p></div>
     </div>
@@ -387,7 +388,7 @@ const mesC = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov',
 const dm = s => { const x=d(s); return x.getDate()+' '+mesC[x.getMonth()]; };
 const range = (a,b) => a===b ? dm(b) : (d(a).getMonth()===d(b).getMonth() ? d(a).getDate()+'–'+dm(b) : dm(a)+' – '+dm(b));
 function textOn(hex){ const h=hex.replace('#',''); const r=parseInt(h.substr(0,2),16),g=parseInt(h.substr(2,2),16),b=parseInt(h.substr(4,2),16); return (0.299*r+0.587*g+0.114*b)>165 ? '#1a1a1a' : '#ffffff'; }
-function badge(k){ const c=(P[k]||{}).color||'#888'; const lbl={BILDU:'BILDU',PODEMOS:'PODEM',SUMAR:'SUMAR',JUNTS:'JUNTS'}[k]||k; return `<span class="badge" style="background:${c};color:${textOn(c)}">${lbl}</span>`; }
+function badge(k){ const c=(P[k]||{}).color||'#888'; const lbl={BILDU:'BILDU',PODEMOS:'PODEM',SUMAR:'F.AMP',JUNTS:'JUNTS'}[k]||k; return `<span class="badge" style="background:${c};color:${textOn(c)}">${lbl}</span>`; }
 const pname = k => (P[k]||{}).name || k;
 const mid = v => v==null ? null : Array.isArray(v) ? (v[0]+v[1])/2 : v;
 

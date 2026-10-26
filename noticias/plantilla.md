@@ -3,24 +3,27 @@
 Se publica **una sola noticia al día**, y solo si ese día hay encuestas nuevas. Nunca durante la veda (24–29 nov).
 Autor: Redacción. Tono: periodístico pero llano, como se lo contarías a un vecino informado; frases cortas, sin tecnicismos de demoscopia («horquilla», «estimación», «submuestra»…) o explicados al momento; neutral entre partidos, con algo de chispa en el segundo párrafo. Texto siempre original: nunca se copian frases de las fuentes.
 
+## Nombres de partidos
+El antiguo espacio de Sumar se llama **Frente Amplio** (candidata: Ada Colau; incluye Movimiento Sumar, IU, Más Madrid y Comuns). Nunca escribas «Sumar» para la candidatura de 2026: solo para hablar del resultado de 2023 («Sumar, hoy Frente Amplio»). Podemos va aparte (salvo en Canarias y la Comunidad Valenciana). En los datos se sigue usando la clave interna SUMAR.
+
 ## Titular
 Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los días que faltan cuando aporte. Al hablar de distancias, que quede claro quién va delante: «X queda a N puntos de Y» significa que X va detrás (bien: «deja al PSOE a 2,6 puntos del PP» si el PP va primero). Relee el titular comprobándolo con las cifras. Ejemplo: «40dB mantiene la mayoría de PP y Vox a 50 días del 29N».
 
 ## Párrafo 1 · Qué trae la encuesta nueva
-- El dato principal: estimación de PP, PSOE, Vox, Sumar y Podemos, y escaños si los publica.
+- El dato principal: estimación de PP, PSOE, Vox, Frente Amplio y Podemos, y escaños si los publica.
 - **Datos obligatorios por ley** (art. 69 LOREG): quién la ha hecho, quién la ha encargado y la ficha técnica (fechas del trabajo de campo, tamaño de la muestra, método y margen de error). Lo que la fuente no publique se dice como «no publicado». Si el margen de error no viene publicado y hay muestra, se puede dar el teórico, avisando de que es teórico (95 %, p=q=0,5).
 - **¿Es previsible o sorprende?** Compararla con la anterior de la misma encuestadora y con la media de las demás. Si se aleja más de 2 puntos de la media en algún partido grande, se dice que es una encuesta que se sale de lo esperado. Si no, se dice que confirma la tendencia.
 - Si ese día hay varias encuestas nuevas, el párrafo abre con la más relevante y menciona brevemente las demás.
 
 ## Párrafo 2 · La tendencia general (con algo de chispa)
 - La media del panel, cómo se ha movido desde el día 5 de octubre y quién sube o baja comparando cada encuestadora consigo misma.
-- La comparación con el 23J cuando dé titular (Podemos se suma a Sumar para comparar).
+- La comparación con el 23J cuando dé titular (en 2023 Podemos fue dentro de Sumar: para comparar se suman Frente Amplio y Podemos).
 - La confianza: si las encuestas coinciden mucho o poco entre sí.
 - Se permite una imagen o una comparación con gracia, siempre sin tomar partido.
 
 ## Párrafo 3 · Días que faltan y escenarios
 - Cuántos días quedan hasta el 29N.
-- Los escenarios posibles con la media de escaños (mayoría: 176): PP + Vox; PP con otros apoyos; bloque de investidura (PSOE, Sumar, Podemos, ERC, Junts, Bildu, PNV, BNG, CC); y otras sumas solo si son aritméticamente posibles.
+- Los escenarios posibles con la media de escaños (mayoría: 176): PP + Vox; PP con otros apoyos; bloque de investidura (PSOE, Frente Amplio, Podemos, ERC, Junts, Bildu, PNV, BNG, CC); y otras sumas solo si son aritméticamente posibles.
 - Qué tendría que pasar para que cambie cada escenario: cuántos escaños le faltan o le sobran a cada bloque.
 
 ## Cierre
@@ -40,7 +43,7 @@ Corto (máx. ~80 caracteres), con el dato principal de la encuesta nueva y los d
 - Meta descripción (120–155 caracteres) con las cifras de los tres primeros partidos.
 - Título y descripción para Facebook/X propios (más directos, con cifras).
 - Tipo de artículo de schema: NewsArticle.
-- Etiquetas (reutilizar las existentes, no crear duplicados): elecciones (1418), elecciones generales (7042), encuestas electorales (7043), 29N (7044) + la de la encuestadora (crear si no existe, p. ej. 40dB = 7045) + los partidos que salgan en el titular o el primer párrafo: PP (1786), psoe (174), vox (2207), Sumar (3723), Podemos (1826). Entre 6 y 10 etiquetas.
+- Etiquetas (reutilizar las existentes, no crear duplicados): elecciones (1418), elecciones generales (7042), encuestas electorales (7043), 29N (7044) + la de la encuestadora (crear si no existe, p. ej. 40dB = 7045) + los partidos que salgan en el titular o el primer párrafo: PP (1786), psoe (174), vox (2207), Frente Amplio (crear si no existe; ya no se usa «Sumar»), Podemos (1826). Entre 6 y 10 etiquetas.
 - Texto alternativo de la imagen: el campo `alt` del generador. Nombre del archivo: encuesta-<encuestadora>-29n-<día>-<mes>.png.
 - Enlace interno a enpapel.es/encuestas-29n y enlace externo a la fuente original.
 - Tras publicar: vaciar la caché de WP Super Cache para que salga en la portada.

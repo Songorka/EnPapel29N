@@ -279,15 +279,15 @@ def t_cambio23J(c, variante):
     if not R:
         return None
     m = dict(c.media)
-    if 'PODEMOS' in m:  # en 2023 Podemos fue dentro de Sumar
+    if 'PODEMOS' in m:  # en 2023 Podemos fue dentro de Sumar (hoy Frente Amplio)
         m['SUMAR+'] = m.get('SUMAR', 0) + m.pop('PODEMOS'); m.pop('SUMAR', None)
         R = dict(R); R['SUMAR+'] = R.pop('SUMAR', 0)
     claves = [k for k in ['PP', 'PSOE', 'VOX', 'SUMAR+', 'ERC', 'JUNTS', 'BILDU', 'PNV'] if k in m and k in R]
     dif = {k: m[k] - R[k] for k in claves}
     top = max(dif, key=lambda k: abs(dif[k]))
-    nom = lambda k: 'Sumar + Podemos' if k == 'SUMAR+' else c.nombre(k)
+    nom = lambda k: 'F. Amplio + Podemos' if k == 'SUMAR+' else c.nombre(k)
     verbo = 'gana' if dif[top] > 0 else 'pierde'
-    titular = cap('Sumar y Podemos juntos' if top == 'SUMAR+' else art(c, top)) + f' {verbo} {fmt(abs(dif[top]))} puntos desde el 23J'
+    titular = cap('Frente Amplio y Podemos juntos' if top == 'SUMAR+' else art(c, top)) + f' {verbo} {fmt(abs(dif[top]))} puntos desde el 23J'
     im, dr = lienzo(c, 'Cambio desde las elecciones de 2023', titular, 'Media de encuestas frente al resultado del 23 de julio de 2023 · enpapel.es/encuestas-29n')
     cx = W // 2 + 60 * S; esc = (W // 2 - 220 * S) / max(abs(v) for v in dif.values())
     y0 = 262 * S; alto = min(46 * S, (H - 52 * S - 270 * S) // len(claves))
