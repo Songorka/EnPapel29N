@@ -46,5 +46,13 @@
   "titular": "Winston para Artículo14: PP 31,3, PSOE 24,9",
   "alt": "Encuesta de Winston para Artículo14: PP 31,3 %, PSOE 24,9 %, Vox 19,1 %, Sumar 6,8 %, Podemos 3,9 %. Se compara con la media.",
   "huella": "87aa9d020250c667dbf852aa1b08d241"
+ },
+ {
+  "fecha": "2026-10-26",
+  "tipo": "cambio23J",
+  "variante": "",
+  "titular": "Vox gana 7,0 puntos desde el 23J",
+  "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −2,0 puntos, PSOE −5,2 puntos, Vox +7,0 puntos, Sumar + Podemos −2,8 puntos, ERC +0,1 puntos, Junts −0,1 puntos, EH Bildu −0,1 puntos",
+  "huella": "5a636b0c5708177316a9219d43355113"
  }
 ]
