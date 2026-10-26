@@ -1,2 +1,0 @@
-2026-10-26 05:51 UTC
-ERROR 401 en POST tags: {"code":"rest_cannot_create","message":"Lo siento, no tienes permisos para crear t\u00e9rminos en esta taxonom\u00eda.","data":{"status":401}} | Pista: la contraseña recibida tiene 24 caracteres (deben ser 24, solo letras y números).
