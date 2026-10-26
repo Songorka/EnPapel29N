@@ -90,6 +90,18 @@ def main():
     modo = orden.get('modo', 'revisar')
     global DESDE
     DESDE = orden.get('desde', DESDE)
+    if modo == 'yo':   # comprobar con qué usuario y permisos entra la conexión del 29N
+        r, h = api('GET', 'users/me?context=edit&_fields=id,username,roles,capabilities')
+        caps = r.get('capabilities', {}) if isinstance(r, dict) else {}
+        res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime()),
+               'usuario': r.get('username') if isinstance(r, dict) else None,
+               'roles': r.get('roles') if isinstance(r, dict) else None,
+               'puede_crear_etiquetas': caps.get('manage_categories'), 'puede_publicar': caps.get('publish_posts'),
+               'error': r.get('error') if isinstance(r, dict) else str(r),
+               'detalle': r.get('detalle') if isinstance(r, dict) else None}
+        json.dump(res, open(os.path.join(RAIZ, 'limpieza', 'resultado-yo.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        return
     if modo == 'instalar':   # instalar y activar un plugin del directorio oficial de WordPress
         res = {'modo': modo, 'hora': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}
         r, _ = api('POST', 'plugins', {'slug': orden['slug'], 'status': 'active'})
