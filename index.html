@@ -378,7 +378,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
     <div class="method">
       <div><h3>Qué entra</h3><p>Encuestas de ámbito estatal publicadas en medios desde el 5 de octubre de 2026. No se incluyen sondeos encargados por partidos. Las cifras se copian tal cual de la fuente original; si un dato no se publica, queda vacío.</p></div>
       <div><h3>La media</h3><p>Media simple de la última encuesta de cada casa con trabajo de campo terminado en los 14 días anteriores a la encuesta más reciente. Cada casa cuenta una vez, aunque haya publicado varias. El CIS no entra en la media: usa un método de estimación propio y se muestra aparte.</p></div>
-      <div><h3>Los escaños</h3><p>Media de las encuestas que publican el reparto completo; si dan una horquilla se usa su punto medio. El total se ajusta a 350 por restos mayores. No es una proyección propia.</p></div>
+      <div><h3>Los escaños</h3><p>Para cada partido, media de los escaños que le dan las encuestas de la media que los publican; si dan una horquilla se usa su punto medio. Los cinco grandes se dejan tal cual y el resto se ajusta para que el total sea 350. No es una proyección propia.</p></div>
       <div><h3>La tendencia</h3><p>Se compara cada casa solo consigo misma, para eliminar su sesgo propio. Sube o baja si el cambio medio supera ±0,5 puntos. Con una sola casa repetida, el dato es provisional.</p></div>
       <div><h3>La confianza</h3><p>Mide cuánto coinciden entre sí las encuestas con campo en los 5 días anteriores a la más reciente (una por casa). Alta: desviación típica de hasta 1 punto; media: hasta 2; baja: más de 2. En partidos pequeños se exige además que la dispersión no supere el 15 % o el 30 % de su media. Con menos de 3 encuestas, se marca como pocos datos. Al lado aparece el rango entre la cifra más baja y la más alta.</p></div>
       <div><h3>Frente Amplio</h3><p>El espacio que en 2023 fue Sumar se presenta el 29N como Frente Amplio (Movimiento Sumar, IU, Más Madrid y Comuns, entre otros). Podemos va por separado, salvo en Canarias y la Comunidad Valenciana, donde concurre en coalición. Para comparar con el 23J se suman Frente Amplio y Podemos, que entonces fueron juntos.</p></div>
@@ -401,7 +401,7 @@ const fmt = (v,dec=1) => v==null||isNaN(v) ? '–' : v.toFixed(dec).replace('.',
 const sgn = v => (v>0?'+':v<0?'−':'±') + fmt(Math.abs(v));
 const mesC = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 const dm = s => { const x=d(s); return x.getDate()+' '+mesC[x.getMonth()]; };
-const range = (a,b) => a===b ? dm(b) : (d(a).getMonth()===d(b).getMonth() ? d(a).getDate()+'–'+dm(b) : dm(a)+' – '+dm(b));
+const range = (a,b) => (!a || a===b) ? dm(b) : (d(a).getMonth()===d(b).getMonth() ? d(a).getDate()+'–'+dm(b) : dm(a)+' – '+dm(b));
 function textOn(hex){ const h=hex.replace('#',''); const r=parseInt(h.substr(0,2),16),g=parseInt(h.substr(2,2),16),b=parseInt(h.substr(4,2),16); return (0.299*r+0.587*g+0.114*b)>165 ? '#1a1a1a' : '#ffffff'; }
 function badge(k){ const c=(P[k]||{}).color||'#888'; const lbl={BILDU:'BILDU',PODEMOS:'PODEM',SUMAR:'F.AMP',JUNTS:'JUNTS'}[k]||k; return `<span class="badge" style="background:${c};color:${textOn(c)}">${lbl}</span>`; }
 const pname = k => (P[k]||{}).name || k;
@@ -432,13 +432,21 @@ function avgVote(set){
 }
 const fullSeats = p => { const t=Object.values(p.seats||{}).reduce((s,v)=>s+(mid(v)||0),0); return t>=340; };
 function avgSeats(set){
-  const full = set.filter(fullSeats); if(!full.length) return {seats:{},n:0};
-  const acc={}; full.forEach(p=>Object.entries(p.seats).forEach(([k,v])=>{ acc[k]=(acc[k]||0)+mid(v); }));
-  Object.keys(acc).forEach(k=> acc[k]/=full.length);
-  const total=Object.values(acc).reduce((s,v)=>s+v,0), scaled={}; let used=0;
-  const rem=Object.entries(acc).map(([k,v])=>{ const x=v*350/total; scaled[k]=Math.floor(x); used+=scaled[k]; return [k,x-Math.floor(x)]; }).sort((a,b)=>b[1]-a[1]);
+  // Cada partido con todas las encuestas de la media que publican SUS escaños (no solo las de reparto
+  // completo, que a veces es una sola casa). Los grandes, tal cual; el resto se ajusta hasta 350.
+  const con = set.filter(p=>p.seats && Object.keys(p.seats).length); if(!con.length) return {seats:{},n:0};
+  const acc={}; con.forEach(p=>Object.entries(p.seats).forEach(([k,v])=>{ if(v!=null) (acc[k]=acc[k]||[]).push(mid(v)); }));
+  const avg={}; Object.entries(acc).forEach(([k,a])=> avg[k]=a.reduce((s,x)=>s+x,0)/a.length);
+  const BIG=['PP','PSOE','VOX','SUMAR','PODEMOS'];
+  const big=Object.entries(avg).filter(([k])=>BIG.includes(k)).reduce((s,[,v])=>s+v,0);
+  const rest=Object.entries(avg).filter(([k])=>!BIG.includes(k)), restSum=rest.reduce((s,[,v])=>s+v,0);
+  const q={};
+  if(rest.length && 350-big>0){ Object.entries(avg).forEach(([k,v])=> q[k]= BIG.includes(k) ? v : v*(350-big)/restSum); }
+  else { const t=Object.values(avg).reduce((s,v)=>s+v,0); Object.entries(avg).forEach(([k,v])=> q[k]=v*350/t); }
+  const scaled={}; let used=0;
+  const rem=Object.entries(q).map(([k,x])=>{ scaled[k]=Math.floor(x); used+=scaled[k]; return [k,x-Math.floor(x)]; }).sort((a,b)=>b[1]-a[1]);
   for(let i=0;used<350;i++,used++) scaled[rem[i%rem.length][0]]++;
-  return {seats:scaled,n:full.length,houses:full.map(p=>p.pollster)};
+  return {seats:scaled,n:con.length,houses:con.map(p=>p.pollster)};
 }
 const enMedia = polls.filter(p=>!fuera(p));
 const lastEnd = enMedia.length ? d(enMedia[enMedia.length-1].fieldEnd) : today;
@@ -523,7 +531,7 @@ document.getElementById('cards').innerHTML = order.map(([k,o])=>{
   const src=document.getElementById('pact-src'), svg=document.getElementById('hemi');
   const toPair=v=>Array.isArray(v)?v:[v,v];
   const sources=[];
-  if(seatAvg.n) sources.push({id:'media',label:'Media de encuestas',sub:'Media de '+seatAvg.n+' encuestas con reparto completo ('+seatAvg.houses.join(', ')+')',seats:Object.fromEntries(Object.entries(seatAvg.seats).map(([k,v])=>[k,[v,v]]))});
+  if(seatAvg.n) sources.push({id:'media',label:'Media de encuestas',sub:'Media de '+seatAvg.n+' encuestas que publican escaños ('+seatAvg.houses.join(', ')+')',seats:Object.fromEntries(Object.entries(seatAvg.seats).map(([k,v])=>[k,[v,v]]))});
   polls.slice().reverse().filter(fullSeats).forEach(p=>sources.push({id:p.id,label:p.pollster+' · '+range(p.fieldStart,p.fieldEnd),sub:p.pollster+' ('+p.media+'), campo '+range(p.fieldStart,p.fieldEnd),seats:Object.fromEntries(Object.entries(p.seats).map(([k,v])=>[k,toPair(v)]))}));
   if(!sources.length){ svg.innerHTML='<text x="260" y="150" text-anchor="middle" fill="var(--ink-3)" font-size="14">Aún no hay encuestas con reparto completo</text>'; return; }
   src.innerHTML=sources.map(s=>`<option value="${s.id}">${s.label}</option>`).join('');

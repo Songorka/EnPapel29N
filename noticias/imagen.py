@@ -99,22 +99,34 @@ def media_hasta(polls, limite=None):
     return {k: sum(a) / len(a) for k, a in acc.items()}, cur
 
 
+GRANDES = ('PP', 'PSOE', 'VOX', 'SUMAR', 'PODEMOS')
+
+
 def escanos(cur):
+    """Escaños medios: cada partido con todas las encuestas de la media que publican SUS escaños
+    (no solo las que dan el reparto completo, que a veces es una sola casa). Los grandes se dejan
+    tal cual; los demás se ajustan para que el total sea 350. Devuelve (escaños, nº de casas)."""
     mid = lambda v: (v[0] + v[1]) / 2 if isinstance(v, list) else v
-    full = [p for p in cur if sum(mid(v) for v in (p.get('seats') or {}).values()) >= 340]
-    if not full:
+    con = [p for p in cur if p.get('seats')]
+    if not con:
         return {}, 0
-    sa = {}
-    for p in full:
+    acc = {}
+    for p in con:
         for k, v in p['seats'].items():
-            sa[k] = sa.get(k, 0) + mid(v) / len(full)
-    tot = sum(sa.values())
-    q = {k: v * 350 / tot for k, v in sa.items()}
+            if v is not None:
+                acc.setdefault(k, []).append(mid(v))
+    sa = {k: sum(a) / len(a) for k, a in acc.items()}
+    grandes = sum(v for k, v in sa.items() if k in GRANDES)
+    resto = {k: v for k, v in sa.items() if k not in GRANDES}
+    if resto and 0 < 350 - grandes:
+        f = (350 - grandes) / sum(resto.values())
+        q = {**{k: v for k, v in sa.items() if k in GRANDES}, **{k: v * f for k, v in resto.items()}}
+    else:
+        q = {k: v * 350 / sum(sa.values()) for k, v in sa.items()}
     out = {k: int(v) for k, v in q.items()}
     for k in sorted(q, key=lambda k: q[k] - int(q[k]), reverse=True)[:350 - sum(out.values())]:
         out[k] += 1
-    return out, len(full)
-
+    return out, len(con)
 
 class Ctx:
     def __init__(self, D, hoy):
