@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-10-27",
+ "generado": "2026-10-28T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 294,
+   "sessions": 316,
+   "screenPageViews": 337
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 97,
+   "sessions": 101,
+   "screenPageViews": 118
+  },
+  "media_7_dias": {
+   "activeUsers": 886,
+   "sessions": 899,
+   "screenPageViews": 927
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 153,
+   "screenPageViews": 185
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 57,
+   "screenPageViews": 63
+  },
+  "pagina_encuestas": {
+   "activeUsers": 6,
+   "screenPageViews": 11
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+    "screenPageViews": 131.0,
+    "activeUsers": 114.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 29.0,
+    "activeUsers": 24.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta Ateneo del Dato: PSOE a 3,5 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ateneo-del-dato-psoe-pp-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 134.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 13.0
+   },
+   {
+    "sessionSource": "bing",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3217,
+   "screenPageViews": 4000
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+   "screenPageViews": 131.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 29.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Majadahonda recibe a ‘The Jazz on Five’ en una nueva jornada - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/majadahonda-recibe-a-the-jazz-on-five-en-una-nueva-jornada-del-iii-festival-marching-bands/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+   "screenPageViews": 4.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 156.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 153.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 6.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 173.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 120.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
