@@ -1,0 +1,157 @@
+{
+ "fecha": "2026-10-28",
+ "generado": "2026-10-29T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 237,
+   "sessions": 242,
+   "screenPageViews": 261
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 5122,
+   "sessions": 5041,
+   "screenPageViews": 5127
+  },
+  "media_7_dias": {
+   "activeUsers": 191,
+   "sessions": 209,
+   "screenPageViews": 232
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 81,
+   "screenPageViews": 95
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 21,
+   "screenPageViews": 23
+  },
+  "pagina_encuestas": {
+   "activeUsers": 4,
+   "screenPageViews": 7
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+    "screenPageViews": 51.0,
+    "activeUsers": 45.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+    "screenPageViews": 16.0,
+    "activeUsers": 15.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 8.0,
+    "activeUsers": 7.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 5.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 68.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 11.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "bing",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "ecosia.org",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3285,
+   "screenPageViews": 4095
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+   "screenPageViews": 51.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+   "screenPageViews": 5.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 160.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 82.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 174.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 62.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
