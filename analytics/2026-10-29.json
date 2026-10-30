@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-10-29",
+ "generado": "2026-10-30T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 283,
+   "sessions": 292,
+   "screenPageViews": 298
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 78,
+   "sessions": 80,
+   "screenPageViews": 79
+  },
+  "media_7_dias": {
+   "activeUsers": 220,
+   "sessions": 239,
+   "screenPageViews": 263
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 32,
+   "screenPageViews": 40
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 10,
+   "screenPageViews": 11
+  },
+  "pagina_encuestas": {
+   "activeUsers": 1,
+   "screenPageViews": 1
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+    "screenPageViews": 16.0,
+    "activeUsers": 15.0
+   },
+   {
+    "pageTitle": "Encuesta Ateneo del Dato: PSOE a 3,5 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ateneo-del-dato-psoe-pp-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 25.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 7.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3315,
+   "screenPageViews": 4135
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Cercanías Madrid recomienda buscar transporte alternativo an - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/cercanias-madrid-recomienda-buscar-transporte-alternativo-ante-la-huelga-de-maquinistas-de-este-jueves/",
+   "screenPageViews": 72.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "Encuesta Ateneo del Dato: PSOE a 3,5 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-ateneo-del-dato-psoe-pp-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+   "screenPageViews": 4.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 184.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 105.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 197.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 85.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 0,
+  "activeUsers": 0
+ }
+}
