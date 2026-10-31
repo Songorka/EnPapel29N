@@ -1,0 +1,149 @@
+{
+ "fecha": "2026-10-30",
+ "generado": "2026-10-31T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 172,
+   "sessions": 175,
+   "screenPageViews": 182
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 167,
+   "sessions": 180,
+   "screenPageViews": 212
+  },
+  "media_7_dias": {
+   "activeUsers": 222,
+   "sessions": 238,
+   "screenPageViews": 259
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 23,
+   "screenPageViews": 25
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 124,
+   "screenPageViews": 146
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+    "screenPageViews": 9.0,
+    "activeUsers": 9.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuestas de la semana: PP y Vox, por encima de la mayoría - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-semana-18-octubre-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 18.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 2.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3335,
+   "screenPageViews": 4160
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Winston: el PSOE se acerca al PP a 32 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-winston-pp-psoe-distancia-29n/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE recorta y se queda a 4,5 puntos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-recorta-29n/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Cercanías Madrid recomienda buscar transporte alternativo an - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/cercanias-madrid-recomienda-buscar-transporte-alternativo-ante-la-huelga-de-maquinistas-de-este-jueves/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Zona Noroeste archivos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/",
+   "screenPageViews": 3.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 148.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 25.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 152.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 20.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
