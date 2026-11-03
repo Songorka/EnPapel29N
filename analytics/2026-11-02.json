@@ -1,0 +1,173 @@
+{
+ "fecha": "2026-11-02",
+ "generado": "2026-11-03T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 223,
+   "sessions": 240,
+   "screenPageViews": 261
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 227,
+   "sessions": 251,
+   "screenPageViews": 277
+  },
+  "media_7_dias": {
+   "activeUsers": 207,
+   "sessions": 218,
+   "screenPageViews": 231
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 150,
+   "screenPageViews": 169
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 151,
+   "screenPageViews": 193
+  },
+  "pagina_encuestas": {
+   "activeUsers": 7,
+   "screenPageViews": 8
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+    "screenPageViews": 153.0,
+    "activeUsers": 140.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta Ateneo del Dato: PSOE a 3,5 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ateneo-del-dato-psoe-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 132.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 7.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 5.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "bing",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3490,
+   "screenPageViews": 4355
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+   "screenPageViews": 153.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 27.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 15.0
+  },
+  {
+   "pageTitle": "Sushi Fest Las Rozas: fechas, horarios y restaurantes - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/sushi-fest-las-rozas/",
+   "screenPageViews": 15.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Muere a los 86 años el actor Patrick Stewart, el capitán Pic - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/muere-a-los-86-anos-el-actor-patrick-stewart-el-capitan-picard-de-star-trek-y-el-profesor-xavier-de-x-men/",
+   "screenPageViews": 4.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 192.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 35.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 7.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 157.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 62.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 4.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 11,
+  "activeUsers": 10
+ }
+}
