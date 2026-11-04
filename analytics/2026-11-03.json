@@ -1,0 +1,161 @@
+{
+ "fecha": "2026-11-03",
+ "generado": "2026-11-04T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 570,
+   "sessions": 611,
+   "screenPageViews": 680
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 294,
+   "sessions": 316,
+   "screenPageViews": 337
+  },
+  "media_7_dias": {
+   "activeUsers": 246,
+   "sessions": 261,
+   "screenPageViews": 280
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 178,
+   "screenPageViews": 207
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 153,
+   "screenPageViews": 185
+  },
+  "pagina_encuestas": {
+   "activeUsers": 9,
+   "screenPageViews": 12
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE cae al 24,6 % a 26 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-peor-dato-29n/",
+    "screenPageViews": 168.0,
+    "activeUsers": 156.0
+   },
+   {
+    "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+    "screenPageViews": 19.0,
+    "activeUsers": 17.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta Ateneo del Dato: PSOE a 3,5 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ateneo-del-dato-psoe-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 159.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 17.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3660,
+   "screenPageViews": 4562
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 332.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE cae al 24,6 % a 26 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-peor-dato-29n/",
+   "screenPageViews": 168.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 33.0
+  },
+  {
+   "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+   "screenPageViews": 19.0
+  },
+  {
+   "pageTitle": "Sushi Fest Las Rozas: fechas, horarios y restaurantes - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/sushi-fest-las-rozas/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "Muere el escultor Miquel Navarro, autor de la ‘Pantera Rosa’ - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/muere-el-escultor-miquel-navarro-autor-de-la-pantera-rosa-y-el-parotet-a-los-81-anos/",
+   "screenPageViews": 15.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 516.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 87.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 3.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 322.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 242.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 6.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 4,
+  "activeUsers": 4
+ }
+}
