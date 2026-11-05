@@ -123,6 +123,17 @@ def publicar(ruta):
                                                           n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
+    if n.get('fotos_cuerpo'):  # fotos dentro del texto: se suben y van donde ponga {{FOTO_1}}, {{FOTO_2}}...
+        for i, foto in enumerate(n['fotos_cuerpo'], 1):
+            with open(os.path.join(RAIZ, foto['ruta']), 'rb') as f:
+                m = api('POST', 'media', crudo=f.read(), cabeceras={
+                    'Content-Type': 'image/jpeg', 'Content-Disposition': f'attachment; filename="{foto.get("nombre") or os.path.basename(foto["ruta"])}"'})
+            api('POST', f'media/{m["id"]}', {'alt_text': foto.get('alt', ''), 'caption': foto.get('pie', '')})
+            alt = foto.get('alt', '').replace('"', '&quot;')
+            pie = f'<figcaption class="wp-element-caption">{foto["pie"]}</figcaption>' if foto.get('pie') else ''
+            figura = (f'<!-- wp:image {{"id":{m["id"]},"sizeSlug":"large"}} -->\n<figure class="wp-block-image size-large">'
+                      f'<img src="{m["source_url"]}" alt="{alt}" class="wp-image-{m["id"]}"/>{pie}</figure>\n<!-- /wp:image -->')
+            n['contenido'] = n['contenido'].replace(f'{{{{FOTO_{i}}}}}', figura)
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
     if n.get('corregir_id'):  # corregir el titular (u otros campos) de una noticia ya publicada; no toca X
         cambios = {k_wp: n[k] for k, k_wp in (('titulo', 'title'), ('extracto', 'excerpt'), ('estado', 'status'), ('contenido', 'content')) if n.get(k)}
