@@ -78,5 +78,13 @@
   "titular": "El PSOE saca 7,2 puntos a Vox",
   "alt": "Cara a cara: PSOE 26,7 % frente a Vox 19,5 % en la media de encuestas",
   "huella": "3c0648b9fdc38f58e4d2c587e04a8b02"
+ },
+ {
+  "fecha": "2026-11-05",
+  "tipo": "encuesta",
+  "variante": "sociometrica-2026-11-01",
+  "titular": "SocioMétrica para El Español: PP 32,7, PSOE 26,6",
+  "alt": "Encuesta de SocioMétrica para El Español: PP 32,7 %, PSOE 26,6 %, Vox 19,1 %. Se compara con la media.",
+  "huella": "1aa2d7acf041f4909be874d5302b629f"
  }
 ]
