@@ -423,7 +423,7 @@ footer{font-size:12px;color:var(--ink-3);display:flex;justify-content:space-betw
     <div class="method">
       <div><h3>Qué entra</h3><p>Encuestas de ámbito estatal publicadas en medios desde el 5 de octubre de 2026. No se incluyen sondeos encargados por partidos. Las cifras se copian tal cual de la fuente original; si un dato no se publica, queda vacío.</p></div>
       <div><h3>La media</h3><p>Media simple de la última encuesta de cada casa con trabajo de campo terminado en los 14 días anteriores a la encuesta más reciente. Cada casa cuenta una vez, aunque haya publicado varias. El CIS no entra en la media: usa un método de estimación propio y se muestra aparte.</p></div>
-      <div><h3>Los escaños</h3><p>Para cada partido, media de los escaños que le dan las encuestas de la media que los publican; si dan una horquilla se usa su punto medio. Los cinco grandes se dejan tal cual y el resto se ajusta para que el total sea 350. No es una proyección propia.</p></div>
+      <div><h3>Los escaños</h3><p>Para cada partido, media de los escaños que le dan las encuestas de la media que los publican; si dan una horquilla se usa su punto medio. Los cinco grandes (PP, PSOE, Vox, Frente Amplio y Podemos) se dejan tal cual. Los escaños que quedan hasta 350 se reparten entre el resto de partidos según las encuestas que los desglosan; si ninguna de la media lo hace, se usan las tres más recientes que sí lo hacen. No es una proyección propia.</p></div>
       <div><h3>La tendencia</h3><p>Se compara cada casa solo consigo misma, para eliminar su sesgo propio. Sube o baja si el cambio medio supera ±0,5 puntos. Con una sola casa repetida, el dato es provisional.</p></div>
       <div><h3>La confianza</h3><p>Mide cuánto coinciden entre sí las encuestas con campo en los 5 días anteriores a la más reciente (una por casa). Alta: desviación típica de hasta 1 punto; media: hasta 2; baja: más de 2. En partidos pequeños se exige además que la dispersión no supere el 15 % o el 30 % de su media. Con menos de 3 encuestas, se marca como pocos datos. Al lado aparece el rango entre la cifra más baja y la más alta.</p></div>
       <div><h3>Frente Amplio</h3><p>El espacio que en 2023 fue Sumar se presenta el 29N como Frente Amplio (Movimiento Sumar, IU, Más Madrid y Comuns, entre otros). Podemos va por separado, salvo en Canarias y la Comunidad Valenciana, donde concurre en coalición. Para comparar con el 23J se suman Frente Amplio y Podemos, que entonces fueron juntos.</p></div>
@@ -565,7 +565,7 @@ document.getElementById('cards').innerHTML = order.map(([k,o])=>{
   return `<div class="pcard"><div class="row1">${badge(k)}<span class="eyebrow">${o.n} enc.</span></div>
     <div class="val num">${fmt(o.v)}<small>%</small></div>
     <div class="bar-mini"><b style="width:${o.v/maxV*100}%;background:${P[k]?.color||'#888'}"></b></div>
-    <div class="seats">${s!=null?'<span class="num">'+s+'</span> escaños':'Sin reparto de escaños'}</div>${tr}${confHTML(k)}</div>`;
+    <div class="seats">${s!=null?'<span class="num">'+s+'</span> '+(s===1?'escaño':'escaños'):'Sin reparto de escaños'}</div>${tr}${confHTML(k)}</div>`;
 }).join('');
 
 /* ---------- encuestas fuera de la media (CIS) ---------- */
