@@ -477,21 +477,28 @@ function avgVote(set){
 }
 const fullSeats = p => { const t=Object.values(p.seats||{}).reduce((s,v)=>s+(mid(v)||0),0); return t>=340; };
 function avgSeats(set){
-  // Cada partido con todas las encuestas de la media que publican SUS escaños (no solo las de reparto
-  // completo, que a veces es una sola casa). Los grandes, tal cual; el resto se ajusta hasta 350.
-  const con = set.filter(p=>p.seats && Object.keys(p.seats).length); if(!con.length) return {seats:{},n:0};
-  const acc={}; con.forEach(p=>Object.entries(p.seats).forEach(([k,v])=>{ if(v!=null) (acc[k]=acc[k]||[]).push(mid(v)); }));
-  const avg={}; Object.entries(acc).forEach(([k,a])=> avg[k]=a.reduce((s,x)=>s+x,0)/a.length);
+  // Grandes (PP, PSOE, Vox, Frente Amplio, Podemos): media de las encuestas de la media que publican SUS
+  // escaños, sin reescalar nunca. Los escaños que sobran hasta 350 se reparten entre los demás partidos
+  // según las encuestas que los desglosan: las de la media y, si ninguna lo hace, las 3 más recientes
+  // (hasta 45 días) que sí lo hacen. Si no hay ninguna, quedan como "Otros". (Antes, sin desglose del
+  // resto, se inflaban los grandes hasta 350: 6-11-2026.)
   const BIG=['PP','PSOE','VOX','SUMAR','PODEMOS'];
-  const big=Object.entries(avg).filter(([k])=>BIG.includes(k)).reduce((s,[,v])=>s+v,0);
-  const rest=Object.entries(avg).filter(([k])=>!BIG.includes(k)), restSum=rest.reduce((s,[,v])=>s+v,0);
-  const q={};
-  if(rest.length && 350-big>0){ Object.entries(avg).forEach(([k,v])=> q[k]= BIG.includes(k) ? v : v*(350-big)/restSum); }
-  else { const t=Object.values(avg).reduce((s,v)=>s+v,0); Object.entries(avg).forEach(([k,v])=> q[k]=v*350/t); }
+  const con = set.filter(p=>p.seats && Object.keys(p.seats).length); if(!con.length) return {seats:{},n:0};
+  const media=(lista,filtro)=>{ const acc={}; lista.forEach(p=>Object.entries(p.seats).forEach(([k,v])=>{ if(v!=null && filtro(k)) (acc[k]=acc[k]||[]).push(mid(v)); }));
+    const o={}; Object.entries(acc).forEach(([k,a])=> o[k]=a.reduce((s,x)=>s+x,0)/a.length); return o; };
+  const big=media(con,k=>BIG.includes(k)), bigSum=Object.values(big).reduce((s,v)=>s+v,0);
+  let rest=media(con,k=>!BIG.includes(k)), restoDe='';
+  if(!Object.keys(rest).length){
+    const desde=lastEnd-45*DAY;
+    const otras=polls.filter(p=>!fuera(p) && p.seats && d(p.fieldEnd)<=lastEnd && d(p.fieldEnd)>=desde && Object.keys(p.seats).some(k=>!BIG.includes(k))).slice(-3);
+    rest=media(otras,k=>!BIG.includes(k)); if(otras.length) restoDe=otras.map(p=>p.pollster).join(', ');
+  }
+  const libre=Math.max(0,350-bigSum), restSum=Object.values(rest).reduce((s,v)=>s+v,0), q={...big};
+  if(restSum>0) Object.entries(rest).forEach(([k,v])=> q[k]=v*libre/restSum); else if(libre>0) q.OTROS=libre;
   const scaled={}; let used=0;
   const rem=Object.entries(q).map(([k,x])=>{ scaled[k]=Math.floor(x); used+=scaled[k]; return [k,x-Math.floor(x)]; }).sort((a,b)=>b[1]-a[1]);
   for(let i=0;used<350;i++,used++) scaled[rem[i%rem.length][0]]++;
-  return {seats:scaled,n:con.length,houses:con.map(p=>p.pollster)};
+  return {seats:scaled,n:con.length,houses:con.map(p=>p.pollster),restoDe};
 }
 const enMedia = polls.filter(p=>!fuera(p));
 const lastEnd = enMedia.length ? d(enMedia[enMedia.length-1].fieldEnd) : today;
@@ -576,7 +583,7 @@ document.getElementById('cards').innerHTML = order.map(([k,o])=>{
   const src=document.getElementById('pact-src'), svg=document.getElementById('hemi');
   const toPair=v=>Array.isArray(v)?v:[v,v];
   const sources=[];
-  if(seatAvg.n) sources.push({id:'media',label:'Media de encuestas',sub:'Media de '+seatAvg.n+' encuestas que publican escaños ('+seatAvg.houses.join(', ')+')',seats:Object.fromEntries(Object.entries(seatAvg.seats).map(([k,v])=>[k,[v,v]]))});
+  if(seatAvg.n) sources.push({id:'media',label:'Media de encuestas',sub:'Media de '+seatAvg.n+' encuestas que publican escaños ('+seatAvg.houses.join(', ')+')'+(seatAvg.restoDe?'; el reparto del resto de partidos, según '+seatAvg.restoDe:''),seats:Object.fromEntries(Object.entries(seatAvg.seats).map(([k,v])=>[k,[v,v]]))});
   polls.slice().reverse().filter(fullSeats).forEach(p=>sources.push({id:p.id,label:p.pollster+' · '+range(p.fieldStart,p.fieldEnd),sub:p.pollster+' ('+p.media+'), campo '+range(p.fieldStart,p.fieldEnd),seats:Object.fromEntries(Object.entries(p.seats).map(([k,v])=>[k,toPair(v)]))}));
   if(!sources.length){ svg.innerHTML='<text x="260" y="150" text-anchor="middle" fill="var(--ink-3)" font-size="14">Aún no hay encuestas con reparto completo</text>'; return; }
   src.innerHTML=sources.map(s=>`<option value="${s.id}">${s.label}</option>`).join('');

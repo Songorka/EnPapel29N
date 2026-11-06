@@ -102,27 +102,36 @@ def media_hasta(polls, limite=None):
 GRANDES = ('PP', 'PSOE', 'VOX', 'SUMAR', 'PODEMOS')
 
 
-def escanos(cur):
-    """Escaños medios: cada partido con todas las encuestas de la media que publican SUS escaños
-    (no solo las que dan el reparto completo, que a veces es una sola casa). Los grandes se dejan
-    tal cual; los demás se ajustan para que el total sea 350. Devuelve (escaños, nº de casas)."""
+def escanos(cur, todas=(), hasta=None):
+    """Escaños medios. Grandes: media de las encuestas de la media que publican SUS escaños, sin
+    reescalar nunca. Lo que sobra hasta 350 se reparte entre el resto según las encuestas que lo
+    desglosan (las de la media o, si ninguna, las 3 más recientes de `todas` en 45 días); si no hay
+    ninguna, queda como OTROS. Devuelve (escaños, nº de casas)."""
     mid = lambda v: (v[0] + v[1]) / 2 if isinstance(v, list) else v
     con = [p for p in cur if p.get('seats')]
     if not con:
         return {}, 0
-    acc = {}
-    for p in con:
-        for k, v in p['seats'].items():
-            if v is not None:
-                acc.setdefault(k, []).append(mid(v))
-    sa = {k: sum(a) / len(a) for k, a in acc.items()}
-    grandes = sum(v for k, v in sa.items() if k in GRANDES)
-    resto = {k: v for k, v in sa.items() if k not in GRANDES}
-    if resto and 0 < 350 - grandes:
-        f = (350 - grandes) / sum(resto.values())
-        q = {**{k: v for k, v in sa.items() if k in GRANDES}, **{k: v * f for k, v in resto.items()}}
-    else:
-        q = {k: v * 350 / sum(sa.values()) for k, v in sa.items()}
+
+    def media(lista, vale):
+        acc = {}
+        for p in lista:
+            for k, v in p['seats'].items():
+                if v is not None and vale(k):
+                    acc.setdefault(k, []).append(mid(v))
+        return {k: sum(a) / len(a) for k, a in acc.items()}
+    big = media(con, lambda k: k in GRANDES)
+    resto = media(con, lambda k: k not in GRANDES)
+    if not resto and todas:
+        otras = [p for p in todas if p.get('seats') and p.get('pollster') != 'CIS' and not p.get('fueraMedia')
+                 and any(k not in GRANDES for k in p['seats'])
+                 and (hasta is None or 0 <= (hasta - d(p['fieldEnd'])).days <= 45)][-3:]
+        resto = media(otras, lambda k: k not in GRANDES)
+    libre = max(0, 350 - sum(big.values()))
+    q = dict(big)
+    if sum(resto.values()) > 0:
+        q.update({k: v * libre / sum(resto.values()) for k, v in resto.items()})
+    elif libre > 0:
+        q['OTROS'] = libre
     out = {k: int(v) for k, v in q.items()}
     for k in sorted(q, key=lambda k: q[k] - int(q[k]), reverse=True)[:350 - sum(out.values())]:
         out[k] += 1
@@ -133,7 +142,9 @@ class Ctx:
         self.D = D; self.P = D['parties']; self.hoy = hoy
         self.polls = sorted(D['polls'], key=lambda p: (d(p['published']), d(p['fieldEnd'])))
         self.media, self.cur = media_hasta(self.polls)
-        self.esc, self.n_esc = escanos(self.cur)
+        ultimo = max((d(p['fieldEnd']) for p in self.cur), default=None)
+        todas = sorted(self.polls, key=lambda p: d(p['fieldEnd']))
+        self.esc, self.n_esc = escanos(self.cur, todas, ultimo)
         self.dias = (d(D['electionDate']) - hoy).days
         self.fechas = sorted({d(p['published']) for p in self.polls})
 
