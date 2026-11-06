@@ -1,0 +1,169 @@
+{
+ "fecha": "2026-11-05",
+ "generado": "2026-11-06T05:48+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 288,
+   "sessions": 315,
+   "screenPageViews": 338
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 283,
+   "sessions": 291,
+   "screenPageViews": 298
+  },
+  "media_7_dias": {
+   "activeUsers": 251,
+   "sessions": 275,
+   "screenPageViews": 298
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 128,
+   "screenPageViews": 146
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 32,
+   "screenPageViews": 40
+  },
+  "pagina_encuestas": {
+   "activeUsers": 2,
+   "screenPageViews": 2
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Sondaxe: el PP aventaja al PSOE en 2,3 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sondaxe-pp-psoe-ventaja-29n/",
+    "screenPageViews": 113.0,
+    "activeUsers": 98.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE cae al 24,6 % a 26 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-peor-dato-29n/",
+    "screenPageViews": 25.0,
+    "activeUsers": 25.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 117.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 6.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 3799,
+   "screenPageViews": 4754
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Sondaxe: el PP aventaja al PSOE en 2,3 puntos - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sondaxe-pp-psoe-ventaja-29n/",
+   "screenPageViews": 113.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 93.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE cae al 24,6 % a 26 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-peor-dato-29n/",
+   "screenPageViews": 25.0
+  },
+  {
+   "pageTitle": "Sushi Fest Las Rozas: fechas, horarios y restaurantes - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/sushi-fest-las-rozas/",
+   "screenPageViews": 14.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "Las Rozas lleva la música de Bach del minué al swing con el - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/las-rozas-lleva-la-musica-de-bach-del-minue-al-swing-con-el-concierto-danzando-con-bach/",
+   "screenPageViews": 5.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 236.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 67.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 8.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 143.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 142.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 3.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 10,
+  "activeUsers": 9
+ }
+}
