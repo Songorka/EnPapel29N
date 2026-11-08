@@ -1,0 +1,173 @@
+{
+ "fecha": "2026-11-07",
+ "generado": "2026-11-08T05:46+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 217,
+   "sessions": 229,
+   "screenPageViews": 249
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 161,
+   "sessions": 166,
+   "screenPageViews": 175
+  },
+  "media_7_dias": {
+   "activeUsers": 283,
+   "sessions": 314,
+   "screenPageViews": 340
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 105,
+   "screenPageViews": 123
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 12,
+   "screenPageViews": 14
+  },
+  "pagina_encuestas": {
+   "activeUsers": 3,
+   "screenPageViews": 3
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Celeste-Tel: PP y Vox suman 204 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-celeste-tel-pp-vox-204-escanos-29n/",
+    "screenPageViews": 82.0,
+    "activeUsers": 71.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE, primero por siete décimas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-29n/",
+    "screenPageViews": 19.0,
+    "activeUsers": 18.0
+   },
+   {
+    "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Encuesta Sondaxe: el PP aventaja al PSOE en 2,3 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sondaxe-pp-psoe-ventaja-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 89.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 10.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 4105,
+   "screenPageViews": 5130
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Celeste-Tel: PP y Vox suman 204 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-celeste-tel-pp-vox-204-escanos-29n/",
+   "screenPageViews": 82.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE, primero por siete décimas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-29n/",
+   "screenPageViews": 19.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 18.0
+  },
+  {
+   "pageTitle": "Moralzarzal celebra la XLI Jornada de Consumo dedicada a red - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/moralzarzal-celebra-la-xli-jornada-de-consumo-dedicada-a-reducir-reutilizar-y-reciclar/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Brunete clausura el XX Certamen de cortometrajes ‘Visualia’ - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/brunete-clausura-el-xx-certamen-de-cortometrajes-visualia-con-una-gala-de-premios-y-proyeccion-de-los-mejores-cortos/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 7.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 122.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 75.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 22.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 6.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 3.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 106.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 105.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 6.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 9,
+  "activeUsers": 8
+ }
+}
