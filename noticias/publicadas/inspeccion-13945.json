@@ -2,45 +2,34 @@
  "id": 13945,
  "estado": "draft",
  "titulo": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
- "slug": "",
+ "slug": "carreras-natacion-por-estaciones",
  "enlace": "https://enpapel.es/?p=13945",
  "categorias": [
   58,
   7057
  ],
  "etiquetas": [
+  "carreras de natación",
   "deporte",
+  "fitness racing",
+  "Hyrox",
   "Lo que viene",
-  "Majadahonda",
   "natación",
   "tendencias"
  ],
- "featured_media": 13944,
+ "featured_media": 13952,
  "yoast": {
-  "_yoast_wpseo_focuskw": "Lo que viene",
-  "_yoast_wpseo_title": "Las ‘carreras de natación’ por estaciones, el nuevo formato %%sep%% %%sitename%%",
-  "_yoast_wpseo_metadesc": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en F",
-  "_yoast_wpseo_opengraph-title": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
-  "_yoast_wpseo_opengraph-description": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en Francia y en Europa. En España todavía casi no",
-  "_yoast_wpseo_twitter-title": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
-  "_yoast_wpseo_twitter-description": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en Francia y en Europa. En España todavía casi no",
+  "_yoast_wpseo_focuskw": "carreras de natación",
+  "_yoast_wpseo_title": "Carreras de natación por estaciones: la moda que llega de Francia %%sep%% %%sitename%%",
+  "_yoast_wpseo_metadesc": "Las carreras de natación por estaciones, al estilo Hyrox, suman 25 ediciones en Francia desde 2025. Qué son, cómo funcionan y si llegarán a España.",
+  "_yoast_wpseo_opengraph-title": "Carreras de natación por estaciones: el formato al estilo Hyrox que arrasa en Francia",
+  "_yoast_wpseo_opengraph-description": "Nadar, salir del agua, hacer un ejercicio y volver a nadar. Este formato suma 25 ediciones en Francia y ya ha llegado al mar en Marsella. ¿Llegará a España?",
+  "_yoast_wpseo_twitter-title": "Carreras de natación por estaciones: el formato al estilo Hyrox que arrasa en Francia",
+  "_yoast_wpseo_twitter-description": "Nadar, salir del agua, hacer un ejercicio y volver a nadar. Este formato suma 25 ediciones en Francia y ya ha llegado al mar en Marsella. ¿Llegará a España?",
   "_yoast_wpseo_schema_article_type": "NewsArticle",
   "_yoast_wpseo_primary_category": "7057"
  },
  "medios": [
-  {
-   "id": 13944,
-   "destacada": true,
-   "archivo": "https://enpapel.es/wp-content/uploads/2026/11/2026-11-09-lo-que-viene.png",
-   "slug": "2026-11-09-lo-que-viene",
-   "titulo": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
-   "alt": "Calles de una piscina cubierta vacía, con corcheras y agua en calma, preparada para una competición de natación.",
-   "pie": "",
-   "descripcion": "",
-   "ancho": 1600,
-   "alto": 900,
-   "tamano_kb": 117
-  },
   {
    "id": 13950,
    "destacada": false,
@@ -53,6 +42,19 @@
    "ancho": 2048,
    "alto": 1143,
    "tamano_kb": 542
+  },
+  {
+   "id": 13952,
+   "destacada": true,
+   "archivo": "https://enpapel.es/wp-content/uploads/2026/11/carreras-natacion-por-estaciones.jpg",
+   "slug": "carreras-natacion-por-estaciones",
+   "titulo": "Carrera de natación por estaciones (imagen generada con IA)",
+   "alt": "Carrera de natación por estaciones en una piscina cubierta: unos participantes nadan por las calles mientras otros hacen planchas y lanzan balones medicinales en el borde, ante el público",
+   "pie": "Imagen ilustrativa generada con IA.",
+   "descripcion": "",
+   "ancho": 1600,
+   "alto": 838,
+   "tamano_kb": 339
   }
  ]
 }
