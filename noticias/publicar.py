@@ -123,6 +123,33 @@ def publicar(ruta):
                                                           n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
+    if n.get('inspeccionar_id'):  # deja en noticias/publicadas/ un informe de la noticia y su foto destacada (sin cambiar nada)
+        pid = n['inspeccionar_id']
+        p = api('GET', f'posts/{pid}?context=edit')
+        info = {'id': pid, 'estado': p['status'], 'titulo': p['title']['raw'], 'slug': p['slug'], 'enlace': p['link'],
+                'categorias': p['categories'], 'etiquetas': [api('GET', f'tags/{t}')['name'] for t in p['tags']],
+                'featured_media': p['featured_media'],
+                'yoast': {k: v for k, v in (p.get('meta') or {}).items() if 'yoast' in k and v}, 'medios': []}
+        ids = {p['featured_media']} | {m['id'] for m in api('GET', f'media?parent={pid}&context=edit&per_page=50')}
+        for mid_ in sorted(i for i in ids if i):
+            m = api('GET', f'media/{mid_}?context=edit')
+            info['medios'].append({'id': m['id'], 'destacada': m['id'] == p['featured_media'], 'archivo': m['source_url'],
+                                   'slug': m['slug'], 'titulo': m['title']['raw'], 'alt': m['alt_text'],
+                                   'pie': m['caption']['raw'], 'descripcion': m['description']['raw'],
+                                   'ancho': m['media_details'].get('width'), 'alto': m['media_details'].get('height'),
+                                   'tamano_kb': round((m['media_details'].get('filesize') or 0) / 1024)})
+            if m['id'] == p['featured_media']:
+                ext = os.path.splitext(urllib.parse.urlparse(m['source_url']).path)[1] or '.jpg'
+                req = urllib.request.Request(m['source_url'], headers={'User-Agent': UA})
+                with urllib.request.urlopen(req, timeout=120) as r, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'inspeccion-{pid}{ext}'), 'wb') as f:
+                    f.write(r.read())
+        os.makedirs(os.path.join(RAIZ, 'noticias', 'publicadas'), exist_ok=True)
+        json.dump(info, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'inspeccion-{pid}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        os.remove(ruta); print('Inspeccionada', pid); return
+    if n.get('medio_id'):  # corregir los datos SEO de una imagen ya subida: alt, título, pie, descripción
+        cambios = {k_wp: n[k] for k, k_wp in (('alt', 'alt_text'), ('titulo_imagen', 'title'), ('pie', 'caption'), ('descripcion', 'description')) if k in n}
+        m = api('POST', f'media/{n["medio_id"]}', cambios)
+        os.remove(ruta); print('Imagen corregida', m['id']); return
     if n.get('fotos_cuerpo'):  # fotos dentro del texto: se suben y van donde ponga {{FOTO_1}}, {{FOTO_2}}...
         for i, foto in enumerate(n['fotos_cuerpo'], 1):
             with open(os.path.join(RAIZ, foto['ruta']), 'rb') as f:
