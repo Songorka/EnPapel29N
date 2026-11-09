@@ -1,0 +1,58 @@
+{
+ "id": 13945,
+ "estado": "draft",
+ "titulo": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
+ "slug": "",
+ "enlace": "https://enpapel.es/?p=13945",
+ "categorias": [
+  58,
+  7057
+ ],
+ "etiquetas": [
+  "deporte",
+  "Lo que viene",
+  "Majadahonda",
+  "natación",
+  "tendencias"
+ ],
+ "featured_media": 13944,
+ "yoast": {
+  "_yoast_wpseo_focuskw": "Lo que viene",
+  "_yoast_wpseo_title": "Las ‘carreras de natación’ por estaciones, el nuevo formato %%sep%% %%sitename%%",
+  "_yoast_wpseo_metadesc": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en F",
+  "_yoast_wpseo_opengraph-title": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
+  "_yoast_wpseo_opengraph-description": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en Francia y en Europa. En España todavía casi no",
+  "_yoast_wpseo_twitter-title": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
+  "_yoast_wpseo_twitter-description": "Un formato de competición que combina nado y pruebas funcionales, al estilo de los circuitos por estaciones de moda en los gimnasios, crece con fuerza en Francia y en Europa. En España todavía casi no",
+  "_yoast_wpseo_schema_article_type": "NewsArticle",
+  "_yoast_wpseo_primary_category": "7057"
+ },
+ "medios": [
+  {
+   "id": 13944,
+   "destacada": true,
+   "archivo": "https://enpapel.es/wp-content/uploads/2026/11/2026-11-09-lo-que-viene.png",
+   "slug": "2026-11-09-lo-que-viene",
+   "titulo": "Las ‘carreras de natación’ por estaciones, el nuevo formato que arrasa en Francia y que apunta a las piscinas españolas",
+   "alt": "Calles de una piscina cubierta vacía, con corcheras y agua en calma, preparada para una competición de natación.",
+   "pie": "",
+   "descripcion": "",
+   "ancho": 1600,
+   "alto": 900,
+   "tamano_kb": 117
+  },
+  {
+   "id": 13950,
+   "destacada": false,
+   "archivo": "https://enpapel.es/wp-content/uploads/2026/11/Gemini_Generated_Image_jv32irjv32irjv32-scaled.jpg",
+   "slug": "gemini_generated_image_jv32irjv32irjv32",
+   "titulo": "Gemini_Generated_Image_jv32irjv32irjv32",
+   "alt": "",
+   "pie": "",
+   "descripcion": "",
+   "ancho": 2048,
+   "alto": 1143,
+   "tamano_kb": 542
+  }
+ ]
+}
