@@ -76,10 +76,16 @@ def etiqueta_id(nombre):
 def subir_imagen(n):
     ruta = os.path.join(RAIZ, n['imagen'])
     nombre = n.get('imagen_nombre') or os.path.basename(ruta)
+    tipo = 'image/jpeg' if nombre.lower().endswith(('.jpg', '.jpeg')) else 'image/png'
     with open(ruta, 'rb') as f:
         m = api('POST', 'media', crudo=f.read(), cabeceras={
-            'Content-Type': 'image/png', 'Content-Disposition': f'attachment; filename="{nombre}"'})
-    api('POST', f'media/{m["id"]}', {'alt_text': n.get('imagen_alt', ''), 'title': n['titulo']})
+            'Content-Type': tipo, 'Content-Disposition': f'attachment; filename="{nombre}"'})
+    datos = {'alt_text': n.get('imagen_alt', ''), 'title': n.get('imagen_titulo') or n.get('titulo', '')}
+    if n.get('imagen_pie'):
+        datos['caption'] = n['imagen_pie']
+    if n.get('corregir_id'):
+        datos['post'] = n['corregir_id']
+    api('POST', f'media/{m["id"]}', datos)
     return m['id']
 
 
@@ -164,6 +170,16 @@ def publicar(ruta):
     salida = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json')
     if n.get('corregir_id'):  # corregir el titular (u otros campos) de una noticia ya publicada; no toca X
         cambios = {k_wp: n[k] for k, k_wp in (('titulo', 'title'), ('extracto', 'excerpt'), ('estado', 'status'), ('contenido', 'content')) if n.get(k)}
+        if n.get('slug'):
+            cambios['slug'] = n['slug']
+        if n.get('etiquetas'):
+            cambios['tags'] = [etiqueta_id(t) for t in n['etiquetas']]
+        if n.get('imagen'):  # nueva foto destacada
+            cambios['featured_media'] = subir_imagen(n)
+        if n.get('seo'):
+            if not n.get('categorias'):
+                n['categorias'] = api('GET', f'posts/{n["corregir_id"]}?context=edit')['categories']
+            cambios['meta'] = meta_seo(n)
         p = api('POST', f'posts/{n["corregir_id"]}', cambios)
         if os.path.exists(salida):
             res = json.load(open(salida, encoding='utf-8'))
