@@ -124,6 +124,9 @@ def publicar(ruta):
     n = json.load(open(ruta, encoding='utf-8'))
     fecha = n['fecha']; estado = n.get('estado', 'publish')
     if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
+        hecho = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json')
+        if os.path.exists(hecho) and json.load(open(hecho, encoding='utf-8')).get('x_enlace'):
+            os.remove(ruta); print(f'{fecha}: ya está en X; no se repite.'); return  # p. ej. lanzado a mano antes que el bot
         # x_etiquetas / x_campana: otros usos de la cola (p. ej. el bot de tendencias) sin los hashtags del 29N
         res = dict(fecha=fecha, enlace=n['enlace'], **a_x(n['x_texto'], n['enlace'], n.get('imagen'), n.get('imagen_alt', ''), n.get('x_video'),
                                                           n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
