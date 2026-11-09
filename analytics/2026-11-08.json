@@ -1,0 +1,173 @@
+{
+ "fecha": "2026-11-08",
+ "generado": "2026-11-09T05:46+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 267,
+   "sessions": 287,
+   "screenPageViews": 324
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 91,
+   "sessions": 97,
+   "screenPageViews": 101
+  },
+  "media_7_dias": {
+   "activeUsers": 305,
+   "sessions": 341,
+   "screenPageViews": 371
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 219,
+   "screenPageViews": 266
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 9,
+   "screenPageViews": 12
+  },
+  "pagina_encuestas": {
+   "activeUsers": 6,
+   "screenPageViews": 11
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta IMOP: el PSOE baja a 106 escaños y el PP sube a 126 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-imop-psoe-106-pp-126-29n/",
+    "screenPageViews": 192.0,
+    "activeUsers": 171.0
+   },
+   {
+    "pageTitle": "Encuesta Celeste-Tel: PP y Vox suman 204 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-celeste-tel-pp-vox-204-escanos-29n/",
+    "screenPageViews": 19.0,
+    "activeUsers": 16.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE, primero por siete décimas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-29n/",
+    "screenPageViews": 15.0,
+    "activeUsers": 14.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 11.0,
+    "activeUsers": 9.0
+   },
+   {
+    "pageTitle": "Encuesta Sondaxe: el PP aventaja al PSOE en 2,3 puntos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sondaxe-pp-psoe-ventaja-29n/",
+    "screenPageViews": 8.0,
+    "activeUsers": 8.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 194.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 9.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 8.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 6.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 2.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 4292,
+   "screenPageViews": 5396
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta IMOP: el PSOE baja a 106 escaños y el PP sube a 126 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-imop-psoe-106-pp-126-29n/",
+   "screenPageViews": 192.0
+  },
+  {
+   "pageTitle": "Encuesta Celeste-Tel: PP y Vox suman 204 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-celeste-tel-pp-vox-204-escanos-29n/",
+   "screenPageViews": 19.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE, primero por siete décimas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-29n/",
+   "screenPageViews": 15.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 11.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 230.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 42.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 10.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 8.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 202.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 61.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 4.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 12,
+  "activeUsers": 12
+ }
+}
