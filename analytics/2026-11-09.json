@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-09",
- "generado": "2026-11-10T05:47+00:00",
+ "generado": "2026-11-10T13:25+00:00",
  "web": {
   "ayer": {
    "activeUsers": 182,
@@ -73,10 +73,6 @@
     "activeUsers": 8.0
    },
    {
-    "sessionSource": "(not set)",
-    "activeUsers": 1.0
-   },
-   {
     "sessionSource": "chatgpt.com",
     "activeUsers": 1.0
    },
@@ -140,11 +136,11 @@
    "sessions": 3.0
   },
   {
-   "sessionDefaultChannelGroup": "Unassigned",
-   "sessions": 2.0
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
   },
   {
-   "sessionDefaultChannelGroup": "Organic Social",
+   "sessionDefaultChannelGroup": "Unassigned",
    "sessions": 1.0
   }
  ],
