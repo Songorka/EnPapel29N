@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-11-10",
+ "generado": "2026-11-11T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 96,
+   "sessions": 108,
+   "screenPageViews": 113
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 570,
+   "sessions": 615,
+   "screenPageViews": 680
+  },
+  "media_7_dias": {
+   "activeUsers": 236,
+   "sessions": 262,
+   "screenPageViews": 282
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 25,
+   "screenPageViews": 31
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 178,
+   "screenPageViews": 207
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 2
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+    "screenPageViews": 20.0,
+    "activeUsers": 19.0
+   },
+   {
+    "pageTitle": "Encuesta IMOP: el PSOE baja a 106 escaños y el PP sube a 126 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-imop-psoe-106-pp-126-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE, primero por siete décimas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE recorta y se queda a 2 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-recorta-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE saca 11,8 puntos al PP para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-ventaja-pp-29n/",
+    "screenPageViews": 1.0,
+    "activeUsers": 1.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 22.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "es.search.yahoo.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 4439,
+   "screenPageViews": 5578
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+   "screenPageViews": 20.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "FemPatch emprende en salud femenina - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/ieavanzado-y-emprendimiento/fempatch-emprende-en-salud-femenina/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Brunete clausura el XX Certamen de cortometrajes ‘Visualia’ - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/brunete-clausura-el-xx-certamen-de-cortometrajes-visualia-con-una-gala-de-premios-y-proyeccion-de-los-mejores-cortos/",
+   "screenPageViews": 5.0
+  },
+  {
+   "pageTitle": "La candidata del PP inicia encuentros con la sociedad civil majariega para recoger sus propuestas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/la-candidata-del-pp-inicia-encuentros-con-la-sociedad-civil-majariega-para-recoger-sus-propuestas/",
+   "screenPageViews": 3.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 64.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 42.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 65.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 31.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
