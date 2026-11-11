@@ -118,5 +118,13 @@
   "titular": "El PP saca 12,4 puntos a Vox",
   "alt": "Cara a cara: PP 31,4 % frente a Vox 19,0 % en la media de encuestas",
   "huella": "5ea5bee7e34b4121b85751f3c785326c"
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "encuesta",
+  "variante": "swdemoscopia-2026-11-09",
+  "titular": "SW Demoscopia para La Séptima: PSOE 31,2, PP 28,3",
+  "alt": "Encuesta de SW Demoscopia para La Séptima: PSOE 31,2 %, PP 28,3 %, Vox 17,5 %, Frente Amplio 7,5 %, Podemos 1,7 %. Se compara con la media.",
+  "huella": "81997695fe167e8626e8b4832267e659"
  }
 ]
