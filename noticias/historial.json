@@ -126,5 +126,13 @@
   "titular": "SW Demoscopia para La Séptima: PSOE 31,2, PP 28,3",
   "alt": "Encuesta de SW Demoscopia para La Séptima: PSOE 31,2 %, PP 28,3 %, Vox 17,5 %, Frente Amplio 7,5 %, Podemos 1,7 %. Se compara con la media.",
   "huella": "81997695fe167e8626e8b4832267e659"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "cambio23J",
+  "variante": "",
+  "titular": "Vox gana 6,6 puntos desde el 23J",
+  "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −1,7 puntos, PSOE −4,8 puntos, Vox +6,6 puntos, F. Amplio + Podemos −3,7 puntos",
+  "huella": "a2e769dd8f840d85c99308f9fcf7db15"
  }
 ]
