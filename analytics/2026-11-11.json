@@ -1,0 +1,161 @@
+{
+ "fecha": "2026-11-11",
+ "generado": "2026-11-12T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 625,
+   "sessions": 664,
+   "screenPageViews": 767
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 282,
+   "sessions": 316,
+   "screenPageViews": 351
+  },
+  "media_7_dias": {
+   "activeUsers": 283,
+   "sessions": 312,
+   "screenPageViews": 342
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 522,
+   "screenPageViews": 639
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 33,
+   "screenPageViews": 46
+  },
+  "pagina_encuestas": {
+   "activeUsers": 31,
+   "screenPageViews": 34
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+    "screenPageViews": 580.0,
+    "activeUsers": 509.0
+   },
+   {
+    "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+    "screenPageViews": 9.0,
+    "activeUsers": 8.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE recorta y se queda a 2 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-recorta-pp-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 3.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 500.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 18.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 6.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 4939,
+   "screenPageViews": 6217
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+   "screenPageViews": 580.0
+  },
+  {
+   "pageTitle": "CDI Rozasbasket: cinco temporadas y nueva revista del club - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/cdi-rozasbasket-revista-19-cinco-temporadas/",
+   "screenPageViews": 39.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 34.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 13.0
+  },
+  {
+   "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 8.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 543.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 108.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 6.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 5.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 485.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 129.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 12.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 0
+ }
+}
