@@ -1,0 +1,169 @@
+{
+ "fecha": "2026-11-12",
+ "generado": "2026-11-13T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 559,
+   "sessions": 605,
+   "screenPageViews": 694
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 288,
+   "sessions": 316,
+   "screenPageViews": 338
+  },
+  "media_7_dias": {
+   "activeUsers": 321,
+   "sessions": 352,
+   "screenPageViews": 393
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 471,
+   "screenPageViews": 591
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 128,
+   "screenPageViews": 146
+  },
+  "pagina_encuestas": {
+   "activeUsers": 31,
+   "screenPageViews": 39
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+    "screenPageViews": 319.0,
+    "activeUsers": 287.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: PP y Vox se quedan en 174 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-pp-vox-174-29n/",
+    "screenPageViews": 218.0,
+    "activeUsers": 193.0
+   },
+   {
+    "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 7.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE recorta y se queda a 2 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-recorta-pp-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 426.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 26.0
+   },
+   {
+    "sessionSource": "(data not available)",
+    "activeUsers": 14.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 5385,
+   "screenPageViews": 6808
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+   "screenPageViews": 319.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: PP y Vox se quedan en 174 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-pp-vox-174-29n/",
+   "screenPageViews": 218.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 39.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "CDI Rozasbasket: cinco temporadas y nueva revista del club - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/cdi-rozasbasket-revista-19-cinco-temporadas/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Encuesta DYM: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-dym-pp-vox-mayoria-29n/",
+   "screenPageViews": 7.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 477.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 108.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Cross-network",
+   "sessions": 14.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 390.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 160.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 9.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 2,
+  "activeUsers": 2
+ }
+}
