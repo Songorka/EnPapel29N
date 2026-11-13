@@ -1,0 +1,168 @@
+{
+ "fecha": "Viernes 13 de noviembre · Faltan 16 días",
+ "eyebrow": "ARRANCA LA CAMPAÑA",
+ "dias": 16,
+ "entrada": 0.9,
+ "pausa": 0.35,
+ "salida": 1.4,
+ "n_encuestas": 47,
+ "subgancho": "de 19 encuestadoras desde septiembre",
+ "desde": "2026-10-18",
+ "etq_ini": "18 oct",
+ "etq_fin": "10 nov",
+ "gap_ini": "5,6 puntos",
+ "gap_fin": "4,5 puntos",
+ "t_gap_ini": 0.6,
+ "t_gap_fin": 7.916507936507936,
+ "pp_vox": 199,
+ "pp_vox_antes": 203,
+ "t_resalta": 1.8,
+ "disc1": {
+  "nombre": "SW Demoscopia",
+  "filas": [
+   [
+    "PSOE",
+    31.4
+   ],
+   [
+    "PP",
+    28.1
+   ]
+  ],
+  "nota": "La única privada con el PSOE primero"
+ },
+ "cis": {
+  "filas": [
+   [
+    "PSOE",
+    33.3
+   ],
+   [
+    "PP",
+    25.5
+   ]
+  ],
+  "nota": "Fuera de la media · de 12 a 8 puntos"
+ },
+ "aviso_veda": "Encuestas hasta el lunes 23 · después, veda",
+ "t_url": 3.8,
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "pose": "sorpresa",
+   "poses": [
+    "sorpresa",
+    "presenta",
+    "explica",
+    "ojo"
+   ],
+   "clips": [
+    {
+     "audio": "c00.wav",
+     "texto": "Arranca la campaña. Quedan dieciséis días para el 29N y ya llevamos 47 encuestas publicadas."
+    },
+    {
+     "audio": "c01.wav",
+     "texto": "¿Qué ha cambiado desde octubre? Menos de lo que parece."
+    }
+   ]
+  },
+  {
+   "tipo": "evolucion",
+   "pose": "senala",
+   "poses": [
+    "senala",
+    "explica",
+    "senala",
+    "ojo"
+   ],
+   "clips": [
+    {
+     "audio": "c02.wav",
+     "texto": "A mediados de octubre, el PP le sacaba al PSOE cinco puntos y medio."
+    },
+    {
+     "audio": "c03.wav",
+     "texto": "Hoy, con catorce encuestas en la media, la ventaja es de cuatro y medio: 31,4 frente a 26,9."
+    },
+    {
+     "audio": "c04.wav",
+     "texto": "Vox sigue firme como tercera fuerza, alrededor del 19 %. Y Podemos baja del 3 al 1,8."
+    }
+   ]
+  },
+  {
+   "tipo": "escanos",
+   "pose": "senala",
+   "poses": [
+    "senala",
+    "explica",
+    "encoge"
+   ],
+   "clips": [
+    {
+     "audio": "c05.wav",
+     "texto": "En escaños, PP y Vox han pasado de 203 a 199."
+    },
+    {
+     "audio": "c06.wav",
+     "texto": "Siguen por encima de la mayoría absoluta, que está en 176, pero con algo menos de colchón."
+    }
+   ]
+  },
+  {
+   "tipo": "discordante",
+   "pose": "sorpresa",
+   "poses": [
+    "sorpresa",
+    "brazos",
+    "ojo",
+    "explica"
+   ],
+   "clips": [
+    {
+     "audio": "c07.wav",
+     "texto": "Hay una excepción: SW Demoscopia es la única encuesta privada que pone al PSOE por delante, con un 31,4 %."
+    },
+    {
+     "audio": "c08.wav",
+     "texto": "Y el CIS, que no entra en nuestra media, sigue con el PSOE primero, aunque ha pasado de doce puntos de ventaja a ocho."
+    }
+   ]
+  },
+  {
+   "tipo": "vuelta",
+   "pose": "brazos",
+   "poses": [
+    "brazos",
+    "piensa",
+    "encoge"
+   ],
+   "clips": [
+    {
+     "audio": "c09.wav",
+     "texto": "¿Moverá algo la campaña? Para perder la mayoría, PP y Vox tendrían que dejarse 24 escaños."
+    },
+    {
+     "audio": "c10.wav",
+     "texto": "Hasta ahora el bloque se ha movido muy poco. Quedan dos semanas para ver si eso cambia."
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "pose": "pulgar",
+   "poses": [
+    "pulgar",
+    "presenta",
+    "adios"
+   ],
+   "clips": [
+    {
+     "audio": "c11.wav",
+     "texto": "Podremos publicar encuestas hasta el lunes 23; después llega la veda. Todas las cifras y el pactómetro, en enpapel.es."
+    }
+   ]
+  }
+ ]
+}

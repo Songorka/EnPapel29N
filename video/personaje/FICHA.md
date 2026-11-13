@@ -28,6 +28,8 @@ Usarla SIEMPRE como referencia al generar al personaje. No cambiar nada sin el v
 - Generar frases cortas (máx. ~130 caracteres por clip): con textos largos el motor a veces corta el final.
 
 ## Animación
-- `video/papiro/<gesto>_{cerrada,abierta,parpadeo}.png`: 8 gestos (neutral, explica, presenta, ojo, encoge, piensa, sorpresa, adios),
+- `video/papiro/<gesto>_{cerrada,abierta,parpadeo}.png`: 11 gestos (neutral, explica, presenta, ojo, encoge, piensa, sorpresa, adios,
+  y desde el 13/11/2026, aprobados por Gorka: senala —señala arriba, al gráfico—, pulgar —pulgar arriba— y brazos —brazos cruzados—),
   cada uno con boca cerrada, boca abierta y parpadeo, alineados entre sí (`video/cortar.py`).
+- `video/render_campana.py` (13/11/2026): igual que render.py, más el gráfico de evolución; entra y sale andando, cambia de gesto cada ~2,3 s y se balancea más.
 - `video/render.py`: la boca se abre con la voz, parpadea cada ~3,4 s y cambia de gesto en cada frase (con un saltito).
