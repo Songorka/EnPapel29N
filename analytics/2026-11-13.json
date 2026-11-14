@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-11-13",
+ "generado": "2026-11-14T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 203,
+   "sessions": 218,
+   "screenPageViews": 247
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 352,
+   "sessions": 381,
+   "screenPageViews": 397
+  },
+  "media_7_dias": {
+   "activeUsers": 299,
+   "sessions": 329,
+   "screenPageViews": 371
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 146,
+   "screenPageViews": 186
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 230,
+   "screenPageViews": 253
+  },
+  "pagina_encuestas": {
+   "activeUsers": 13,
+   "screenPageViews": 19
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+    "screenPageViews": 69.0,
+    "activeUsers": 60.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: PP y Vox se quedan en 174 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-pp-vox-174-29n/",
+    "screenPageViews": 38.0,
+    "activeUsers": 35.0
+   },
+   {
+    "pageTitle": "Encuestas 29N: así se han movido al arrancar la campaña - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-arranca-campana-29n/",
+    "screenPageViews": 33.0,
+    "activeUsers": 29.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE gana y PP y Vox no suman en el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-gana-pp-vox-sin-mayoria-29n/",
+    "screenPageViews": 17.0,
+    "activeUsers": 14.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: PP y Vox mantienen la mayoría para el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-pp-vox-mayoria-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 125.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 13.0
+   },
+   {
+    "sessionSource": "(data not available)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "bing",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "es.search.yahoo.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 5522,
+   "screenPageViews": 6994
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+   "screenPageViews": 69.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: PP y Vox se quedan en 174 escaños - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-pp-vox-174-29n/",
+   "screenPageViews": 38.0
+  },
+  {
+   "pageTitle": "Encuestas 29N: así se han movido al arrancar la campaña - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/papiro-encuestas-arranca-campana-29n/",
+   "screenPageViews": 33.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 19.0
+  },
+  {
+   "pageTitle": "Encuesta CIS: el PSOE gana y PP y Vox no suman en el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-cis-psoe-gana-pp-vox-sin-mayoria-29n/",
+   "screenPageViews": 17.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 146.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 66.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Cross-network",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 121.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 82.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 2,
+  "activeUsers": 2
+ }
+}
