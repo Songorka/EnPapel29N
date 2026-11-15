@@ -153,6 +153,33 @@ def publicar(ruta):
                                                           n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
         json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(res, ensure_ascii=False)); return
+    if n.get('seccion'):  # crear (o completar) una categoría y ponerla la primera en los menús de la cabecera
+        sc = n['seccion']; info = {'nombre': sc['nombre'], 'menus': [], 'avisos': []}
+        cid = categoria_id(sc['nombre'])
+        cat = api('POST', f'categories/{cid}', {k: sc[k] for k in ('slug', 'description') if sc.get(k)})
+        info.update(categoria_id=cid, enlace=cat['link'], slug=cat['slug'])
+        try:
+            ubic = api('GET', 'menu-locations?context=edit')
+            info['ubicaciones'] = {k: {'descripcion': v.get('description'), 'menu': v.get('menu')} for k, v in ubic.items()}
+            menus = {v['menu'] for k, v in ubic.items() if v.get('menu') and not re.search(r'foot|pie|social|legal', k + ' ' + (v.get('description') or ''), re.I)}
+            for mid_ in sorted(menus):
+                items = api('GET', f'menu-items?menus={mid_}&per_page=100&context=edit')
+                arriba = sorted((i for i in items if not i['parent']), key=lambda i: i['menu_order'])
+                ficha = {'menu': mid_, 'antes': [(i['id'], i['title']['raw'] if isinstance(i['title'], dict) else i['title'], i['menu_order']) for i in arriba]}
+                if any(i['object'] == 'category' and i['object_id'] == cid for i in items):
+                    ficha['ya_estaba'] = True
+                elif sc.get('menu') == 'primero':
+                    for i in arriba:
+                        api('POST', f'menu-items/{i["id"]}', {'menu_order': i['menu_order'] + 1})
+                    nuevo = api('POST', 'menu-items', {'title': sc['nombre'], 'type': 'taxonomy', 'object': 'category', 'object_id': cid,
+                                                         'menus': mid_, 'parent': 0, 'menu_order': min([i['menu_order'] for i in arriba] or [1]), 'status': 'publish'})
+                    ficha['anadido'] = nuevo['id']
+                info['menus'].append(ficha)
+        except SystemExit as e:
+            info['avisos'].append(f'Menú no tocado: {e.code}')
+        os.makedirs(os.path.join(RAIZ, 'noticias', 'publicadas'), exist_ok=True)
+        json.dump(info, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        os.remove(ruta); print(json.dumps(info, ensure_ascii=False)); return
     if n.get('inspeccionar_id'):  # deja en noticias/publicadas/ un informe de la noticia y su foto destacada (sin cambiar nada)
         pid = n['inspeccionar_id']
         p = api('GET', f'posts/{pid}?context=edit')
