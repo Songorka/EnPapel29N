@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-14",
- "generado": "2026-11-15T05:47+00:00",
+ "generado": "2026-11-15T12:41+00:00",
  "web": {
   "ayer": {
    "activeUsers": 275,
@@ -13,9 +13,9 @@
    "screenPageViews": 249
   },
   "media_7_dias": {
-   "activeUsers": 231,
-   "sessions": 254,
-   "screenPageViews": 284
+   "activeUsers": 306,
+   "sessions": 339,
+   "screenPageViews": 383
   }
  },
  "29n": {
@@ -90,8 +90,8 @@
    }
   ],
   "acumulado_desde_5_oct": {
-   "activeUsers": 5239,
-   "screenPageViews": 6627
+   "activeUsers": 5675,
+   "screenPageViews": 7218
   }
  },
  "mas_leidas": [
