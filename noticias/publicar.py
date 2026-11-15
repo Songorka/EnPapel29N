@@ -180,6 +180,13 @@ def publicar(ruta):
         os.makedirs(os.path.join(RAIZ, 'noticias', 'publicadas'), exist_ok=True)
         json.dump(info, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         os.remove(ruta); print(json.dumps(info, ensure_ascii=False)); return
+    if n.get('menu_cambios'):  # borrar elementos de menú y fijar el orden de otros: {"borrar": [id], "orden": {"id": n}}
+        mc = n['menu_cambios']
+        for iid in mc.get('borrar', []):
+            api('DELETE', f'menu-items/{iid}?force=true')
+        for iid, orden in (mc.get('orden') or {}).items():
+            api('POST', f'menu-items/{iid}', {'menu_order': orden})
+        os.remove(ruta); print('Menú corregido', mc); return
     if n.get('inspeccionar_id'):  # deja en noticias/publicadas/ un informe de la noticia y su foto destacada (sin cambiar nada)
         pid = n['inspeccionar_id']
         p = api('GET', f'posts/{pid}?context=edit')
