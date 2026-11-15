@@ -1,0 +1,89 @@
+{
+ "nombre": "Agenda",
+ "menus": [
+  {
+   "menu": 41,
+   "antes": [
+    [
+     13279,
+     "Elecciones 29N",
+     1
+    ],
+    [
+     210,
+     "IEavanzado y emprendimiento",
+     2
+    ],
+    [
+     211,
+     "Majadahonda",
+     3
+    ],
+    [
+     1136,
+     "Zona Noroeste",
+     4
+    ],
+    [
+     13352,
+     "Tendencias",
+     5
+    ],
+    [
+     13351,
+     "Otras secciones",
+     6
+    ]
+   ],
+   "anadido": 13996
+  },
+  {
+   "menu": 43,
+   "antes": [
+    [
+     136,
+     "Sobre Nosotros",
+     1
+    ],
+    [
+     138,
+     "Política de Privacidad",
+     2
+    ],
+    [
+     535,
+     "Aviso Legal",
+     3
+    ],
+    [
+     139,
+     "Contacto",
+     4
+    ]
+   ],
+   "anadido": 13997
+  }
+ ],
+ "avisos": [],
+ "categoria_id": 7124,
+ "enlace": "https://enpapel.es/agenda/",
+ "slug": "agenda",
+ "ubicaciones": {
+  "top_navigation": {
+   "descripcion": "Top Bar Navigation",
+   "menu": 43
+  },
+  "navigation": {
+   "descripcion": "Main Navigation",
+   "menu": 41
+  },
+  "mobile_navigation": {
+   "descripcion": "Mobile Navigation",
+   "menu": 41
+  },
+  "footer_navigation": {
+   "descripcion": "Footer Navigation",
+   "menu": 43
+  }
+ }
+}

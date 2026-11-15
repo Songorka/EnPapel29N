@@ -1,9 +1,0 @@
-{
- "fecha": "seccion-agenda",
- "seccion": {
-  "nombre": "Agenda",
-  "slug": "agenda",
-  "description": "Planes y actividades de cada fin de semana en Majadahonda y la Zona Noroeste, con información oficial de los ayuntamientos.",
-  "menu": "primero"
- }
-}
