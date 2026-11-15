@@ -73,6 +73,23 @@ def etiqueta_id(nombre):
         raise
 
 
+def categoria_id(c):
+    """Las categorías pueden ir por id (45) o por nombre ("Agenda"); si el nombre no existe, se crea."""
+    if not isinstance(c, str):
+        return c
+    import html
+    for t in api('GET', 'categories?per_page=100&search=' + urllib.parse.quote(c)):
+        if html.unescape(t['name']).strip().lower() == c.strip().lower():
+            return t['id']
+    try:
+        return api('POST', 'categories', {'name': c})['id']
+    except SystemExit as e:
+        m = re.search(r'"term_id":\s*(\d+)', str(e.code))
+        if 'term_exists' in str(e.code) and m:
+            return int(m.group(1))
+        raise
+
+
 def subir_imagen(n):
     ruta = os.path.join(RAIZ, n['imagen'])
     nombre = n.get('imagen_nombre') or os.path.basename(ruta)
@@ -123,6 +140,10 @@ def a_x(texto_base, enlace, imagen_rel, alt, video_rel=None, etiquetas=('#29N', 
 def publicar(ruta):
     n = json.load(open(ruta, encoding='utf-8'))
     fecha = n['fecha']; estado = n.get('estado', 'publish')
+    if n.get('categorias'):
+        n['categorias'] = [categoria_id(c) for c in n['categorias']]
+    if isinstance((n.get('seo') or {}).get('categoria_principal'), str):
+        n['seo']['categoria_principal'] = categoria_id(n['seo']['categoria_principal'])
     if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
         hecho = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json')
         if os.path.exists(hecho) and json.load(open(hecho, encoding='utf-8')).get('x_enlace'):
