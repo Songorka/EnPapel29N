@@ -1,0 +1,173 @@
+{
+ "fecha": "2026-11-14",
+ "generado": "2026-11-15T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 275,
+   "sessions": 302,
+   "screenPageViews": 329
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 216,
+   "sessions": 229,
+   "screenPageViews": 249
+  },
+  "media_7_dias": {
+   "activeUsers": 231,
+   "sessions": 254,
+   "screenPageViews": 284
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 178,
+   "screenPageViews": 224
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 105,
+   "screenPageViews": 123
+  },
+  "pagina_encuestas": {
+   "activeUsers": 10,
+   "screenPageViews": 16
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 15 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-sin-mayoria-29n/",
+    "screenPageViews": 147.0,
+    "activeUsers": 131.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+    "screenPageViews": 25.0,
+    "activeUsers": 22.0
+   },
+   {
+    "pageTitle": "Encuestas 29N: así se han movido al arrancar la campaña - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/papiro-encuestas-arranca-campana-29n/",
+    "screenPageViews": 8.0,
+    "activeUsers": 7.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: PP y Vox se quedan en 174 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-pp-vox-174-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE gana y PP y Vox no suman en el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-gana-pp-vox-sin-mayoria-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 5.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 160.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 10.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 2.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 5239,
+   "screenPageViews": 6627
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 15 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-sin-mayoria-29n/",
+   "screenPageViews": 147.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+   "screenPageViews": 25.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 16.0
+  },
+  {
+   "pageTitle": "Planes en Las Rozas este fin de semana: Ruta de la Tapa, Zumba y Freestyle - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/planes-fin-de-semana-las-rozas-ruta-tapa-zumba-fest-freestyle/",
+   "screenPageViews": 12.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Encuestas 29N: así se han movido al arrancar la campaña - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/papiro-encuestas-arranca-campana-29n/",
+   "screenPageViews": 8.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 195.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 98.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 3.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 153.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 118.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 5.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 6,
+  "activeUsers": 6
+ }
+}
