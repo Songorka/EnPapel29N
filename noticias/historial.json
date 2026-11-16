@@ -158,5 +158,13 @@
   "titular": "Frente Amplio saca 5,1 puntos a Podemos",
   "alt": "Cara a cara: Frente Amplio 6,9 % frente a Podemos 1,7 % en la media de encuestas",
   "huella": "6dbed17770829de0147dc38ccd267d32"
+ },
+ {
+  "fecha": "2026-11-16",
+  "tipo": "encuesta",
+  "variante": "40db-2026-11-15",
+  "titular": "40dB para El País / SER: PP 31,5, PSOE 30,3",
+  "alt": "Encuesta de 40dB para El País / SER: PP 31,5 %, PSOE 30,3 %, Vox 18,0 %, Podemos 1,1 %. Se compara con la media.",
+  "huella": "4f5ac544dbcbd191e43298a905d92137"
  }
 ]
