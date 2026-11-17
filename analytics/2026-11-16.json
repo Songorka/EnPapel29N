@@ -1,9 +1,9 @@
 {
  "fecha": "2026-11-16",
- "generado": "2026-11-17T05:47+00:00",
+ "generado": "2026-11-17T14:18+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 256,
+   "activeUsers": 254,
    "sessions": 277,
    "screenPageViews": 301
   },
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 320,
-   "sessions": 354,
+   "sessions": 353,
    "screenPageViews": 400
   }
  },
