@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-11-17",
+ "generado": "2026-11-18T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 168,
+   "sessions": 185,
+   "screenPageViews": 207
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 96,
+   "sessions": 108,
+   "screenPageViews": 113
+  },
+  "media_7_dias": {
+   "activeUsers": 329,
+   "sessions": 364,
+   "screenPageViews": 413
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 103,
+   "screenPageViews": 133
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 25,
+   "screenPageViews": 31
+  },
+  "pagina_encuestas": {
+   "activeUsers": 7,
+   "screenPageViews": 9
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta 40dB: Vox baja a 58 escaños a 12 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-vox-baja-pp-vox-191-29n/",
+    "screenPageViews": 72.0,
+    "activeUsers": 64.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE recorta y se queda a 1,3 del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-recorta-pp-29n-2/",
+    "screenPageViews": 19.0,
+    "activeUsers": 15.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE pasa del 30 % y PP y Vox suman 192 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-30-pp-vox-192-29n/",
+    "screenPageViews": 10.0,
+    "activeUsers": 9.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 15 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-sin-mayoria-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 6.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 83.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 16.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "ecosia.org",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 6127,
+   "screenPageViews": 7803
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta 40dB: Vox baja a 58 escaños a 12 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-vox-baja-pp-vox-191-29n/",
+   "screenPageViews": 72.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: el PSOE recorta y se queda a 1,3 del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-psoe-recorta-pp-29n-2/",
+   "screenPageViews": 19.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: el PSOE pasa del 30 % y PP y Vox suman 192 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-psoe-30-pp-vox-192-29n/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Encuesta GAD3: PP y Vox suman 198 escaños a 48 días del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-sigma-dos-pp-vox-29n/",
+   "screenPageViews": 6.0
+  },
+  {
+   "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 15 días - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-sin-mayoria-29n/",
+   "screenPageViews": 6.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 111.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 71.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 96.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 71.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 1.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
