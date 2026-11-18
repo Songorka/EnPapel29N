@@ -282,7 +282,8 @@ def publicar(ruta):
     res = {'fecha': fecha, 'estado': p['status'], 'id': p['id'], 'enlace': p['link'], 'titulo': n['titulo'],
            'imagen_id': media, 'seo_aplicado': bool(p.get('meta', {}).get('_yoast_wpseo_metadesc'))}
     if estado == 'publish' and p['status'] == 'publish' and n.get('x_texto'):
-        res.update(a_x(n['x_texto'], p['link'], n['imagen'], n.get('imagen_alt', ''), n.get('x_video')))
+        res.update(a_x(n['x_texto'], p['link'], n['imagen'], n.get('imagen_alt', ''), n.get('x_video'),
+                       n.get('x_etiquetas', ('#29N', '#Encuestas')), n.get('x_campana', '29n')))
     os.makedirs(os.path.dirname(salida), exist_ok=True)
     if estado == 'draft':
         salida = salida.replace('.json', '-borrador.json')
