@@ -144,6 +144,12 @@ def publicar(ruta):
         n['categorias'] = [categoria_id(c) for c in n['categorias']]
     if isinstance((n.get('seo') or {}).get('categoria_principal'), str):
         n['seo']['categoria_principal'] = categoria_id(n['seo']['categoria_principal'])
+    if n.get('x_borrar'):  # borrar un post de X ya publicado (p. ej. para rehacerlo con otra imagen)
+        import x_publicar
+        x_publicar._peticion('DELETE', f"https://api.x.com/2/tweets/{n['x_borrar']}")
+        print(f"{fecha}: borrado el post de X {n['x_borrar']}")
+        if not n.get('solo_x'):
+            os.remove(ruta); return
     if n.get('solo_x'):  # publicar en X una noticia que ya está en Enpapel
         hecho = os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}-x.json')
         if os.path.exists(hecho) and json.load(open(hecho, encoding='utf-8')).get('x_enlace'):
