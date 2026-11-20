@@ -190,5 +190,13 @@
   "titular": "El PSOE sube 1,5 puntos desde el 5 de octubre",
   "alt": "Evolución de la media de encuestas desde el 5 de octubre: PP −1,0 puntos, PSOE +1,5 puntos, Vox +0,1 puntos, Frente Amplio +0,6 puntos",
   "huella": "fad9b3260362a95ecb9ec94671da365a"
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "cara",
+  "variante": "PP-PSOE",
+  "titular": "El PP saca 3,4 puntos al PSOE",
+  "alt": "Cara a cara: PP 31,2 % frente a PSOE 27,8 % en la media de encuestas",
+  "huella": "ca0f19b3768f0cdc06575b95b009111b"
  }
 ]
