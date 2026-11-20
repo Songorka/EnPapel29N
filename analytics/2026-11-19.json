@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-19",
- "generado": "2026-11-20T05:47+00:00",
+ "generado": "2026-11-20T13:57+00:00",
  "web": {
   "ayer": {
    "activeUsers": 396,
-   "sessions": 431,
+   "sessions": 433,
    "screenPageViews": 462
   },
   "mismo_dia_semana_pasada": {
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 249,
-   "sessions": 279,
+   "sessions": 280,
    "screenPageViews": 306
   }
  },
@@ -66,19 +66,19 @@
   "fuentes": [
    {
     "sessionSource": "google",
-    "activeUsers": 222.0
+    "activeUsers": 223.0
    },
    {
     "sessionSource": "(direct)",
     "activeUsers": 14.0
    },
    {
-    "sessionSource": "(not set)",
-    "activeUsers": 9.0
-   },
-   {
     "sessionSource": "x",
     "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
    },
    {
     "sessionSource": "bing",
@@ -125,19 +125,19 @@
  "fuentes_web": [
   {
    "sessionDefaultChannelGroup": "Organic Search",
-   "sessions": 284.0
+   "sessions": 285.0
   },
   {
    "sessionDefaultChannelGroup": "Direct",
-   "sessions": 139.0
-  },
-  {
-   "sessionDefaultChannelGroup": "Unassigned",
-   "sessions": 11.0
+   "sessions": 140.0
   },
   {
    "sessionDefaultChannelGroup": "Organic Social",
    "sessions": 4.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 3.0
   }
  ],
  "dispositivos": [
