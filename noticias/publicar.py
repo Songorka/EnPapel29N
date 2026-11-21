@@ -144,6 +144,10 @@ def publicar(ruta):
         n['categorias'] = [categoria_id(c) for c in n['categorias']]
     if isinstance((n.get('seo') or {}).get('categoria_principal'), str):
         n['seo']['categoria_principal'] = categoria_id(n['seo']['categoria_principal'])
+    if n.get('papelera_id'):  # mandar una entrada a la papelera de WordPress (se puede recuperar desde ahí)
+        api('DELETE', f"posts/{n['papelera_id']}")
+        print(f"{fecha}: entrada {n['papelera_id']} enviada a la papelera")
+        os.remove(ruta); return
     if n.get('x_borrar'):  # borrar un post de X ya publicado (p. ej. para rehacerlo con otra imagen)
         import x_publicar
         x_publicar._peticion('DELETE', f"https://api.x.com/2/tweets/{n['x_borrar']}")
