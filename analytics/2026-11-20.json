@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-11-20",
+ "generado": "2026-11-21T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 326,
+   "sessions": 343,
+   "screenPageViews": 373
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 202,
+   "sessions": 218,
+   "screenPageViews": 247
+  },
+  "media_7_dias": {
+   "activeUsers": 265,
+   "sessions": 298,
+   "screenPageViews": 324
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 181,
+   "screenPageViews": 213
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 146,
+   "screenPageViews": 186
+  },
+  "pagina_encuestas": {
+   "activeUsers": 9,
+   "screenPageViews": 15
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta Data10: PP y Vox suman 196 escaños en el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-data10-pp-vox-196-escanos-29n/",
+    "screenPageViews": 116.0,
+    "activeUsers": 107.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE, a dos puntos del PP en el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-dos-puntos-pp-29n/",
+    "screenPageViews": 70.0,
+    "activeUsers": 62.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: Vox baja a 58 escaños a 12 días del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-vox-baja-pp-vox-191-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 5.0
+   },
+   {
+    "pageTitle": "Encuesta Data10: PP y Vox suman 202 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-data10-pp-vox-202-escanos-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   },
+   {
+    "pageTitle": "Encuesta SocioMétrica: PP y Vox suman 203 escaños - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sociometrica-pp-vox-203-escanos-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 161.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 10.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 6.0
+   },
+   {
+    "sessionSource": "x",
+    "activeUsers": 5.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 6602,
+   "screenPageViews": 8452
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta Data10: PP y Vox suman 196 escaños en el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-data10-pp-vox-196-escanos-29n/",
+   "screenPageViews": 116.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: el PSOE, a dos puntos del PP en el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-psoe-dos-puntos-pp-29n/",
+   "screenPageViews": 70.0
+  },
+  {
+   "pageTitle": "La Asamblea de Madrid aprueba la ley del suelo ‘LÍDER’ con l - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/la-asamblea-de-madrid-aprueba-la-ley-del-suelo-lider-con-los-votos-de-pp-y-vox-y-las-criticas-de-la-oposicion-y-los-colectivos-vecinales/",
+   "screenPageViews": 21.0
+  },
+  {
+   "pageTitle": "Encuestas 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/encuestas-29n/",
+   "screenPageViews": 15.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Alfredo Timermans entra con fuerza en las quinielas para relevar a Álvarez Ustarroz - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/alfredo-timermans-entra-con-fuerza-en-las-quinielas-para-relevar-a-alvarez-ustarroz/",
+   "screenPageViews": 5.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 213.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 120.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 8.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 7.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 185.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 137.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 4.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 7,
+  "activeUsers": 6
+ }
+}
