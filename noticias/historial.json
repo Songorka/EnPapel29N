@@ -198,5 +198,13 @@
   "titular": "El PP saca 3,4 puntos al PSOE",
   "alt": "Cara a cara: PP 31,2 % frente a PSOE 27,8 % en la media de encuestas",
   "huella": "ca0f19b3768f0cdc06575b95b009111b"
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "encuesta",
+  "variante": "data10-2026-11-20",
+  "titular": "Data10 para OKDiario: PP 32,5, PSOE 26,5",
+  "alt": "Encuesta de Data10 para OKDiario: PP 32,5 %, PSOE 26,5 %, Vox 18,8 %, Frente Amplio 6,8 %. Se compara con la media.",
+  "huella": "330ccc7721ea421818d44a4735f1a42d"
  }
 ]
