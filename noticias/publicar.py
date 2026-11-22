@@ -148,6 +148,27 @@ def publicar(ruta):
         api('DELETE', f"posts/{n['papelera_id']}")
         print(f"{fecha}: entrada {n['papelera_id']} enviada a la papelera")
         os.remove(ruta); return
+    if n.get('widget_css'):  # añade (o actualiza) un widget HTML con <style> en la zona de widgets del pie, que sale en todas las páginas
+        wc = n['widget_css']
+        marca = f"<!-- enpapel-css:{wc['nombre']} -->"
+        contenido = marca + '\n<style>\n' + wc['css'] + '\n</style>'
+        sidebars = api('GET', 'sidebars?context=edit')
+        widgets = api('GET', 'widgets?context=edit&per_page=100')
+        existente = next((w for w in widgets if marca in json.dumps(w.get('instance') or {}, ensure_ascii=False)
+                          or marca in (w.get('rendered') or '')), None)
+        if existente:
+            w = api('POST', f"widgets/{existente['id']}", {'instance': {'raw': {'title': '', 'content': contenido}}})
+        else:
+            zona = next((s['id'] for s in sidebars if any(x.startswith('jnews_about') for x in s.get('widgets', []))),
+                        None) or wc.get('sidebar')
+            w = api('POST', 'widgets', {'id_base': 'custom_html', 'sidebar': zona,
+                                         'instance': {'raw': {'title': '', 'content': contenido}}})
+        res = {'fecha': fecha, 'widget': w.get('id'), 'sidebar': w.get('sidebar'),
+               'sidebars': [{'id': s['id'], 'widgets': s.get('widgets', [])} for s in sidebars]}
+        json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        print(f"{fecha}: widget CSS {w.get('id')} en {w.get('sidebar')}")
+        os.remove(ruta); return
     if n.get('x_borrar'):  # borrar un post de X ya publicado (p. ej. para rehacerlo con otra imagen)
         import x_publicar
         x_publicar._peticion('DELETE', f"https://api.x.com/2/tweets/{n['x_borrar']}")
