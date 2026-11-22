@@ -206,5 +206,13 @@
   "titular": "Data10 para OKDiario: PP 32,5, PSOE 26,5",
   "alt": "Encuesta de Data10 para OKDiario: PP 32,5 %, PSOE 26,5 %, Vox 18,8 %, Frente Amplio 6,8 %. Se compara con la media.",
   "huella": "330ccc7721ea421818d44a4735f1a42d"
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "cambio23J",
+  "variante": "",
+  "titular": "Vox gana 6,2 puntos desde el 23J",
+  "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −2,2 puntos, PSOE −3,6 puntos, Vox +6,2 puntos, F. Amplio + Podemos −4,7 puntos",
+  "huella": "71c8374809223115f48c42da6a624fc4"
  }
 ]
