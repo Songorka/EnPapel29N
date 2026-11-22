@@ -153,7 +153,12 @@ def publicar(ruta):
         marca = f"<!-- enpapel-css:{wc['nombre']} -->"
         contenido = marca + '\n<style>\n' + wc['css'] + '\n</style>'
         sidebars = api('GET', 'sidebars?context=edit')
-        widgets = api('GET', 'widgets?context=edit&per_page=100')
+        try:
+            widgets = api('GET', 'widgets?context=edit&per_page=100', intentos=1)
+        except BaseException:
+            widgets = []  # algún plugin rompe el listado de widgets; se crea uno nuevo (o se usa wc['id'])
+        if wc.get('id'):
+            widgets = [{'id': wc['id'], 'rendered': marca}]
         existente = next((w for w in widgets if marca in json.dumps(w.get('instance') or {}, ensure_ascii=False)
                           or marca in (w.get('rendered') or '')), None)
         if existente:
