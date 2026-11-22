@@ -1,9 +1,9 @@
 {
  "fecha": "2026-11-21",
- "generado": "2026-11-22T05:47+00:00",
+ "generado": "2026-11-22T13:16+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 304,
+   "activeUsers": 303,
    "sessions": 327,
    "screenPageViews": 360
   },
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 269,
-   "sessions": 302,
+   "sessions": 301,
    "screenPageViews": 328
   }
  },
@@ -142,10 +142,6 @@
   {
    "sessionDefaultChannelGroup": "Referral",
    "sessions": 1.0
-  },
-  {
-   "sessionDefaultChannelGroup": "Unassigned",
-   "sessions": 1.0
   }
  ],
  "dispositivos": [
@@ -155,7 +151,7 @@
   },
   {
    "deviceCategory": "desktop",
-   "activeUsers": 111.0
+   "activeUsers": 110.0
   },
   {
    "deviceCategory": "tablet",
