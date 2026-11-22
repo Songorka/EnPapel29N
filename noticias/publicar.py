@@ -148,6 +148,16 @@ def publicar(ruta):
         api('DELETE', f"posts/{n['papelera_id']}")
         print(f"{fecha}: entrada {n['papelera_id']} enviada a la papelera")
         os.remove(ruta); return
+    if n.get('rest_post'):  # cambios puntuales en la API: lista de [ruta, cuerpo]; guarda las respuestas en publicadas/
+        res = {}
+        for r, cuerpo in n['rest_post']:
+            try:
+                res[r] = api('POST', r, cuerpo, intentos=1)
+            except BaseException as e:
+                res[r] = str(e)[:500]
+        json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        os.remove(ruta); return
     if n.get('rest_get'):  # solo lectura: guarda en publicadas/ la respuesta de unas rutas de la API (para diagnosticar)
         res = {}
         for r in n['rest_get']:
