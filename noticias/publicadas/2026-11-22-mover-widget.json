@@ -1,0 +1,51 @@
+{
+ "sidebars/footer-widget-1": {
+  "id": "footer-widget-1",
+  "name": "Footer Widget 1",
+  "description": "",
+  "class": "",
+  "before_widget": "<div class=\"footer_widget %2$s\" id=\"%1$s\">",
+  "after_widget": "</div>",
+  "before_title": "<div class=\"jeg_footer_heading jeg_footer_heading_1\"><h3 class=\"jeg_footer_title\"><span>",
+  "after_title": "</span></h3></div>",
+  "status": "active",
+  "widgets": [
+   "jnews_about-1",
+   "jnews_social-1",
+   "custom_html-3"
+  ],
+  "_links": {
+   "collection": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/sidebars"
+    }
+   ],
+   "self": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/sidebars/footer-widget-1",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH"
+      ]
+     }
+    }
+   ],
+   "wp:widget": [
+    {
+     "embeddable": true,
+     "href": "https://enpapel.es/wp-json/wp/v2/widgets?sidebar=footer-widget-1"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+}
