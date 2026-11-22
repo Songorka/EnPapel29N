@@ -1,0 +1,104 @@
+{
+ "sidebars/footer-widget-1?context=edit": {
+  "id": "footer-widget-1",
+  "name": "Footer Widget 1",
+  "description": "",
+  "class": "",
+  "before_widget": "<div class=\"footer_widget %2$s\" id=\"%1$s\">",
+  "after_widget": "</div>",
+  "before_title": "<div class=\"jeg_footer_heading jeg_footer_heading_1\"><h3 class=\"jeg_footer_title\"><span>",
+  "after_title": "</span></h3></div>",
+  "status": "active",
+  "widgets": [
+   "jnews_about-1",
+   "jnews_social-1"
+  ],
+  "_links": {
+   "collection": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/sidebars"
+    }
+   ],
+   "self": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/sidebars/footer-widget-1",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH"
+      ]
+     }
+    }
+   ],
+   "wp:widget": [
+    {
+     "embeddable": true,
+     "href": "https://enpapel.es/wp-json/wp/v2/widgets?sidebar=footer-widget-1"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "widgets/custom_html-3?context=edit": {
+  "id": "custom_html-3",
+  "id_base": "custom_html",
+  "sidebar": "wp_inactive_widgets",
+  "rendered": "",
+  "rendered_form": "<input id=\"widget-custom_html-3-title\" name=\"widget-custom_html[3][title]\" class=\"title sync-input\" type=\"hidden\" value=\"\" />\n\t\t<textarea id=\"widget-custom_html-3-content\" name=\"widget-custom_html[3][content]\" class=\"content sync-input\" hidden>&lt;!-- enpapel-css:impresiones-movil --&gt;\n&lt;style&gt;\n@media only screen and (max-width: 1023px) {\n  .jeg_share_stats .jeg_share_count { display: none !important; }\n  .jeg_share_stats .jeg_views_count { display: block !important; }\n}\n&lt;/style&gt;</textarea>",
+  "instance": {
+   "encoded": "YToyOntzOjU6InRpdGxlIjtzOjA6IiI7czo3OiJjb250ZW50IjtzOjIzNToiPCEtLSBlbnBhcGVsLWNzczppbXByZXNpb25lcy1tb3ZpbCAtLT4KPHN0eWxlPgpAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjNweCkgewogIC5qZWdfc2hhcmVfc3RhdHMgLmplZ19zaGFyZV9jb3VudCB7IGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsgfQogIC5qZWdfc2hhcmVfc3RhdHMgLmplZ192aWV3c19jb3VudCB7IGRpc3BsYXk6IGJsb2NrICFpbXBvcnRhbnQ7IH0KfQo8L3N0eWxlPiI7fQ==",
+   "hash": "3c7e96620f1a762b5956f6e5099ddb63",
+   "raw": {
+    "title": "",
+    "content": "<!-- enpapel-css:impresiones-movil -->\n<style>\n@media only screen and (max-width: 1023px) {\n  .jeg_share_stats .jeg_share_count { display: none !important; }\n  .jeg_share_stats .jeg_views_count { display: block !important; }\n}\n</style>"
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/widgets/custom_html-3",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/widgets"
+    }
+   ],
+   "about": [
+    {
+     "embeddable": true,
+     "href": "https://enpapel.es/wp-json/wp/v2/widget-types/custom_html"
+    }
+   ],
+   "wp:sidebar": [
+    {
+     "href": "https://enpapel.es/wp-json/wp/v2/sidebars/wp_inactive_widgets/"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+}
