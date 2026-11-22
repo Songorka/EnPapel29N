@@ -1,1 +1,1 @@
-{"fecha": "2026-11-22-css-impresiones", "widget_css": {"nombre": "impresiones-movil", "css": "@media only screen and (max-width: 1023px) {\n  .jeg_share_stats .jeg_share_count { display: none !important; }\n  .jeg_share_stats .jeg_views_count { display: block !important; }\n}"}}
+{"fecha": "2026-11-22-css-impresiones", "widget_css": {"nombre": "impresiones-movil", "css": "@media only screen and (max-width: 1023px) {\n  .jeg_share_stats .jeg_share_count { display: none !important; }\n  .jeg_share_stats .jeg_views_count { display: block !important; }\n}"}, "intento": 2}
