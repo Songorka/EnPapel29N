@@ -148,6 +148,16 @@ def publicar(ruta):
         api('DELETE', f"posts/{n['papelera_id']}")
         print(f"{fecha}: entrada {n['papelera_id']} enviada a la papelera")
         os.remove(ruta); return
+    if n.get('rest_get'):  # solo lectura: guarda en publicadas/ la respuesta de unas rutas de la API (para diagnosticar)
+        res = {}
+        for r in n['rest_get']:
+            try:
+                res[r] = api('GET', r, intentos=1)
+            except BaseException as e:
+                res[r] = str(e)[:500]
+        json.dump(res, open(os.path.join(RAIZ, 'noticias', 'publicadas', f'{fecha}.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        os.remove(ruta); return
     if n.get('widget_css'):  # añade (o actualiza) un widget HTML con <style> en la zona de widgets del pie, que sale en todas las páginas
         wc = n['widget_css']
         marca = f"<!-- enpapel-css:{wc['nombre']} -->"
