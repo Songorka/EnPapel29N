@@ -1,0 +1,87 @@
+{
+ "fecha": "2026-11-22-css-impresiones",
+ "widget": "custom_html-3",
+ "sidebar": "footer-widget-1",
+ "sidebars": [
+  {
+   "id": "wp_inactive_widgets",
+   "widgets": [
+    "block-2",
+    "block-3",
+    "block-4",
+    "block-5",
+    "block-6"
+   ]
+  },
+  {
+   "id": "home",
+   "widgets": [
+    "bsa_shortcode_widget-3",
+    "weather_atlas-2",
+    "jnews_tab_post-2"
+   ]
+  },
+  {
+   "id": "home-loop",
+   "widgets": [
+    "jnews_social_counter-3",
+    "jnews_module_element_ads-3"
+   ]
+  },
+  {
+   "id": "home-3-loop",
+   "widgets": [
+    "jnews_social_counter-2",
+    "jnews_module_block_21-1"
+   ]
+  },
+  {
+   "id": "home-3",
+   "widgets": [
+    "jnews_popular-2",
+    "jnews_module_element_ads-2",
+    "jnews_tab_post-3"
+   ]
+  },
+  {
+   "id": "tiempo",
+   "widgets": [
+    "weather_atlas-4"
+   ]
+  },
+  {
+   "id": "default-sidebar",
+   "widgets": [
+    "bsa_shortcode_widget-5",
+    "bsa_shortcode_widget-6",
+    "weather_atlas-3",
+    "jnews_social_counter-1",
+    "jnews_tab_post-1",
+    "jnews_module_block_19-1"
+   ]
+  },
+  {
+   "id": "footer-widget-1",
+   "widgets": [
+    "jnews_about-1",
+    "jnews_social-1"
+   ]
+  },
+  {
+   "id": "footer-widget-2",
+   "widgets": [
+    "custom_html-2"
+   ]
+  },
+  {
+   "id": "footer-widget-3",
+   "widgets": [
+    "jnews_recent_news-1"
+   ]
+  },
+  {
+   "id": "footer-widget-4",
+   "widgets": []
+  }
+ ]
+}
