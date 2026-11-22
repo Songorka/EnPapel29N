@@ -214,5 +214,37 @@
   "titular": "Vox gana 6,2 puntos desde el 23J",
   "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −2,2 puntos, PSOE −3,6 puntos, Vox +6,2 puntos, F. Amplio + Podemos −4,7 puntos",
   "huella": "71c8374809223115f48c42da6a624fc4"
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "encuesta",
+  "variante": "gad3-2026-11-19",
+  "titular": "GAD3 para ABC: PP 31,1, PSOE 28,4",
+  "alt": "Encuesta de GAD3 para ABC: PP 31,1 %, PSOE 28,4 %, Vox 18,1 %, Frente Amplio 5,8 %. Se compara con la media.",
+  "huella": "b7f1ad65d82b0d27520ad69930c8b242"
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "encuesta",
+  "variante": "ipsos-2026-11-20",
+  "titular": "Ipsos para La Vanguardia: PP 30,3, PSOE 29,8",
+  "alt": "Encuesta de Ipsos para La Vanguardia: PP 30,3 %, PSOE 29,8 %, Vox 17,9 %, Frente Amplio 5,8 %. Se compara con la media.",
+  "huella": "7d755d2ca37f4299a43e778141000215"
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "encuesta",
+  "variante": "hamalgama-2026-11-20",
+  "titular": "Hamalgama Métrica para Vozpópuli: PP 31,8, PSOE 25,4",
+  "alt": "Encuesta de Hamalgama Métrica para Vozpópuli: PP 31,8 %, PSOE 25,4 %, Vox 20,6 %. Se compara con la media.",
+  "huella": "c5c5215d5ea98b8822dfd442e94e0e36"
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "encuesta",
+  "variante": "sigmados-2026-11-20",
+  "titular": "Sigma Dos para El Mundo: PP 31,5, PSOE 28,0",
+  "alt": "Encuesta de Sigma Dos para El Mundo: PP 31,5 %, PSOE 28,0 %, Vox 18,3 %, Frente Amplio 7,2 %. Se compara con la media.",
+  "huella": "b7df93a3967fc37fa9fee50fc725077d"
  }
 ]
