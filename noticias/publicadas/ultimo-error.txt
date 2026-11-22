@@ -1,0 +1,2 @@
+2026-11-22 22:46 UTC
+ERROR 500 en GET widgets?context=edit&per_page=100: {"code":"internal_server_error","message":"<p>Ha habido un error cr\u00edtico en esta web.<\/p><p><a href=\"https:\/\/wordpress.org\/documentation\/article\/faq-troubleshooting\/\">Aprende m\u00e1s sobre el diagn\u00f3stico de WordPress.<\/a><\/p>","data":{"status":500,"error":{"type":1,"message":"Uncaught Error: Call to a member function get_options() on null in \/var\/www\/vhosts\/enpapel.es\/httpdocs\/wp-content\/themes\/jnews\/class\/Widget\/Module\/WidgetModuleAbstract.php:81\nStack trace:\
