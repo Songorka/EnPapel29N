@@ -1,9 +1,9 @@
 {
  "fecha": "2026-11-22",
- "generado": "2026-11-23T05:47+00:00",
+ "generado": "2026-11-23T15:53+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 790,
+   "activeUsers": 789,
    "sessions": 833,
    "screenPageViews": 905
   },
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 340,
-   "sessions": 375,
+   "sessions": 376,
    "screenPageViews": 408
   }
  },
@@ -133,7 +133,7 @@
   },
   {
    "sessionDefaultChannelGroup": "Direct",
-   "sessions": 232.0
+   "sessions": 234.0
   },
   {
    "sessionDefaultChannelGroup": "Referral",
@@ -145,7 +145,7 @@
   },
   {
    "sessionDefaultChannelGroup": "Unassigned",
-   "sessions": 5.0
+   "sessions": 4.0
   },
   {
    "sessionDefaultChannelGroup": "AI Assistant",
@@ -159,7 +159,7 @@
   },
   {
    "deviceCategory": "desktop",
-   "activeUsers": 291.0
+   "activeUsers": 290.0
   },
   {
    "deviceCategory": "tablet",
