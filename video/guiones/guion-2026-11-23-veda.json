@@ -1,0 +1,141 @@
+{
+ "fecha": "Lunes 23 de noviembre · Faltan 6 días",
+ "eyebrow": "LA ÚLTIMA FOTO ANTES DE LA VEDA",
+ "dias": 6,
+ "entrada": 0.9,
+ "pausa": 0.35,
+ "salida": 1.4,
+ "t_url": 3.2,
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "pose": "sorpresa",
+   "poses": [
+    "sorpresa",
+    "presenta",
+    "explica"
+   ],
+   "clips": [
+    {
+     "audio": "v00.wav",
+     "texto": "Última foto antes de la veda. Desde mañana no se pueden publicar encuestas."
+    },
+    {
+     "audio": "v01.wav",
+     "texto": "Esto es lo que dicen a seis días del 29N."
+    }
+   ]
+  },
+  {
+   "tipo": "foto",
+   "pose": "senala",
+   "poses": [
+    "senala",
+    "explica",
+    "senala",
+    "ojo"
+   ],
+   "clips": [
+    {
+     "audio": "v14.wav",
+     "texto": "La media: PP, 30,9 %. PSOE, 28,1 %."
+    },
+    {
+     "audio": "v15.wav",
+     "texto": "Vox, 18,7 %. Y Frente Amplio, 6,5 %."
+    },
+    {
+     "audio": "v03.wav",
+     "texto": "La ventaja del PP se queda en 2,8 puntos. A mediados de octubre era de 5,6."
+    }
+   ]
+  },
+  {
+   "tipo": "escenarios",
+   "pose": "senala",
+   "poses": [
+    "senala",
+    "explica",
+    "encoge",
+    "piensa"
+   ],
+   "clips": [
+    {
+     "audio": "v04.wav",
+     "texto": "En escaños, PP y Vox suman 194 con UPN: dieciocho por encima de la mayoría."
+    },
+    {
+     "audio": "v05.wav",
+     "texto": "El PP solo se queda en 129. Necesitaría a Vox."
+    },
+    {
+     "audio": "v06.wav",
+     "texto": "Los socios de la investidura de Sánchez suman 154, a veintidós de la mayoría."
+    }
+   ]
+  },
+  {
+   "tipo": "error",
+   "pose": "piensa",
+   "poses": [
+    "piensa",
+    "sorpresa",
+    "explica",
+    "ojo"
+   ],
+   "clips": [
+    {
+     "audio": "v07.wav",
+     "texto": "En 2023, las últimas encuestas daban al PP casi siete puntos de ventaja. Ganó por 1,4."
+    },
+    {
+     "audio": "v08.wav",
+     "texto": "Todas se quedaron cortas con el PSOE. PP y Vox pasaron de 178 escaños en las encuestas a 170."
+    }
+   ]
+  },
+  {
+   "tipo": "hipotesis",
+   "pose": "brazos",
+   "poses": [
+    "brazos",
+    "explica",
+    "senala",
+    "encoge"
+   ],
+   "clips": [
+    {
+     "audio": "v09.wav",
+     "texto": "Si este año se repitiera el mismo error, el PSOE quedaría por delante en votos."
+    },
+    {
+     "audio": "v10.wav",
+     "texto": "Pero PP y Vox bajarían a unos 186 escaños y seguirían con mayoría."
+    },
+    {
+     "audio": "v11.wav",
+     "texto": "Para perderla, el error tendría que ser más del doble que en 2023."
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "pose": "pulgar",
+   "poses": [
+    "pulgar",
+    "presenta",
+    "adios"
+   ],
+   "clips": [
+    {
+     "audio": "v12.wav",
+     "texto": "Cada elección es distinta y las encuestas no votan. El domingo, a las ocho, saldremos de dudas."
+    },
+    {
+     "audio": "v13.wav",
+     "texto": "Todo, en enpapel.es."
+    }
+   ]
+  }
+ ]
+}
