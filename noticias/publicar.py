@@ -290,6 +290,11 @@ def publicar(ruta):
             cambios['tags'] = [etiqueta_id(t) for t in n['etiquetas']]
         if n.get('imagen'):  # nueva foto destacada
             cambios['featured_media'] = subir_imagen(n)
+        if n.get('video') and cambios.get('content'):  # vídeo: se sube a la mediateca y se inserta donde ponga {{VIDEO_URL}}
+            with open(os.path.join(RAIZ, n['video']), 'rb') as f:
+                v = api('POST', 'media', crudo=f.read(), cabeceras={
+                    'Content-Type': 'video/mp4', 'Content-Disposition': f'attachment; filename="{os.path.basename(n["video"])}"'})
+            cambios['content'] = cambios['content'].replace('{{VIDEO_URL}}', v['source_url'])
         if n.get('seo'):
             if not n.get('categorias'):
                 n['categorias'] = api('GET', f'posts/{n["corregir_id"]}?context=edit')['categories']
