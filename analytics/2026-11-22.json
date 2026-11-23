@@ -1,0 +1,173 @@
+{
+ "fecha": "2026-11-22",
+ "generado": "2026-11-23T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 790,
+   "sessions": 833,
+   "screenPageViews": 905
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 290,
+   "sessions": 312,
+   "screenPageViews": 347
+  },
+  "media_7_dias": {
+   "activeUsers": 340,
+   "sessions": 375,
+   "screenPageViews": 408
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 517,
+   "screenPageViews": 622
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 213,
+   "screenPageViews": 247
+  },
+  "pagina_encuestas": {
+   "activeUsers": 22,
+   "screenPageViews": 27
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuesta GAD3: el PSOE se acerca a 2,7 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-psoe-recorta-pp-29n/",
+    "screenPageViews": 226.0,
+    "activeUsers": 205.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+    "screenPageViews": 150.0,
+    "activeUsers": 136.0
+   },
+   {
+    "pageTitle": "Encuesta 40dB: el PSOE, a tres décimas del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-40db-psoe-tres-decimas-pp-29n/",
+    "screenPageViews": 89.0,
+    "activeUsers": 76.0
+   },
+   {
+    "pageTitle": "Encuesta Ipsos: el PSOE, a medio punto del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ipsos-psoe-medio-punto-pp-29n/",
+    "screenPageViews": 59.0,
+    "activeUsers": 52.0
+   },
+   {
+    "pageTitle": "Encuesta Hamalgama: PSOE 98 escaños y Vox 80 - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-hamalgama-psoe-98-vox-80-29n/",
+    "screenPageViews": 31.0,
+    "activeUsers": 30.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 455.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 50.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 7.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 3.0
+   },
+   {
+    "sessionSource": "bing",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 7260,
+   "screenPageViews": 9339
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuesta GAD3: el PSOE se acerca a 2,7 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-gad3-psoe-recorta-pp-29n/",
+   "screenPageViews": 226.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+   "screenPageViews": 150.0
+  },
+  {
+   "pageTitle": "Encuesta 40dB: el PSOE, a tres décimas del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-40db-psoe-tres-decimas-pp-29n/",
+   "screenPageViews": 89.0
+  },
+  {
+   "pageTitle": "Encuesta Ipsos: el PSOE, a medio punto del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-ipsos-psoe-medio-punto-pp-29n/",
+   "screenPageViews": 59.0
+  },
+  {
+   "pageTitle": "El Rayo Majadahonda cae en el Ibercaja Estadio ante el Real - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/el-rayo-majadahonda-cae-en-el-ibercaja-estadio-ante-el-real-zaragoza-y-carlos-martinez-destaca-el-trabajo-defensivo/",
+   "screenPageViews": 55.0
+  },
+  {
+   "pageTitle": "Encuesta Hamalgama: PSOE 98 escaños y Vox 80 - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-hamalgama-psoe-98-vox-80-29n/",
+   "screenPageViews": 31.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 585.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 232.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 6.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 5.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 484.0
+  },
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 291.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 16.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 6,
+  "activeUsers": 6
+ }
+}
