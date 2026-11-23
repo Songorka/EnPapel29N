@@ -1,0 +1,118 @@
+{
+ "posts?status=draft&per_page=20&context=edit&_fields=id,date,title,featured_media,categories,slug,excerpt,content,meta": [
+  {
+   "id": 14091,
+   "date": "2026-11-23T08:06:06",
+   "slug": "",
+   "title": {
+    "raw": "Marc Márquez se proclama campeón de MotoGP por octava vez tras la mayor remontada de la historia del Mundial",
+    "rendered": "Marc Márquez se proclama campeón de MotoGP por octava vez tras la mayor remontada de la historia del Mundial"
+   },
+   "content": {
+    "raw": "<p>Marc Márquez ya es campeón del mundo de MotoGP por octava vez. El piloto de Ducati ha confirmado este domingo en el Autódromo Internacional do Algarve, en Portimao, un título que a finales de primavera casi nadie daba por probable. Le bastó terminar octavo en el Gran Premio de Portugal para cerrar la cuenta, según <a href=\"https://elpais.com/deportes/motociclismo/2026-11-22/marc-marquez-es-eterno-levanta-su-octavo-titulo-de-motogp-tras-culminar-una-remontada-increible-en-el-gp-de-portugal.html\" target=\"_blank\" rel=\"noopener\">El País</a>.</p>\n\n<h2>Una remontada sin precedentes</h2>\n<p>El dato que lo resume todo es el 102. Esos fueron los puntos que llegaron a separar a Márquez del líder tras siete citas disputadas, y nadie había remontado jamás una desventaja así en el campeonato. Lo hizo con el brazo derecho muy castigado: fue operado por novena vez en siete años y se perdió dos grandes premios. Los médicos, apunta el diario, consideran que el brazo funciona al 50 % de sus facultades, y que será así ya de por vida.</p>\n<p>Según <a href=\"https://www.abc.es/deportes/motos/ocho-dos-marc-marquez-valentino-rossi-alcanza-20261108013304-nt.html\" target=\"_blank\" rel=\"noopener\">ABC</a>, a partir del verano encadenó una racha de podios y victorias mientras su rival en la lucha por el título, Marco Bezzecchi, acumulaba errores y ceros.</p>\n\n<h2>Una carrera con la calculadora en la mano</h2>\n<p>En Portimao, Márquez salió decidido: adelantó en la primera frenada al poleman Bezzecchi y lideró la primera vuelta. Después fue perdiendo posiciones hasta la séptima plaza y rodó buena parte de la carrera novena, la posición que le garantizaba el título sin depender de nadie. Consultaba la pizarra con las posiciones de sus rivales; la épica, esta vez, convivía con la aritmética.</p>\n<p>La victoria fue para Bezzecchi, con Jorge Martín segundo, en otro triplete de Aprilia. Una moto, la RS-GP, que según El País se mostró esta temporada más redonda que la Desmosedici de Ducati. Márquez ganó el campeonato con más cabeza que moto.</p>\n\n<h2>Los números de un récord</h2>\n<ul>\n<li>Octavo título en la categoría reina, los mismos que Giacomo Agostini, y uno más que los siete de Valentino Rossi.</li>\n<li>Décimo título mundial en total, frente a los nueve de Rossi.</li>\n<li>Según <a href=\"https://www.elespanol.com/deportes/motor/motogp/20261123/marc-marquez-conquista-mundial-resistio-valentino-rossi-remontada-puntos-historia/1003744467966_0.html\" target=\"_blank\" rel=\"noopener\">El Español</a>, solo tiene por delante a Ángel Nieto (12+1) y al propio Agostini (15).</li>\n<li>A sus 33 años, es el tercer campeón más veterano de la historia de MotoGP.</li>\n</ul>\n\n<h2>Una celebración con cabra incluida</h2>\n<p>Al cruzar la meta, Márquez soltó la tensión ante sus seguidores. «Señoras y señores, el año pasado dije que me quedé en paz conmigo mismo. ¡Este año va por vosotros!», dijo con una camiseta conmemorativa con el número 1 a la espalda. Después, la sombra de una cabra en una pantalla, guiño al acrónimo inglés ‘GOAT’ (el mejor de todos los tiempos), dio paso a un momento especial: Agostini, de 84 años, apareció para entregarle un casco dorado y fundirse con él en un abrazo.</p>\n<p>El futuro inmediato pasa por seguir en Ducati, ya que ABC recuerda que tiene renovación firmada con la marca. Con ocho coronas empatado con Agostini, el siguiente objetivo está a la vista: ser el único en solitario con más títulos en la categoría reina. Para un hombre al que le quedan un 50 % de brazo y bastantes ganas, parece un plazo razonable.</p>\n<p><em>Fuentes: <a href=\"https://elpais.com/deportes/motociclismo/2026-11-22/marc-marquez-es-eterno-levanta-su-octavo-titulo-de-motogp-tras-culminar-una-remontada-increible-en-el-gp-de-portugal.html\" target=\"_blank\" rel=\"noopener\">El País</a>, <a href=\"https://www.abc.es/deportes/motos/ocho-dos-marc-marquez-valentino-rossi-alcanza-20261108013304-nt.html\" target=\"_blank\" rel=\"noopener\">ABC</a>, <a href=\"https://www.elespanol.com/deportes/motor/motogp/20261123/marc-marquez-conquista-mundial-resistio-valentino-rossi-remontada-puntos-historia/1003744467966_0.html\" target=\"_blank\" rel=\"noopener\">El Español</a>, <a href=\"https://www.europapress.es/deportes/motociclismo-00311/noticia-marc-marquez-campeon-mundo-motogp-octava-vez-20261122144853.html\" target=\"_blank\" rel=\"noopener\">Europa Press</a>, <a href=\"https://www.20minutos.es/deportes/deportes_motor/motogp/marquez-da-otro-paso-mas-para-ser-mas-grande-historia-supera-rossi-iguala-agostini-es-tercero-con-mas-titulos_7064296_0.html\" target=\"_blank\" rel=\"noopener\">20minutos</a>.</em></p>",
+    "rendered": "<p>Marc Márquez ya es campeón del mundo de MotoGP por octava vez. El piloto de Ducati ha confirmado este domingo en el Autódromo Internacional do Algarve, en Portimao, un título que a finales de primavera casi nadie daba por probable. Le bastó terminar octavo en el Gran Premio de Portugal para cerrar la cuenta, según <a href=\"https://elpais.com/deportes/motociclismo/2026-11-22/marc-marquez-es-eterno-levanta-su-octavo-titulo-de-motogp-tras-culminar-una-remontada-increible-en-el-gp-de-portugal.html\" target=\"_blank\" rel=\"noopener\">El País</a>.</p>\n<h2>Una remontada sin precedentes</h2>\n<p>El dato que lo resume todo es el 102. Esos fueron los puntos que llegaron a separar a Márquez del líder tras siete citas disputadas, y nadie había remontado jamás una desventaja así en el campeonato. Lo hizo con el brazo derecho muy castigado: fue operado por novena vez en siete años y se perdió dos grandes premios. Los médicos, apunta el diario, consideran que el brazo funciona al 50 % de sus facultades, y que será así ya de por vida.</p>\n<p>Según <a href=\"https://www.abc.es/deportes/motos/ocho-dos-marc-marquez-valentino-rossi-alcanza-20261108013304-nt.html\" target=\"_blank\" rel=\"noopener\">ABC</a>, a partir del verano encadenó una racha de podios y victorias mientras su rival en la lucha por el título, Marco Bezzecchi, acumulaba errores y ceros.</p>\n<h2>Una carrera con la calculadora en la mano</h2>\n<p>En Portimao, Márquez salió decidido: adelantó en la primera frenada al poleman Bezzecchi y lideró la primera vuelta. Después fue perdiendo posiciones hasta la séptima plaza y rodó buena parte de la carrera novena, la posición que le garantizaba el título sin depender de nadie. Consultaba la pizarra con las posiciones de sus rivales; la épica, esta vez, convivía con la aritmética.</p>\n<p>La victoria fue para Bezzecchi, con Jorge Martín segundo, en otro triplete de Aprilia. Una moto, la RS-GP, que según El País se mostró esta temporada más redonda que la Desmosedici de Ducati. Márquez ganó el campeonato con más cabeza que moto.</p>\n<h2>Los números de un récord</h2>\n<ul>\n<li>Octavo título en la categoría reina, los mismos que Giacomo Agostini, y uno más que los siete de Valentino Rossi.</li>\n<li>Décimo título mundial en total, frente a los nueve de Rossi.</li>\n<li>Según <a href=\"https://www.elespanol.com/deportes/motor/motogp/20261123/marc-marquez-conquista-mundial-resistio-valentino-rossi-remontada-puntos-historia/1003744467966_0.html\" target=\"_blank\" rel=\"noopener\">El Español</a>, solo tiene por delante a Ángel Nieto (12+1) y al propio Agostini (15).</li>\n<li>A sus 33 años, es el tercer campeón más veterano de la historia de MotoGP.</li>\n</ul>\n<h2>Una celebración con cabra incluida</h2>\n<p>Al cruzar la meta, Márquez soltó la tensión ante sus seguidores. «Señoras y señores, el año pasado dije que me quedé en paz conmigo mismo. ¡Este año va por vosotros!», dijo con una camiseta conmemorativa con el número 1 a la espalda. Después, la sombra de una cabra en una pantalla, guiño al acrónimo inglés ‘GOAT’ (el mejor de todos los tiempos), dio paso a un momento especial: Agostini, de 84 años, apareció para entregarle un casco dorado y fundirse con él en un abrazo.</p>\n<p>El futuro inmediato pasa por seguir en Ducati, ya que ABC recuerda que tiene renovación firmada con la marca. Con ocho coronas empatado con Agostini, el siguiente objetivo está a la vista: ser el único en solitario con más títulos en la categoría reina. Para un hombre al que le quedan un 50 % de brazo y bastantes ganas, parece un plazo razonable.</p>\n<p><em>Fuentes: <a href=\"https://elpais.com/deportes/motociclismo/2026-11-22/marc-marquez-es-eterno-levanta-su-octavo-titulo-de-motogp-tras-culminar-una-remontada-increible-en-el-gp-de-portugal.html\" target=\"_blank\" rel=\"noopener\">El País</a>, <a href=\"https://www.abc.es/deportes/motos/ocho-dos-marc-marquez-valentino-rossi-alcanza-20261108013304-nt.html\" target=\"_blank\" rel=\"noopener\">ABC</a>, <a href=\"https://www.elespanol.com/deportes/motor/motogp/20261123/marc-marquez-conquista-mundial-resistio-valentino-rossi-remontada-puntos-historia/1003744467966_0.html\" target=\"_blank\" rel=\"noopener\">El Español</a>, <a href=\"https://www.europapress.es/deportes/motociclismo-00311/noticia-marc-marquez-campeon-mundo-motogp-octava-vez-20261122144853.html\" target=\"_blank\" rel=\"noopener\">Europa Press</a>, <a href=\"https://www.20minutos.es/deportes/deportes_motor/motogp/marquez-da-otro-paso-mas-para-ser-mas-grande-historia-supera-rossi-iguala-agostini-es-tercero-con-mas-titulos_7064296_0.html\" target=\"_blank\" rel=\"noopener\">20minutos</a>.</em></p>\n",
+    "protected": false,
+    "block_version": 0
+   },
+   "excerpt": {
+    "raw": "El piloto de Cervera ha sellado en Portimao, con una octava plaza en el Gran Premio de Portugal, su décimo título mundial. Con él iguala a Agostini en la categoría reina y supera a Valentino Rossi.",
+    "rendered": "<p>El piloto de Cervera ha sellado en Portimao, con una octava plaza en el Gran Premio de Portugal, su décimo título mundial. Con él iguala a Agostini en la categoría reina y supera a Valentino Rossi.</p>\n",
+    "protected": false
+   },
+   "featured_media": 14090,
+   "meta": {
+    "_yoast_wpseo_focuskw": "MotoGP",
+    "_yoast_wpseo_title": "Marc Márquez se proclama campeón de MotoGP por octava vez tr %%sep%% %%sitename%%",
+    "_yoast_wpseo_metadesc": "El piloto de Cervera ha sellado en Portimao, con una octava plaza en el Gran Premio de Portugal, su décimo título mundial. Con él iguala a Agostini en la c",
+    "_yoast_wpseo_opengraph-title": "Marc Márquez se proclama campeón de MotoGP por octava vez tras la mayor remontada de la historia del Mundial",
+    "_yoast_wpseo_opengraph-description": "El piloto de Cervera ha sellado en Portimao, con una octava plaza en el Gran Premio de Portugal, su décimo título mundial. Con él iguala a Agostini en la categoría reina y supera a Valentino Rossi.",
+    "_yoast_wpseo_twitter-title": "Marc Márquez se proclama campeón de MotoGP por octava vez tras la mayor remontada de la historia del Mundial",
+    "_yoast_wpseo_twitter-description": "El piloto de Cervera ha sellado en Portimao, con una octava plaza en el Gran Premio de Portugal, su décimo título mundial. Con él iguala a Agostini en la categoría reina y supera a Valentino Rossi.",
+    "_yoast_wpseo_schema_article_type": "NewsArticle",
+    "_yoast_wpseo_primary_category": "7057",
+    "jnews-multi-image_gallery": [],
+    "jnews_single_post": {
+     "format": "standard"
+    },
+    "jnews_primary_category": [],
+    "jnews_social_meta": [],
+    "jnews_review": [],
+    "enable_review": "",
+    "type": "",
+    "name": "",
+    "summary": "",
+    "brand": "",
+    "sku": "",
+    "good": [],
+    "bad": [],
+    "score_override": "",
+    "override_value": "",
+    "rating": [],
+    "price": [],
+    "jnews_override_counter": [],
+    "footnotes": ""
+   },
+   "categories": [
+    58,
+    7057
+   ]
+  },
+  {
+   "id": 14088,
+   "date": "2026-11-23T08:05:40",
+   "slug": "",
+   "title": {
+    "raw": "El gimnasio ‘low cost’ gana terreno en Europa y Estados Unidos y mira ya hacia la península ibérica",
+    "rendered": "El gimnasio ‘low cost’ gana terreno en Europa y Estados Unidos y mira ya hacia la península ibérica"
+   },
+   "content": {
+    "raw": "<p>Quien haya mirado alguna vez tarifas de gimnasio sabe que la cuota mensual puede asustar casi tanto como las agujetas del lunes. Precisamente ahí se ha colocado el gimnasio <em>low cost</em>: centros con una mensualidad muy baja, servicios esenciales y un enfoque pensado para principiantes, con la idea de que nadie se sienta fuera de lugar al entrar.</p>\n\n<h2>Qué es y por qué funciona</h2>\n<p>El concepto se apoya en dos ideas sencillas: precio contenido y ambiente acogedor. Según recoge el medio especializado <a href=\"https://athletechnews.com/planet-fitness-australia-approachability-gymtimidation-marketing-campaign/\" target=\"_blank\" rel=\"noopener\">Athletech News</a>, una de las grandes cadenas del sector insiste en ofrecer un gimnasio accesible y sin complejos para combatir la llamada ‘gymtimidation’, es decir, ese pudor de quien siente que todos los demás saben lo que hacen menos él.</p>\n\n<h2>Dónde está creciendo</h2>\n<ul>\n<li><strong>Estados Unidos:</strong> una cadena de gimnasios de bajo coste con muchos servicios ha llegado a los 600 centros en todo el mundo, impulsada por sus franquiciados, según <a href=\"https://athletechnews.com/crunch-fitness-600-gyms-franchisees-push-growth-cr-fitness-100-gyms/\" target=\"_blank\" rel=\"noopener\">la misma publicación</a>. El dato confirma, según el medio, que hay demanda para este formato.</li>\n<li><strong>Francia:</strong> un fondo de inversión ha adquirido una cadena francesa de gimnasios, en plena consolidación del sector en Europa, <a href=\"https://athletechnews.com/providence-equity-group-france-fitness-park-gym-acquisition/\" target=\"_blank\" rel=\"noopener\">según Athletech News</a>.</li>\n<li><strong>Portugal:</strong> una gran cadena estadounidense ha comprado una cadena portuguesa y, con ello, entra en el mercado ibérico del <em>low cost</em>, <a href=\"https://athletechnews.com/planet-fitness-acquires-portugal-be-fit-pushes-inclusive-messaging-q3-earnings/\" target=\"_blank\" rel=\"noopener\">según la misma fuente</a>.</li>\n</ul>\n<p>Los tres movimientos se produjeron entre finales de octubre y principios de noviembre. Las fuentes no detallan el importe de las operaciones en Europa.</p>\n\n<h2>¿Y en España?</h2>\n<p>Aquí está el matiz. El seguimiento que hace En Papel de este tipo de tendencias apunta a que el interés de búsqueda en España es todavía discreto y que son pocos los negocios detectados bajo esta etiqueta. Con todo, la compra en Portugal es una señal difícil de ignorar: cuando una gran cadena se instala al otro lado de la frontera, suele ser cuestión de tiempo que alguien mire el mapa y se pregunte qué hay al este. Todo apunta a que el formato encaja bien con el mercado español, pero habrá que ver si llega pronto o si, como casi todo, tarda unos años en cruzar los Pirineos.</p>\n\n<h2>Qué podría suponer en Majadahonda y el noroeste</h2>\n<p>Ninguna de las fuentes menciona la Comunidad de Madrid ni el noroeste, así que cualquier previsión local es, por ahora, terreno de hipótesis. Lo que sí se puede decir es que el modelo se dirige a quien empieza o quiere probar sin comprometerse con una cuota alta, un perfil que existe en cualquier ciudad, también aquí. Si el formato se extiende, los vecinos podrían ver más opciones de precio para entrenar, y la oferta actual, desde los centros municipales hasta los privados, tendría un nuevo punto de comparación.</p>\n<p>De momento, la recomendación es de vecino a vecino: antes de apuntarse a nada, conviene mirar bien la letra pequeña. Eso, por cierto, sí que no ha cambiado con ninguna moda.</p>\n<p><em>Fuentes: <a href=\"https://athletechnews.com/planet-fitness-acquires-portugal-be-fit-pushes-inclusive-messaging-q3-earnings/\" target=\"_blank\" rel=\"noopener\">Athletech News – compra de una cadena portuguesa</a>, <a href=\"https://athletechnews.com/crunch-fitness-600-gyms-franchisees-push-growth-cr-fitness-100-gyms/\" target=\"_blank\" rel=\"noopener\">Athletech News – 600 gimnasios</a>, <a href=\"https://athletechnews.com/providence-equity-group-france-fitness-park-gym-acquisition/\" target=\"_blank\" rel=\"noopener\">Athletech News – adquisición en Francia</a>, <a href=\"https://athletechnews.com/planet-fitness-australia-approachability-gymtimidation-marketing-campaign/\" target=\"_blank\" rel=\"noopener\">Athletech News – campaña contra la ‘gymtimidation’</a>.</em></p>",
+    "rendered": "<p>Quien haya mirado alguna vez tarifas de gimnasio sabe que la cuota mensual puede asustar casi tanto como las agujetas del lunes. Precisamente ahí se ha colocado el gimnasio <em>low cost</em>: centros con una mensualidad muy baja, servicios esenciales y un enfoque pensado para principiantes, con la idea de que nadie se sienta fuera de lugar al entrar.</p>\n<h2>Qué es y por qué funciona</h2>\n<p>El concepto se apoya en dos ideas sencillas: precio contenido y ambiente acogedor. Según recoge el medio especializado <a href=\"https://athletechnews.com/planet-fitness-australia-approachability-gymtimidation-marketing-campaign/\" target=\"_blank\" rel=\"noopener\">Athletech News</a>, una de las grandes cadenas del sector insiste en ofrecer un gimnasio accesible y sin complejos para combatir la llamada ‘gymtimidation’, es decir, ese pudor de quien siente que todos los demás saben lo que hacen menos él.</p>\n<h2>Dónde está creciendo</h2>\n<ul>\n<li><strong>Estados Unidos:</strong> una cadena de gimnasios de bajo coste con muchos servicios ha llegado a los 600 centros en todo el mundo, impulsada por sus franquiciados, según <a href=\"https://athletechnews.com/crunch-fitness-600-gyms-franchisees-push-growth-cr-fitness-100-gyms/\" target=\"_blank\" rel=\"noopener\">la misma publicación</a>. El dato confirma, según el medio, que hay demanda para este formato.</li>\n<li><strong>Francia:</strong> un fondo de inversión ha adquirido una cadena francesa de gimnasios, en plena consolidación del sector en Europa, <a href=\"https://athletechnews.com/providence-equity-group-france-fitness-park-gym-acquisition/\" target=\"_blank\" rel=\"noopener\">según Athletech News</a>.</li>\n<li><strong>Portugal:</strong> una gran cadena estadounidense ha comprado una cadena portuguesa y, con ello, entra en el mercado ibérico del <em>low cost</em>, <a href=\"https://athletechnews.com/planet-fitness-acquires-portugal-be-fit-pushes-inclusive-messaging-q3-earnings/\" target=\"_blank\" rel=\"noopener\">según la misma fuente</a>.</li>\n</ul>\n<p>Los tres movimientos se produjeron entre finales de octubre y principios de noviembre. Las fuentes no detallan el importe de las operaciones en Europa.</p>\n<h2>¿Y en España?</h2>\n<p>Aquí está el matiz. El seguimiento que hace En Papel de este tipo de tendencias apunta a que el interés de búsqueda en España es todavía discreto y que son pocos los negocios detectados bajo esta etiqueta. Con todo, la compra en Portugal es una señal difícil de ignorar: cuando una gran cadena se instala al otro lado de la frontera, suele ser cuestión de tiempo que alguien mire el mapa y se pregunte qué hay al este. Todo apunta a que el formato encaja bien con el mercado español, pero habrá que ver si llega pronto o si, como casi todo, tarda unos años en cruzar los Pirineos.</p>\n<h2>Qué podría suponer en Majadahonda y el noroeste</h2>\n<p>Ninguna de las fuentes menciona la Comunidad de Madrid ni el noroeste, así que cualquier previsión local es, por ahora, terreno de hipótesis. Lo que sí se puede decir es que el modelo se dirige a quien empieza o quiere probar sin comprometerse con una cuota alta, un perfil que existe en cualquier ciudad, también aquí. Si el formato se extiende, los vecinos podrían ver más opciones de precio para entrenar, y la oferta actual, desde los centros municipales hasta los privados, tendría un nuevo punto de comparación.</p>\n<p>De momento, la recomendación es de vecino a vecino: antes de apuntarse a nada, conviene mirar bien la letra pequeña. Eso, por cierto, sí que no ha cambiado con ninguna moda.</p>\n<p><em>Fuentes: <a href=\"https://athletechnews.com/planet-fitness-acquires-portugal-be-fit-pushes-inclusive-messaging-q3-earnings/\" target=\"_blank\" rel=\"noopener\">Athletech News – compra de una cadena portuguesa</a>, <a href=\"https://athletechnews.com/crunch-fitness-600-gyms-franchisees-push-growth-cr-fitness-100-gyms/\" target=\"_blank\" rel=\"noopener\">Athletech News – 600 gimnasios</a>, <a href=\"https://athletechnews.com/providence-equity-group-france-fitness-park-gym-acquisition/\" target=\"_blank\" rel=\"noopener\">Athletech News – adquisición en Francia</a>, <a href=\"https://athletechnews.com/planet-fitness-australia-approachability-gymtimidation-marketing-campaign/\" target=\"_blank\" rel=\"noopener\">Athletech News – campaña contra la ‘gymtimidation’</a>.</em></p>\n",
+    "protected": false,
+    "block_version": 0
+   },
+   "excerpt": {
+    "raw": "Cuotas mínimas, servicios básicos y un ambiente pensado para quien nunca ha pisado una sala de musculación: el modelo atrae inversión en Francia, Portugal y EE. UU. Aquí, de momento, se deja ver poco.",
+    "rendered": "<p>Cuotas mínimas, servicios básicos y un ambiente pensado para quien nunca ha pisado una sala de musculación: el modelo atrae inversión en Francia, Portugal y EE. UU. Aquí, de momento, se deja ver poco.</p>\n",
+    "protected": false
+   },
+   "featured_media": 14087,
+   "meta": {
+    "_yoast_wpseo_focuskw": "Lo que viene",
+    "_yoast_wpseo_title": "El gimnasio ‘low cost’ gana terreno en Europa y Estados Unid %%sep%% %%sitename%%",
+    "_yoast_wpseo_metadesc": "Cuotas mínimas, servicios básicos y un ambiente pensado para quien nunca ha pisado una sala de musculación: el modelo atrae inversión en Francia, Portugal",
+    "_yoast_wpseo_opengraph-title": "El gimnasio ‘low cost’ gana terreno en Europa y Estados Unidos y mira ya hacia la península ibérica",
+    "_yoast_wpseo_opengraph-description": "Cuotas mínimas, servicios básicos y un ambiente pensado para quien nunca ha pisado una sala de musculación: el modelo atrae inversión en Francia, Portugal y EE. UU. Aquí, de momento, se deja ver poco.",
+    "_yoast_wpseo_twitter-title": "El gimnasio ‘low cost’ gana terreno en Europa y Estados Unidos y mira ya hacia la península ibérica",
+    "_yoast_wpseo_twitter-description": "Cuotas mínimas, servicios básicos y un ambiente pensado para quien nunca ha pisado una sala de musculación: el modelo atrae inversión en Francia, Portugal y EE. UU. Aquí, de momento, se deja ver poco.",
+    "_yoast_wpseo_schema_article_type": "NewsArticle",
+    "_yoast_wpseo_primary_category": "7057",
+    "jnews-multi-image_gallery": [],
+    "jnews_single_post": {
+     "format": "standard"
+    },
+    "jnews_primary_category": [],
+    "jnews_social_meta": [],
+    "jnews_review": [],
+    "enable_review": "",
+    "type": "",
+    "name": "",
+    "summary": "",
+    "brand": "",
+    "sku": "",
+    "good": [],
+    "bad": [],
+    "score_override": "",
+    "override_value": "",
+    "rating": [],
+    "price": [],
+    "jnews_override_counter": [],
+    "footnotes": ""
+   },
+   "categories": [
+    58,
+    7057
+   ]
+  }
+ ]
+}
