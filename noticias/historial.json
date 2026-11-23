@@ -246,5 +246,13 @@
   "titular": "Sigma Dos para El Mundo: PP 31,5, PSOE 28,0",
   "alt": "Encuesta de Sigma Dos para El Mundo: PP 31,5 %, PSOE 28,0 %, Vox 18,3 %, Frente Amplio 7,2 %. Se compara con la media.",
   "huella": "b7df93a3967fc37fa9fee50fc725077d"
+ },
+ {
+  "fecha": "2026-11-23",
+  "tipo": "cambio23J",
+  "variante": "",
+  "titular": "Vox gana 6,3 puntos desde el 23J",
+  "alt": "Diferencia entre la media de encuestas y el resultado de 2023: PP −2,2 puntos, PSOE −3,6 puntos, Vox +6,3 puntos",
+  "huella": "b29c16f1c29f2f904fe42cf4dd8325e0"
  }
 ]
