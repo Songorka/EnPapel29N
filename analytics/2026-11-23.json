@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-23",
- "generado": "2026-11-24T05:47+00:00",
+ "generado": "2026-11-24T15:46+00:00",
  "web": {
   "ayer": {
-   "activeUsers": 594,
-   "sessions": 645,
+   "activeUsers": 593,
+   "sessions": 644,
    "screenPageViews": 713
   },
   "mismo_dia_semana_pasada": {
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 389,
-   "sessions": 421,
+   "sessions": 429,
    "screenPageViews": 467
   }
  },
@@ -73,12 +73,12 @@
     "activeUsers": 53.0
    },
    {
-    "sessionSource": "(not set)",
-    "activeUsers": 6.0
-   },
-   {
     "sessionSource": "news.google.com",
     "activeUsers": 4.0
+   },
+   {
+    "sessionSource": "(not set)",
+    "activeUsers": 2.0
    },
    {
     "sessionSource": "bing",
@@ -140,15 +140,15 @@
    "sessions": 8.0
   },
   {
-   "sessionDefaultChannelGroup": "Unassigned",
-   "sessions": 8.0
-  },
-  {
    "sessionDefaultChannelGroup": "AI Assistant",
    "sessions": 2.0
   },
   {
    "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
    "sessions": 2.0
   }
  ],
@@ -159,7 +159,7 @@
   },
   {
    "deviceCategory": "desktop",
-   "activeUsers": 285.0
+   "activeUsers": 284.0
   },
   {
    "deviceCategory": "tablet",
