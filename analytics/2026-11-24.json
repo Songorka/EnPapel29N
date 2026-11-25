@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-24",
- "generado": "2026-11-25T05:46+00:00",
+ "generado": "2026-11-25T15:30+00:00",
  "web": {
   "ayer": {
    "activeUsers": 249,
-   "sessions": 263,
+   "sessions": 264,
    "screenPageViews": 281
   },
   "mismo_dia_semana_pasada": {
@@ -14,7 +14,7 @@
   },
   "media_7_dias": {
    "activeUsers": 401,
-   "sessions": 437,
+   "sessions": 441,
    "screenPageViews": 477
   }
  },
@@ -129,7 +129,7 @@
   },
   {
    "sessionDefaultChannelGroup": "Organic Search",
-   "sessions": 129.0
+   "sessions": 130.0
   },
   {
    "sessionDefaultChannelGroup": "Organic Social",
