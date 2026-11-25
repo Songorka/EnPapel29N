@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-11-24",
+ "generado": "2026-11-25T05:46+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 249,
+   "sessions": 263,
+   "screenPageViews": 281
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 166,
+   "sessions": 185,
+   "screenPageViews": 208
+  },
+  "media_7_dias": {
+   "activeUsers": 401,
+   "sessions": 437,
+   "screenPageViews": 477
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 109,
+   "screenPageViews": 133
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 103,
+   "screenPageViews": 134
+  },
+  "pagina_encuestas": {
+   "activeUsers": 1,
+   "screenPageViews": 1
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+    "screenPageViews": 76.0,
+    "activeUsers": 65.0
+   },
+   {
+    "pageTitle": "Búsquedas en Google: así se ha movido la campaña del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/lo-que-busca-espana-partidos-google-campana-29n/",
+    "screenPageViews": 13.0,
+    "activeUsers": 10.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+    "screenPageViews": 11.0,
+    "activeUsers": 11.0
+   },
+   {
+    "pageTitle": "Encuesta Ipsos: el PSOE, a medio punto del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-ipsos-psoe-medio-punto-pp-29n/",
+    "screenPageViews": 7.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: el PSOE se acerca a 2,7 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-psoe-recorta-pp-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 4.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 89.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 17.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "ecosia.org",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "songorka.github.io",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 7787,
+   "screenPageViews": 10014
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+   "screenPageViews": 76.0
+  },
+  {
+   "pageTitle": "Una marcha lenta de profesores en huelga complica este marte - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/una-marcha-lenta-de-profesores-en-huelga-complica-este-martes-los-accesos-a-madrid-tambien-por-la-a-6/",
+   "screenPageViews": 22.0
+  },
+  {
+   "pageTitle": "Búsquedas en Google: así se ha movido la campaña del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/lo-que-busca-espana-partidos-google-campana-29n/",
+   "screenPageViews": 13.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+   "screenPageViews": 11.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Encuesta Ipsos: el PSOE, a medio punto del PP - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-ipsos-psoe-medio-punto-pp-29n/",
+   "screenPageViews": 7.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 130.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 129.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 1.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 157.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 88.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 4.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 3,
+  "activeUsers": 3
+ }
+}
