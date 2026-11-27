@@ -1,0 +1,165 @@
+{
+ "fecha": "2026-11-26",
+ "generado": "2026-11-27T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 164,
+   "sessions": 180,
+   "screenPageViews": 193
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 396,
+   "sessions": 433,
+   "screenPageViews": 462
+  },
+  "media_7_dias": {
+   "activeUsers": 398,
+   "sessions": 423,
+   "screenPageViews": 463
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 74,
+   "screenPageViews": 89
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 245,
+   "screenPageViews": 303
+  },
+  "pagina_encuestas": {
+   "activeUsers": 0,
+   "screenPageViews": 0
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+    "screenPageViews": 51.0,
+    "activeUsers": 42.0
+   },
+   {
+    "pageTitle": "Candidatos en Google: Sánchez, el más buscado del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/lo-que-busca-espana-candidatos-google-29n/",
+    "screenPageViews": 14.0,
+    "activeUsers": 14.0
+   },
+   {
+    "pageTitle": "Temas de campaña en Google: vivienda e inmigración - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/lo-que-busca-espana-temas-vivienda-inmigracion-google-29n/",
+    "screenPageViews": 6.0,
+    "activeUsers": 6.0
+   },
+   {
+    "pageTitle": "Encuesta SW Demoscopia: el PSOE sigue primero a 18 días - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+    "screenPageViews": 5.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Encuesta GAD3: el PSOE se acerca a 2,7 puntos del PP - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-gad3-psoe-recorta-pp-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 0.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 53.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 17.0
+   },
+   {
+    "sessionSource": "chatgpt.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "duckduckgo",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "gemini.google.com",
+    "activeUsers": 1.0
+   },
+   {
+    "sessionSource": "news.google.com",
+    "activeUsers": 1.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 7921,
+   "screenPageViews": 10163
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+   "screenPageViews": 51.0
+  },
+  {
+   "pageTitle": "Candidatos en Google: Sánchez, el más buscado del 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/lo-que-busca-espana-candidatos-google-29n/",
+   "screenPageViews": 14.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "Censo electoral de Majadahonda: 56.106 electores el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/censo-electoral-majadahonda-29n-electores/",
+   "screenPageViews": 8.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 7.0
+  },
+  {
+   "pageTitle": "Las Rozas reúne a más de 70 personas en un ‘hackathon’ para - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/zona-noroeste/las-rozas-reune-a-mas-de-70-personas-en-un-hackathon-para-imaginar-la-ciudad-de-2040/",
+   "screenPageViews": 6.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 95.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 81.0
+  },
+  {
+   "sessionDefaultChannelGroup": "AI Assistant",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Referral",
+   "sessions": 2.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 96.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 66.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 3.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
