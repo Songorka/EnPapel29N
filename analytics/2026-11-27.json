@@ -1,0 +1,149 @@
+{
+ "fecha": "2026-11-27",
+ "generado": "2026-11-28T05:47+00:00",
+ "web": {
+  "ayer": {
+   "activeUsers": 174,
+   "sessions": 182,
+   "screenPageViews": 195
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 325,
+   "sessions": 343,
+   "screenPageViews": 373
+  },
+  "media_7_dias": {
+   "activeUsers": 378,
+   "sessions": 402,
+   "screenPageViews": 437
+  }
+ },
+ "29n": {
+  "ayer": {
+   "activeUsers": 65,
+   "screenPageViews": 77
+  },
+  "mismo_dia_semana_pasada": {
+   "activeUsers": 181,
+   "screenPageViews": 213
+  },
+  "pagina_encuestas": {
+   "activeUsers": 3,
+   "screenPageViews": 3
+  },
+  "noticias": [
+   {
+    "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+    "screenPageViews": 54.0,
+    "activeUsers": 50.0
+   },
+   {
+    "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+    "screenPageViews": 4.0,
+    "activeUsers": 4.0
+   },
+   {
+    "pageTitle": "Candidatos en Google: Sánchez, el más buscado del 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/lo-que-busca-espana-candidatos-google-29n/",
+    "screenPageViews": 3.0,
+    "activeUsers": 3.0
+   },
+   {
+    "pageTitle": "Elecciones 29N archivos - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 1.0
+   },
+   {
+    "pageTitle": "Encuesta CIS: el PSOE gana y PP y Vox no suman en el 29N - Enpapel - Tu periódico en Majadahonda",
+    "pagePath": "/elecciones-29n/encuesta-cis-psoe-gana-pp-vox-sin-mayoria-29n/",
+    "screenPageViews": 2.0,
+    "activeUsers": 2.0
+   }
+  ],
+  "fuentes": [
+   {
+    "sessionSource": "google",
+    "activeUsers": 59.0
+   },
+   {
+    "sessionSource": "(direct)",
+    "activeUsers": 6.0
+   }
+  ],
+  "acumulado_desde_5_oct": {
+   "activeUsers": 7988,
+   "screenPageViews": 10240
+  }
+ },
+ "mas_leidas": [
+  {
+   "pageTitle": "Encuestas 2023: cuánto fallaron antes del 23J - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuestas-2023-fallaron-psoe-23j-lecciones-29n/",
+   "screenPageViews": 54.0
+  },
+  {
+   "pageTitle": "Más de 130 personalidades de la cultura apoyan la huelga educativa - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/tendencias/mas-de-130-personalidades-de-la-cultura-firman-un-manifiesto-de-apoyo-al-profesorado-madrileno-en-huelga/",
+   "screenPageViews": 17.0
+  },
+  {
+   "pageTitle": "Censo electoral de Majadahonda: 56.106 electores el 29N - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/censo-electoral-majadahonda-29n-electores/",
+   "screenPageViews": 10.0
+  },
+  {
+   "pageTitle": "En Papel - Tu periódico en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/",
+   "screenPageViews": 9.0
+  },
+  {
+   "pageTitle": "Encuesta Sigma Dos: el PSOE sube siete veces seguidas - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/elecciones-29n/encuesta-sigma-dos-psoe-siete-subidas-29n/",
+   "screenPageViews": 4.0
+  },
+  {
+   "pageTitle": "Mesa electoral 29N: cuándo sabrás si te toca en Majadahonda - Enpapel - Tu periódico en Majadahonda",
+   "pagePath": "/majadahonda/mesa-electoral-29n-majadahonda-sorteo/",
+   "screenPageViews": 4.0
+  }
+ ],
+ "fuentes_web": [
+  {
+   "sessionDefaultChannelGroup": "Direct",
+   "sessions": 92.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Search",
+   "sessions": 87.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Unassigned",
+   "sessions": 2.0
+  },
+  {
+   "sessionDefaultChannelGroup": "Organic Social",
+   "sessions": 1.0
+  }
+ ],
+ "dispositivos": [
+  {
+   "deviceCategory": "desktop",
+   "activeUsers": 108.0
+  },
+  {
+   "deviceCategory": "mobile",
+   "activeUsers": 64.0
+  },
+  {
+   "deviceCategory": "tablet",
+   "activeUsers": 2.0
+  }
+ ],
+ "desde_x": {
+  "sessions": 1,
+  "activeUsers": 1
+ }
+}
